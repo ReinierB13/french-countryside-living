@@ -5,13 +5,16 @@ import { notFound } from 'next/navigation';
 import Marcel from '@/components/Marcel';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import { getRecipeBySlug, recipes } from '@/lib/content';
+import { routing } from '@/i18n/routing';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return recipes.map((r) => ({ slug: r.slug }));
+  return routing.locales.flatMap((locale) =>
+    recipes.map((r) => ({ locale, slug: r.slug }))
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

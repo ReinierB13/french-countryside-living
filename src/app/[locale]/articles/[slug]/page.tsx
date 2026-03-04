@@ -6,13 +6,16 @@ import Marcel from '@/components/Marcel';
 import ArticleCard from '@/components/ArticleCard';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import { getArticleBySlug, getRelatedArticles, articles } from '@/lib/content';
+import { routing } from '@/i18n/routing';
 
 interface Props {
   params: Promise<{ locale: string; slug: string }>;
 }
 
 export async function generateStaticParams() {
-  return articles.map((a) => ({ slug: a.slug }));
+  return routing.locales.flatMap((locale) =>
+    articles.map((a) => ({ locale, slug: a.slug }))
+  );
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

@@ -1,30 +1,30 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname } from 'next/navigation';
+import { Link, usePathname } from '@/i18n/navigation';
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const t = useTranslations('Navigation');
   const locale = useLocale();
-  const pathname = usePathname();
+  const pathname = usePathname(); // locale-stripped pathname from next-intl
 
+  // href values are locale-agnostic paths — next-intl Link adds prefix automatically
   const links = [
-    { href: `/${locale}/articles`, label: t('articles') },
-    { href: `/${locale}/videos`, label: t('videos') },
-    { href: `/${locale}/recipes`, label: t('recipes') },
-    { href: `/${locale}/france`, label: t('france') },
-    { href: `/${locale}/provence`, label: t('provence') },
-    { href: `/${locale}/about`, label: t('about') },
-    { href: `/${locale}/contact`, label: t('contact') },
+    { href: '/articles' as const, label: t('articles') },
+    { href: '/videos' as const, label: t('videos') },
+    { href: '/recipes' as const, label: t('recipes') },
+    { href: '/france' as const, label: t('france') },
+    { href: '/provence' as const, label: t('provence') },
+    { href: '/about' as const, label: t('about') },
+    { href: '/contact' as const, label: t('contact') },
   ];
 
-  const isActive = (href: string) => pathname === href || pathname.startsWith(href + '/');
+  const isActive = (href: string) =>
+    pathname === href || pathname.startsWith(href + '/');
 
-  const otherLocale = locale === 'en' ? 'fr' : 'en';
-  const localizedPath = pathname.replace(`/${locale}`, `/${otherLocale}`);
+  const otherLocale = (locale === 'en' ? 'fr' : 'en') as 'en' | 'fr';
 
   return (
     <nav className="bg-olive text-white sticky top-0 z-50 shadow-lg">
@@ -32,7 +32,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Brand */}
           <Link
-            href={`/${locale}`}
+            href="/"
             className="font-heading font-bold text-lg md:text-xl text-parchment hover:text-amber transition-colors shrink-0"
           >
             French Countryside Living
@@ -55,11 +55,12 @@ export default function Navigation() {
             ))}
 
             {/* Language switcher */}
-            <div className="ml-3 pl-3 border-l border-olive-light flex items-center">
+            <div className="ml-3 pl-3 border-l border-olive-light flex items-center gap-1">
               <span className="text-parchment/50 text-xs font-body uppercase">{locale}</span>
-              <span className="text-parchment/30 mx-1">/</span>
+              <span className="text-parchment/30">/</span>
               <Link
-                href={localizedPath}
+                href={pathname}
+                locale={otherLocale}
                 className="text-parchment/50 hover:text-amber text-xs font-body uppercase transition-colors"
               >
                 {otherLocale}
@@ -74,9 +75,9 @@ export default function Navigation() {
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
           >
-            <span className="block w-6 h-0.5 bg-current mb-1.5 transition-all" />
-            <span className="block w-6 h-0.5 bg-current mb-1.5 transition-all" />
-            <span className="block w-6 h-0.5 bg-current transition-all" />
+            <span className="block w-6 h-0.5 bg-current mb-1.5" />
+            <span className="block w-6 h-0.5 bg-current mb-1.5" />
+            <span className="block w-6 h-0.5 bg-current" />
           </button>
         </div>
 
@@ -97,9 +98,10 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <div className="pt-3 flex gap-3">
+            <div className="pt-3">
               <Link
-                href={localizedPath}
+                href={pathname}
+                locale={otherLocale}
                 className="text-parchment/60 hover:text-amber text-sm font-body uppercase transition-colors"
               >
                 {otherLocale === 'fr' ? 'Français' : 'English'}
