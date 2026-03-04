@@ -1,0 +1,116 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "articles": "Articles",
+    "videos": "Videos",
+    "recipes": "Recipes",
+    "france": "France",
+    "provence": "Provence",
+    "about": "About",
+    "contact": "Contact",
+    "siteName": "French Countryside Living"
+  },
+  "HomePage": {
+    "heroTitle": "French Countryside Living",
+    "heroSubtitle": "Hunting, cooking, and life in rural Provence",
+    "featuredArticles": "Featured Articles",
+    "latestVideos": "Latest Videos",
+    "recipes": "From the Kitchen",
+    "viewAll": "View all",
+    "exploreProvence": "Explore Provence",
+    "exploreProvenceDesc": "Stone villages, lavender fields, ancient olive groves — the soul of the South of France.",
+    "franceTitle": "Life in Rural France",
+    "franceDesc": "France is not just Paris. Beyond the boulevards lies an ancient countryside of hunting traditions, seasonal markets, and a way of life unchanged for centuries. Come discover the real France.",
+    "exploreFrance": "Explore France",
+    "discoverMore": "Discover more",
+    "newsletterTitle": "Stay Connected",
+    "newsletterDesc": "Join us for stories from the Provençal countryside — hunting seasons, recipes, and the slow rhythm of rural life."
+  },
+  "ArticlesPage": {
+    "title": "Articles",
+    "subtitle": "Stories from the countryside — hunting, cooking, and the rhythm of Provençal life.",
+    "readMore": "Read more"
+  },
+  "ArticlePage": {
+    "backToArticles": "← Back to Articles",
+    "relatedArticles": "More Reading"
+  },
+  "VideosPage": {
+    "title": "Videos",
+    "subtitle": "Watch life unfold in the Provençal countryside.",
+    "watchOnYoutube": "Watch on YouTube"
+  },
+  "RecipesPage": {
+    "title": "Recipes",
+    "subtitle": "Wild game, fire cooking, and the flavours of Provence.",
+    "allRecipes": "All Recipes",
+    "wildGame": "Wild Game",
+    "braai": "Braai & Fire",
+    "provencal": "Provençal",
+    "readRecipe": "Get the recipe"
+  },
+  "RecipePage": {
+    "backToRecipes": "← Back to Recipes",
+    "ingredients": "Ingredients",
+    "instructions": "Instructions",
+    "serves": "Serves",
+    "prepTime": "Prep",
+    "cookTime": "Cook",
+    "printRecipe": "Print Recipe"
+  },
+  "FrancePage": {
+    "title": "France",
+    "subtitle": "Hunting culture, rural traditions, and the soul of the French countryside.",
+    "huntingTitle": "La Chasse — The Hunt",
+    "huntingDesc": "Hunting is woven into the fabric of rural French life. Every autumn, the countryside rings with the sound of the hunt — a tradition passed down through generations.",
+    "traditionsTitle": "Rural Traditions",
+    "agricultureTitle": "Agriculture & Seasons",
+    "foodTitle": "Seasonal Food Culture"
+  },
+  "ProvencePage": {
+    "title": "Provence",
+    "subtitle": "Villages, vineyards, olive groves, and the perfume of wild herbs.",
+    "villagesTitle": "Villages & Landscapes",
+    "marketsTitle": "Markets & Food",
+    "wineTitle": "Wine & Olive Oil",
+    "cultureTitle": "Culture & Traditions"
+  },
+  "AboutPage": {
+    "title": "About",
+    "subtitle": "Welcome to French Countryside Living.",
+    "content": "This is a place dedicated to documenting real life in rural Provence — the hunts, the harvests, the meals cooked over fire, and the slow rhythms of countryside living.",
+    "marcelTitle": "Meet Marcel",
+    "marcelDesc": "Marcel the Frog is our cheerful mascot — a countryside philosopher who appears throughout the site to offer tips, wisdom, and the occasional wry observation about life in the South of France."
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "subtitle": "Get in touch.",
+    "nameLabel": "Your name",
+    "emailLabel": "Your email",
+    "messageLabel": "Your message",
+    "sendButton": "Send message",
+    "successMessage": "Thank you! We'll be in touch soon.",
+    "followUs": "Follow Along"
+  },
+  "Newsletter": {
+    "title": "Join the Countryside",
+    "desc": "Stories, recipes, and seasonal updates from rural Provence — delivered to your inbox.",
+    "placeholder": "Your email address",
+    "button": "Subscribe",
+    "privacy": "No spam, ever. Unsubscribe any time."
+  },
+  "Footer": {
+    "tagline": "Hunting, cooking, and life in rural Provence.",
+    "explore": "Explore",
+    "connect": "Connect",
+    "youtube": "YouTube Channel",
+    "copyright": "© {year} French Countryside Living. All rights reserved.",
+    "madeWith": "Made with love in Provence."
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "Something went wrong.",
+    "notFound": "Page not found.",
+    "backHome": "← Back to Home"
+  }
+}

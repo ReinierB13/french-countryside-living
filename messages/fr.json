@@ -1,0 +1,116 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "articles": "Articles",
+    "videos": "Vidéos",
+    "recipes": "Recettes",
+    "france": "France",
+    "provence": "Provence",
+    "about": "À propos",
+    "contact": "Contact",
+    "siteName": "French Countryside Living"
+  },
+  "HomePage": {
+    "heroTitle": "French Countryside Living",
+    "heroSubtitle": "Chasse, cuisine et vie à la campagne en Provence",
+    "featuredArticles": "Articles à la une",
+    "latestVideos": "Dernières vidéos",
+    "recipes": "De la cuisine",
+    "viewAll": "Voir tout",
+    "exploreProvence": "Explorer la Provence",
+    "exploreProvenceDesc": "Villages en pierre, champs de lavande, oliveraies — l'âme du Sud de la France.",
+    "franceTitle": "La vie à la campagne française",
+    "franceDesc": "La France, ce n'est pas seulement Paris. Au-delà des boulevards se trouve une campagne ancienne aux traditions de chasse, aux marchés saisonniers, et à un mode de vie inchangé depuis des siècles.",
+    "exploreFrance": "Explorer la France",
+    "discoverMore": "En savoir plus",
+    "newsletterTitle": "Restez connecté",
+    "newsletterDesc": "Rejoignez-nous pour des histoires de la campagne provençale — saisons de chasse, recettes et rythme lent de la vie rurale."
+  },
+  "ArticlesPage": {
+    "title": "Articles",
+    "subtitle": "Histoires de la campagne — chasse, cuisine et rythme de la vie provençale.",
+    "readMore": "Lire la suite"
+  },
+  "ArticlePage": {
+    "backToArticles": "← Retour aux articles",
+    "relatedArticles": "À lire aussi"
+  },
+  "VideosPage": {
+    "title": "Vidéos",
+    "subtitle": "Regardez la vie se dérouler dans la campagne provençale.",
+    "watchOnYoutube": "Voir sur YouTube"
+  },
+  "RecipesPage": {
+    "title": "Recettes",
+    "subtitle": "Gibier sauvage, cuisson au feu et saveurs de Provence.",
+    "allRecipes": "Toutes les recettes",
+    "wildGame": "Gibier",
+    "braai": "Braai & Feu",
+    "provencal": "Provençal",
+    "readRecipe": "Voir la recette"
+  },
+  "RecipePage": {
+    "backToRecipes": "← Retour aux recettes",
+    "ingredients": "Ingrédients",
+    "instructions": "Instructions",
+    "serves": "Personnes",
+    "prepTime": "Préparation",
+    "cookTime": "Cuisson",
+    "printRecipe": "Imprimer la recette"
+  },
+  "FrancePage": {
+    "title": "France",
+    "subtitle": "Culture de la chasse, traditions rurales et âme de la campagne française.",
+    "huntingTitle": "La Chasse",
+    "huntingDesc": "La chasse est tissée dans la vie rurale française. Chaque automne, la campagne résonne des sons de la chasse — une tradition transmise de génération en génération.",
+    "traditionsTitle": "Traditions rurales",
+    "agricultureTitle": "Agriculture & Saisons",
+    "foodTitle": "Culture gastronomique saisonnière"
+  },
+  "ProvencePage": {
+    "title": "Provence",
+    "subtitle": "Villages, vignobles, oliveraies et parfum des herbes sauvages.",
+    "villagesTitle": "Villages & Paysages",
+    "marketsTitle": "Marchés & Gastronomie",
+    "wineTitle": "Vin & Huile d'olive",
+    "cultureTitle": "Culture & Traditions"
+  },
+  "AboutPage": {
+    "title": "À propos",
+    "subtitle": "Bienvenue sur French Countryside Living.",
+    "content": "Ce site est dédié à documenter la vie réelle en Provence rurale — les chasses, les récoltes, les repas cuisinés au feu de bois et les rythmes lents de la vie à la campagne.",
+    "marcelTitle": "Rencontrez Marcel",
+    "marcelDesc": "Marcel la Grenouille est notre mascotte joviale — un philosophe champêtre qui apparaît tout au long du site pour offrir des conseils, de la sagesse et une observation pince-sans-rire sur la vie dans le Sud de la France."
+  },
+  "ContactPage": {
+    "title": "Contact",
+    "subtitle": "Prenez contact.",
+    "nameLabel": "Votre nom",
+    "emailLabel": "Votre email",
+    "messageLabel": "Votre message",
+    "sendButton": "Envoyer le message",
+    "successMessage": "Merci ! Nous vous répondrons bientôt.",
+    "followUs": "Suivez-nous"
+  },
+  "Newsletter": {
+    "title": "Rejoignez la campagne",
+    "desc": "Histoires, recettes et actualités saisonnières de la Provence rurale — dans votre boîte mail.",
+    "placeholder": "Votre adresse email",
+    "button": "S'abonner",
+    "privacy": "Pas de spam. Désinscription à tout moment."
+  },
+  "Footer": {
+    "tagline": "Chasse, cuisine et vie à la campagne en Provence.",
+    "explore": "Explorer",
+    "connect": "Suivre",
+    "youtube": "Chaîne YouTube",
+    "copyright": "© {year} French Countryside Living. Tous droits réservés.",
+    "madeWith": "Fait avec amour en Provence."
+  },
+  "Common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite.",
+    "notFound": "Page introuvable.",
+    "backHome": "← Retour à l'accueil"
+  }
+}

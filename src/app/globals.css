@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-parchment text-charcoal;
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  }
+}
+
+@layer components {
+  /* Rich text / article body styles */
+  .prose-countryside {
+    @apply font-body text-charcoal leading-relaxed;
+  }
+
+  .prose-countryside h2 {
+    @apply font-heading text-2xl font-semibold text-olive mt-10 mb-4 pb-2 border-b border-parchment;
+  }
+
+  .prose-countryside h3 {
+    @apply font-heading text-xl font-semibold text-charcoal mt-8 mb-3;
+  }
+
+  .prose-countryside p {
+    @apply mb-5 leading-relaxed;
+  }
+
+  .prose-countryside a {
+    @apply text-terracotta underline hover:text-terracotta-dark;
+  }
+
+  .prose-countryside ul {
+    @apply list-disc list-inside mb-5 space-y-2;
+  }
+
+  .prose-countryside ol {
+    @apply list-decimal list-inside mb-5 space-y-2;
+  }
+
+  .prose-countryside li {
+    @apply font-body text-charcoal leading-relaxed;
+  }
+
+  .prose-countryside blockquote {
+    @apply border-l-4 border-terracotta pl-5 my-6 italic text-charcoal/80;
+  }
+
+  /* Section divider */
+  .section-divider {
+    @apply border-t border-charcoal/10 my-12;
+  }
+}
