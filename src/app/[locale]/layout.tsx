@@ -44,9 +44,24 @@ export const metadata: Metadata = {
     'sanglier',
   ],
   icons: {
-    icon: '/icon.ico',
+    icon: [
+      { url: '/icons/icon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icons/icon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/icon.ico' },
+    ],
+    apple: [
+      { url: '/icons/icon-152x152.png', sizes: '152x152', type: 'image/png' },
+      { url: '/icons/icon-192x192.png', sizes: '192x192', type: 'image/png' },
+    ],
     shortcut: '/icon.ico',
   },
+  manifest: '/manifest.webmanifest',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'French Countryside Living',
+  },
+  formatDetection: { telephone: false },
   openGraph: {
     siteName: 'French Countryside Living',
     locale: 'en_GB',
@@ -72,6 +87,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={`${playfair.variable} ${lora.variable}`}>
+      <head>
+        <meta name="theme-color" content="#556B2F" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      </head>
       <body className="bg-parchment min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Navigation />
