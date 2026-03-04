@@ -38,7 +38,7 @@ export default function Footer({ locale }: FooterProps) {
               French Countryside Living
             </Link>
             <p className="font-body text-sm text-parchment/60 mt-3 leading-relaxed max-w-sm">
-              Hunting, cooking, and life in rural Provence — stories from the South of France.
+              Living, cooking and life in rural Provence — stories from the South of France.
             </p>
             <div className="flex gap-4 mt-5">
               <a
