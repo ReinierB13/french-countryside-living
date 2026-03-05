@@ -19,36 +19,27 @@ export default function RecipeGrid({ recipes, locale }: { recipes: Recipe[]; loc
 
   return (
     <>
-      {/* Filter buttons */}
-      <div className="flex flex-wrap gap-2 mb-10">
-        <button
-          onClick={() => setActive('all')}
-          className={`flex items-center gap-2 px-4 py-2 rounded-sm font-body text-sm font-semibold transition-colors ${
-            active === 'all'
-              ? 'bg-terracotta text-white'
-              : 'bg-white border border-parchment text-charcoal hover:bg-parchment/60'
-          }`}
+      {/* Category dropdown */}
+      <div className="flex items-center gap-3 mb-10">
+        <label htmlFor="recipe-category" className="font-heading font-semibold text-charcoal text-sm uppercase tracking-widest">
+          Categories
+        </label>
+        <select
+          id="recipe-category"
+          value={active}
+          onChange={(e) => setActive(e.target.value)}
+          className="font-body text-sm text-charcoal bg-white border border-parchment px-4 py-2 rounded-sm shadow-sm focus:outline-none focus:ring-1 focus:ring-terracotta cursor-pointer"
         >
-          <span>🍽</span> All Recipes
-        </button>
-
-        {categories.map((key) => {
-          const meta = getCatMeta(key);
-          return (
-            <button
-              key={key}
-              onClick={() => setActive(key)}
-              className={`flex items-center gap-2 px-4 py-2 rounded-sm font-body text-sm font-semibold transition-colors ${
-                active === key
-                  ? 'bg-terracotta text-white'
-                  : 'bg-white border border-parchment text-charcoal hover:bg-parchment/60'
-              }`}
-            >
-              <span>{meta.icon}</span>
-              {meta.label}
-            </button>
-          );
-        })}
+          <option value="all">🍽 All Recipes</option>
+          {categories.map((key) => {
+            const meta = getCatMeta(key);
+            return (
+              <option key={key} value={key}>
+                {meta.icon} {meta.label}
+              </option>
+            );
+          })}
+        </select>
       </div>
 
       {/* Recipe grid */}
