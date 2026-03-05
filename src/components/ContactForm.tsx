@@ -6,6 +6,7 @@ export default function ContactForm() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -14,10 +15,20 @@ export default function ContactForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Placeholder — connect to email service (Resend, Formspree, etc.)
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
-    setLoading(false);
+    setError(null);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -84,6 +95,12 @@ export default function ContactForm() {
           className={`${inputClass} resize-none`}
         />
       </div>
+
+      {error && (
+        <p className="font-body text-sm text-terracotta border border-terracotta/30 bg-terracotta/5 rounded-sm px-4 py-3">
+          {error}
+        </p>
+      )}
 
       <button
         type="submit"
