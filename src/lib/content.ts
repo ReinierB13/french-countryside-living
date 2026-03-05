@@ -416,6 +416,14 @@ export const videos: Video[] = [
     date: '2026-03-05',
     category: 'Provence',
   },
+  {
+    id: 'les-alpilles-drive',
+    title: 'The Most Beautiful Drive in Provence – Les Alpilles',
+    description: 'A scenic drive through the heart of Les Alpilles, with original music composed for the journey — white limestone ridges, olive groves, and the villages that make this corner of Provence unforgettable.',
+    youtubeId: 'JTVwEWiKz5g',
+    date: '2026-03-05',
+    category: 'Provence',
+  },
 ];
 
 // Helper functions
