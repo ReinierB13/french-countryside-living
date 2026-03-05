@@ -155,6 +155,60 @@ export const articles: Article[] = [
     marcelTip: 'Do not turn the soil too early. Wait until it stops sticking to your boots. Cold, wet soil that gets compacted will take the whole season to recover.',
     marcelType: 'gardener',
   },
+  {
+    slug: 'jan-tamatie',
+    title: 'Jan Tamatie Would Be Proud',
+    excerpt:
+      'On growing real tomatoes, honouring your grandfather, and the quiet tragedy of the supermarket tomato. Life at Die Plaas.',
+    content: `<p class="text-olive text-xs font-heading uppercase tracking-widest mb-6">Life at Die Plaas</p>
+
+<h2>An Apology on Behalf of the Supermarket Tomato</h2>
+<p>Let us begin with a moment of honesty. The tomato you find wrapped in plastic net at a supermarket — arriving from Spain or Morocco, perfectly round, uniformly red, and completely devoid of any opinion about being eaten — is not really a tomato. It is the idea of a tomato. A tomato that has been optimised for travel, shelf-life, and visual consistency, and has sacrificed everything else at that particular altar. It doesn't smell of anything. It tastes of nothing much. Cut it open and it stares back at you with the blank expression of something that has given up.</p>
+<p>We eat them, of course, because they're there. But we don't talk about them. Nobody has ever bitten into a supermarket tomato and been transported anywhere.</p>
+
+<h2>Jan Tamatie</h2>
+<p>My grandfather was a farmer in South Africa. He grew tomatoes and grapes, and he was apparently so well-known for the former that people called him Jan Tamatie — Jan the Tomato. I didn't think about that name much when I was a child, standing on his farm eating tomatoes straight from the vine with a pinch of rock salt. It just seemed normal. Of course tomatoes tasted like that. What else would they taste like?</p>
+<p>The answer, I discovered some decades later in a French supermarket, is: considerably less.</p>
+<p>It was 2018. We were living in Provence, our neighbour had a corner of garden going spare, and I had two small raised beds — 1m x 1.2m each, not exactly Die Plaas — and a modest ambition. I wanted to show my children where food actually comes from. I planted some cherry tomatoes and a few beefsteaks, tended them with perhaps more enthusiasm than expertise, and waited.</p>
+<p>The first ripe tomato of that summer, I picked early in the morning while it was still warm from the previous day's sun. I ate it standing in the garden, still in my pyjamas, with no salt, no ceremony, no audience.</p>
+<p>I was immediately eight years old again, standing on my grandfather's farm.</p>
+<p>That was it. That was the moment. Jan Tamatie had a lot to answer for.</p>
+
+<h2>From Two Raised Beds to Die Plaas</h2>
+<p>The two small beds became a 50m² potager. The potager eventually became something altogether more serious — a large kitchen garden that our family now calls Die Plaas. Our Farm. It is not a metaphor. It is, genuinely, our farm. Small by farming standards, enormous by the standards of what two people can reasonably maintain while also holding down jobs and raising children, but ours entirely.</p>
+<p>The tomatoes are the heart of it. Every year, as the season turns, we make the trip together as a family to the pépinière — the local plant nursery — to choose the seedlings. Cherry tomatoes. Beefsteaks. Heirlooms in colours that range from deep crimson to a slightly alarming orange-yellow. We take the choosing seriously. We discuss the merits of various varieties with a solemnity that might seem disproportionate to people who have never grown their own food, and seems entirely proportionate to people who have.</p>
+<p>Planting day is an occasion. Everyone has a role. Photos are taken. Plans are made. Standing there with your hands in the soil, looking at a row of small seedlings that will, in three months, be taller than you and producing more tomatoes than you know what to do with — it is quietly one of the better days of the year.</p>
+
+<h2>The Fish Trench (Which Sounds Worse Than It Is)</h2>
+<p>I should mention the fish scraps.</p>
+<p>Our local supermarket has a fishmonger who is very understanding about the needs of the committed kitchen gardener. Before planting season, I collect the fish scraps — heads, bones, the parts that would otherwise go to waste — and bury them in a deep trench beneath where the tomatoes will eventually go. It is an ancient technique. The nitrogen and phosphorus that break down from the fish feed the roots over the whole growing season in a slow, patient way that no bag of fertiliser can quite replicate.</p>
+<p>The tomatoes, for their part, don't seem to mind where their nutrients come from. They just grow. Vigorously. Enthusiastically. Without the faintest concern for my wife's entirely reasonable position on how many plants is too many plants.</p>
+
+<h2>The Annual Negotiation (24 Plants or Bust)</h2>
+<p>My wife is a sensible person. She understands that tomato plants, left unchecked, have imperialist ambitions. She knows that 24 plants will already produce more tomatoes than any household can eat fresh, more than we can dehydrate, more than we can preserve in olive oil — and we do all three. She has done the maths.</p>
+<p>I, meanwhile, have also done the maths, and arrived at a different answer. My maths involves the memory of a morning in 2018, a warm tomato, and a grandfather who farmed and sold them for a living. My maths says: more.</p>
+<p>We compromise, as one does in a long marriage, on her number. And then I plant a few extra at the far end of the bed and hope she doesn't count.</p>
+<p><em>(She counts.)</em></p>
+
+<h2>Twice a Week, and Worth Every Minute</h2>
+<p>The watering happens twice a week. It sounds simple, and it is — but there is something about the rhythm of it that becomes, over the course of a summer, almost meditative. You walk the rows. You check the plants. You pinch off the lateral shoots (or you mean to, and then you don't, and then you have a plant that is attempting to become a tree). You watch the green fruits slowly blush, first at the shoulders, then all the way through.</p>
+<p>When the first tomatoes of summer are ready, we make salads that need nothing more than good olive oil, a scattering of fleur de sel, and a few torn basil leaves. Later in the season, when the abundance becomes genuinely overwhelming, we slice them and lay them in the dehydrator — and those dehydrated tomatoes, preserved in olive oil with a little thyme and garlic, will make January pasta considerably more bearable.</p>
+<p>The children, who have grown up doing this, eat tomatoes from the vine without thinking anything special of it. Which is exactly right. This should be normal.</p>
+
+<h2>What a Real Tomato Tastes Like</h2>
+<p>It tastes like summer in Provence. It tastes like soil that was properly fed and plants that were properly tended. It tastes like the decision, six years ago, to put two small raised beds in a neighbour's garden and see what happened.</p>
+<p>It tastes like standing on a farm in South Africa as a child, holding something warm from the vine.</p>
+<p>The Spanish tomato, perfectly round and perfectly empty, will still be there in the supermarket. It will always be there. But once you've grown your own — once you've knelt in the dirt at planting day with your family around you, once you've smelled the particular green smell of tomato leaves on your hands, once you've eaten the first one still warm from the sun — you understand what all the fuss is about.</p>
+<p>Jan Tamatie knew. He always knew.</p>
+
+<p class="text-charcoal/50 text-sm mt-8">Provence, Spring 2026 · Die Plaas</p>`,
+    image: '/images/hero-spring.jpg',
+    date: '2026-03-05',
+    category: 'Potager',
+    tags: ['Provence', 'Potager'],
+    marcelTip: 'Bury fish scraps deep under your tomato beds before planting. The old farmers knew this trick centuries before anyone invented fertiliser. The tomatoes know it too.',
+    marcelType: 'gardener',
+  },
 ];
 
 export const recipes: Recipe[] = [
