@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
-import ArticleCard from '@/components/ArticleCard';
+import ArticleGrid from '@/components/ArticleGrid';
 import { articles } from '@/lib/content';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -31,11 +31,7 @@ export default async function ArticlesPage({
       />
 
       <section className="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {articles.map((article) => (
-            <ArticleCard key={article.slug} article={article} locale={locale} />
-          ))}
-        </div>
+        <ArticleGrid articles={articles} locale={locale} />
       </section>
     </>
   );
