@@ -56,13 +56,11 @@ export default function Navigation() {
             ))}
 
             {/* Language switcher */}
-            <div className="ml-3 pl-3 border-l border-olive-light flex items-center gap-1">
-              <span className="text-parchment/50 text-xs font-body uppercase">{locale}</span>
-              <span className="text-parchment/30">/</span>
+            <div className="ml-3 pl-3 border-l border-olive-light flex items-center">
               <Link
                 href={pathname}
                 locale={otherLocale}
-                className="text-parchment/50 hover:text-amber text-xs font-body uppercase transition-colors"
+                className="text-parchment/60 hover:text-amber text-xs font-body font-semibold uppercase tracking-widest transition-colors border border-parchment/20 hover:border-amber/50 px-2 py-1 rounded-sm"
               >
                 {otherLocale}
               </Link>
@@ -103,9 +101,9 @@ export default function Navigation() {
               <Link
                 href={pathname}
                 locale={otherLocale}
-                className="text-parchment/60 hover:text-amber text-sm font-body uppercase transition-colors"
+                className="inline-block text-parchment/60 hover:text-amber text-sm font-body font-semibold uppercase tracking-widest transition-colors border border-parchment/20 hover:border-amber/50 px-3 py-1.5 rounded-sm"
               >
-                {otherLocale === 'fr' ? 'Français' : 'English'}
+                {otherLocale === 'fr' ? 'FR — Français' : 'EN — English'}
               </Link>
             </div>
           </div>
