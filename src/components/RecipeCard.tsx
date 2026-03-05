@@ -6,21 +6,26 @@ interface RecipeCardProps {
   locale: string;
 }
 
-const categoryColors: Record<string, string> = {
-  'wild-game': 'bg-charcoal text-parchment',
-  braai: 'bg-terracotta text-white',
-  provencal: 'bg-olive text-white',
-  potjie: 'bg-amber text-charcoal',
+export const categoryConfig: Record<string, { label: string; color: string; icon: string }> = {
+  'wild-game': { label: 'Wild Game',   color: 'bg-charcoal text-parchment', icon: '🎯' },
+  braai:       { label: 'Braai & Fire', color: 'bg-terracotta text-white',  icon: '🔥' },
+  provencal:   { label: 'Provençal',   color: 'bg-olive text-white',        icon: '🫒' },
+  potjie:      { label: 'Potjiekos',   color: 'bg-amber text-charcoal',     icon: '🫕' },
+  fish:        { label: 'Fish',        color: 'bg-sky-700 text-white',       icon: '🐟' },
+  apero:       { label: 'Apéro',       color: 'bg-rose-600 text-white',      icon: '🥂' },
 };
 
-const categoryLabels: Record<string, string> = {
-  'wild-game': 'Wild Game',
-  braai: 'Braai & Fire',
-  provencal: 'Provençal',
-  potjie: 'Potjiekos',
-};
+const fallback = { label: '', color: 'bg-parchment text-charcoal', icon: '🍽' };
+
+function getCat(category: string) {
+  if (categoryConfig[category]) return categoryConfig[category];
+  // Unknown category: capitalise and use fallback colours
+  return { ...fallback, label: category.charAt(0).toUpperCase() + category.slice(1) };
+}
 
 export default function RecipeCard({ recipe, locale }: RecipeCardProps) {
+  const cat = getCat(recipe.category);
+
   return (
     <Link href={`/${locale}/recipes/${recipe.slug}`} className="group block">
       <article className="bg-white rounded-sm overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
@@ -34,10 +39,8 @@ export default function RecipeCard({ recipe, locale }: RecipeCardProps) {
           }}
         >
           <div className="absolute inset-0 group-hover:bg-black/10 transition-colors duration-300" />
-          <span
-            className={`absolute top-3 left-3 text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide ${categoryColors[recipe.category]}`}
-          >
-            {categoryLabels[recipe.category]}
+          <span className={`absolute top-3 left-3 text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide ${cat.color}`}>
+            {cat.label}
           </span>
           <span className="absolute bottom-3 right-3 bg-black/60 text-white text-xs font-body px-2 py-1 rounded-sm">
             Serves {recipe.servings}

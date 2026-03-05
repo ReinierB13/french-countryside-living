@@ -19,7 +19,7 @@ export interface Recipe {
   excerpt: string;
   image: string;
   date: string;
-  category: 'wild-game' | 'braai' | 'provencal' | 'potjie';
+  category: string;
   servings: number;
   prepTime: string;
   cookTime: string;

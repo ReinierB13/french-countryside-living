@@ -1,19 +1,19 @@
 'use client';
 
 import { useState } from 'react';
-import RecipeCard from './RecipeCard';
+import RecipeCard, { categoryConfig } from './RecipeCard';
 import type { Recipe } from '@/types';
 
-const filters = [
-  { key: 'all', label: 'All Recipes', icon: '🍽' },
-  { key: 'wild-game', label: 'Wild Game', icon: '🎯' },
-  { key: 'braai', label: 'Braai & Fire', icon: '🔥' },
-  { key: 'potjie', label: 'Potjiekos', icon: '🫕' },
-  { key: 'provencal', label: 'Provençal', icon: '🫒' },
-];
+function getCatMeta(key: string) {
+  if (categoryConfig[key]) return categoryConfig[key];
+  return { label: key.charAt(0).toUpperCase() + key.slice(1), icon: '🍽', color: '' };
+}
 
 export default function RecipeGrid({ recipes, locale }: { recipes: Recipe[]; locale: string }) {
   const [active, setActive] = useState('all');
+
+  // Build unique category list in the order they first appear
+  const categories = Array.from(new Set(recipes.map((r) => r.category)));
 
   const filtered = active === 'all' ? recipes : recipes.filter((r) => r.category === active);
 
@@ -21,20 +21,34 @@ export default function RecipeGrid({ recipes, locale }: { recipes: Recipe[]; loc
     <>
       {/* Filter buttons */}
       <div className="flex flex-wrap gap-2 mb-10">
-        {filters.map((f) => (
-          <button
-            key={f.key}
-            onClick={() => setActive(f.key)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-sm font-body text-sm font-semibold transition-colors ${
-              active === f.key
-                ? 'bg-terracotta text-white'
-                : 'bg-white border border-parchment text-charcoal hover:bg-parchment/60'
-            }`}
-          >
-            <span>{f.icon}</span>
-            {f.label}
-          </button>
-        ))}
+        <button
+          onClick={() => setActive('all')}
+          className={`flex items-center gap-2 px-4 py-2 rounded-sm font-body text-sm font-semibold transition-colors ${
+            active === 'all'
+              ? 'bg-terracotta text-white'
+              : 'bg-white border border-parchment text-charcoal hover:bg-parchment/60'
+          }`}
+        >
+          <span>🍽</span> All Recipes
+        </button>
+
+        {categories.map((key) => {
+          const meta = getCatMeta(key);
+          return (
+            <button
+              key={key}
+              onClick={() => setActive(key)}
+              className={`flex items-center gap-2 px-4 py-2 rounded-sm font-body text-sm font-semibold transition-colors ${
+                active === key
+                  ? 'bg-terracotta text-white'
+                  : 'bg-white border border-parchment text-charcoal hover:bg-parchment/60'
+              }`}
+            >
+              <span>{meta.icon}</span>
+              {meta.label}
+            </button>
+          );
+        })}
       </div>
 
       {/* Recipe grid */}
