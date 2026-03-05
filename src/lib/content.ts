@@ -163,7 +163,7 @@ export const articles: Article[] = [
     content: `<p class="text-olive text-xs font-heading uppercase tracking-widest mb-6">Life at Die Plaas</p>
 
 <h2>An Apology on Behalf of the Supermarket Tomato</h2>
-<p>Let us begin with a moment of honesty. The tomato you find wrapped in plastic net at a supermarket — arriving from Spain or Morocco, perfectly round, uniformly red, and completely devoid of any opinion about being eaten — is not really a tomato. It is the idea of a tomato. A tomato that has been optimised for travel, shelf-life, and visual consistency, and has sacrificed everything else at that particular altar. It doesn't smell of anything. It tastes of nothing much. Cut it open and it stares back at you with the blank expression of something that has given up.</p>
+<p>Let us begin with a moment of honesty. The tomato you find wrapped in plastic net at a supermarket — arriving from Spain or Morocco, perfectly round, uniformly red, and completely devoid of any opinion about being eaten — is not really a tomato. It is an excuse for a tomato. A tomato that has been optimised for travel, shelf-life, and visual consistency, and has sacrificed everything else at that particular altar. It doesn't smell of anything. It tastes of nothing much. Cut it open and it stares back at you with the blank expression of something that has given up.</p>
 <p>We eat them, of course, because they're there. But we don't talk about them. Nobody has ever bitten into a supermarket tomato and been transported anywhere.</p>
 
 <h2>Jan Tamatie</h2>
