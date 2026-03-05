@@ -4,8 +4,8 @@ import { useState } from 'react';
 import ArticleCard from './ArticleCard';
 import type { Article } from '@/types';
 
-export default function ArticleGrid({ articles, locale }: { articles: Article[]; locale: string }) {
-  const [active, setActive] = useState('all');
+export default function ArticleGrid({ articles, locale, defaultCategory = 'all' }: { articles: Article[]; locale: string; defaultCategory?: string }) {
+  const [active, setActive] = useState(defaultCategory);
 
   const categories = Array.from(new Set(articles.map((a) => a.category).filter(Boolean)));
 

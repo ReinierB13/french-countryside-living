@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
-import ArticleCard from '@/components/ArticleCard';
+import ArticleGrid from '@/components/ArticleGrid';
 import { articles } from '@/lib/content';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -20,7 +20,6 @@ export default async function FrancePage({
   const { locale } = await params;
   const t = await getTranslations('FrancePage');
 
-  const traditionsArticles = articles.filter((a) => a.category === 'Traditions');
 
   return (
     <>
@@ -85,15 +84,7 @@ export default async function FrancePage({
             </Link>
           </div>
 
-          {traditionsArticles.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {traditionsArticles.map((article) => (
-                <ArticleCard key={article.slug} article={article} locale={locale} />
-              ))}
-            </div>
-          ) : (
-            <p className="font-body text-charcoal/50 text-lg">Articles coming soon.</p>
-          )}
+          <ArticleGrid articles={articles} locale={locale} defaultCategory="Traditions" />
         </section>
 
       </div>
