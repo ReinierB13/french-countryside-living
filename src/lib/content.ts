@@ -300,7 +300,7 @@ export const recipes: Recipe[] = [
     excerpt: 'A rich, smoky apéro spread that comes together in minutes — perfect with a chilled glass of rosé at sunset.',
     image: '/images/recipe-tapenade.jpg',
     date: '2026-02-10',
-    category: 'provencal',
+    category: 'apero',
     servings: 4,
     prepTime: '15 min + 30 min chilling',
     cookTime: '0 min',
