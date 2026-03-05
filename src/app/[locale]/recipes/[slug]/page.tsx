@@ -86,6 +86,16 @@ export default async function RecipePage({ params }: Props) {
           {t('backToRecipes')}
         </Link>
 
+        {recipe.story && (
+          <div className="max-w-none mb-12 pb-12 border-b border-charcoal/10">
+            {recipe.story.split('\n\n').map((para, i) => (
+              <p key={i} className="font-body text-charcoal/80 leading-relaxed text-lg mb-5">
+                {para}
+              </p>
+            ))}
+          </div>
+        )}
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Ingredients */}
           <div className="md:col-span-1">

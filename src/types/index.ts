@@ -26,6 +26,7 @@ export interface Recipe {
   difficulty: 'Easy' | 'Medium' | 'Advanced';
   ingredients: string[];
   instructions: string[];
+  story?: string;
   marcelTip?: string;
   marcelType?: MarcelType;
   videoId?: string;
