@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
   }
 
   const { error } = await resend.emails.send({
-    from: 'French Countryside Living <contact@french-countryside-living.com>',
+    from: 'French Countryside Living <onboarding@resend.dev>',
     to: 'french_countryside_living@outlook.com',
     replyTo: email,
     subject: `Message from ${name}`,
