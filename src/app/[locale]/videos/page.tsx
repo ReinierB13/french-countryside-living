@@ -1,7 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
-import VideoCard from '@/components/VideoCard';
+import VideoGrid from '@/components/VideoGrid';
 import Marcel from '@/components/Marcel';
 import { videos } from '@/lib/content';
 
@@ -46,11 +46,7 @@ export default async function VideosPage({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {videos.map((video) => (
-            <VideoCard key={video.id} video={video} />
-          ))}
-        </div>
+        <VideoGrid videos={videos} />
       </section>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
