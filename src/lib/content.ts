@@ -107,8 +107,8 @@ export const articles: Article[] = [
     slug: 'spring-in-provence-luberon',
     title: 'Spring in Provence: Hope, Rosé, and an Unreasonable Amount of Weeding',
     excerpt:
-      'The almond trees are blooming, the potager is waiting, and the weekend rain has clearly made plans. Life in the Luberon as spring finally arrives.',
-    content: `<p class="text-olive text-xs font-heading uppercase tracking-widest mb-6">Life in the Luberon</p>
+      'The almond trees are blooming, the potager is waiting, and the weekend rain has clearly made plans. Life in Les Alpilles as spring finally arrives.',
+    content: `<p class="text-olive text-xs font-heading uppercase tracking-widest mb-6">Life in Les Alpilles</p>
 
 <h2>The First Whisper of Spring</h2>
 <p>It begins subtly. One morning in late February, you step outside and something is different — not warm exactly, but less aggressively cold. The sky is doing that particular Provençal thing where it's simultaneously blue and apologetic, as if winter itself is clearing its throat to say it might, possibly, be nearly done. You don't want to get your hopes up. Winter has done this before. It's basically a tease in velvet fog.</p>
@@ -116,7 +116,7 @@ export const articles: Article[] = [
 <p>Not all at once — they're too dignified for that. It starts with one or two shy blossoms on a single branch, like a diver testing the water with a toe. Then, over the course of a week or so, the whole tree explodes in delicate white and pink, and suddenly the landscape that has spent three months looking like a charcoal sketch is hosting a full-colour renaissance. The almond trees are Provence's opening act, and they never disappoint.</p>
 <p>Then the green arrives. First in timid patches — a flush of new leaves here, a brave clump of grass there. Then it's everywhere, carpeting the garrigue, climbing the walls, filling in all the brown spaces winter left behind. The world, which has been very convincingly dead for several months, turns out to have been merely sleeping. Which is reassuring, really.</p>
 
-<img src="/images/springtime1.jpg" alt="Spring panorama in the Luberon" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/springtime1.jpg" alt="Spring panorama in Les Alpilles" style="width:100%;border-radius:2px;margin:2rem 0;" />
 
 <h2>The Dream: L'Apéro on the Terrace</h2>
 <p>This is the point at which your mind, drunk on blossom and optimism, begins to wander. You are standing in the garden, still wearing two jumpers, but mentally you are already at a different version of this exact spot — it is July, the cicadas are providing enthusiastic background noise, and you are installed on the terrace with a glass of cold rosé, sweat forming on the outside of the bottle, a small plate of cornichons glistening like jewels, and a few slices of saucisson fanned out with entirely unnecessary elegance.</p>
@@ -211,6 +211,49 @@ export const articles: Article[] = [
     tags: ['Provence', 'Potager'],
     marcelTip: 'Bury fish scraps deep under your tomato beds before planting. The old farmers knew this trick centuries before anyone invented fertiliser. The tomatoes know it too.',
     marcelType: 'gardener',
+  },
+  {
+    slug: 'la-chasse-hunting-in-france',
+    title: 'La Chasse: Hunting in France',
+    excerpt:
+      'In Provence, the hunt is a team sport, a tradition, and a way of life. A hunter of Les Alpilles on wild boar, the battue, and why none of it happens without trust.',
+    content: `<p class="text-olive text-xs font-heading uppercase tracking-widest mb-6">La Chasse · Les Alpilles</p>
+
+<p class="font-body text-xl text-charcoal/80 italic leading-relaxed mb-8 border-l-4 border-amber pl-5">I grew up hunting. I am not going to apologise for it. Mankind grew stronger and smarter because we ate meat — and the hunt is as old as humanity itself.</p>
+
+<p>My introduction to hunting came early, in South Africa, where the bush teaches you patience, respect for the animal, and a sharp awareness of everything around you. But hunting in France — and in Provence in particular — is something else entirely. It is, first and foremost, a <em>team sport</em>.</p>
+<p>Forget the solitary figure in a tree stand. Here, the hunt is a collective act, woven into the social fabric of rural life, governed by strict rules, ancient customs, and a great deal of good-natured argument over coffee before dawn.</p>
+
+<h2>The Animal: Wild Boar of Les Alpilles</h2>
+<p>In Provence, our main quarry is the <em>sanglier</em> — the wild boar. Do not underestimate it. These are canny, intelligent animals, with an acute sense of smell that puts most hunting dogs to shame. They are also, when their numbers go unchecked, genuinely destructive. A surpopulation in any area can have devastating consequences for farmers and landowners: rooted-up vineyards, ravaged olive groves, ruined pasture.</p>
+<p>The boar is not a passive participant in this arrangement. It learns, adapts, and frequently wins. We hunt in the vast, rocky garrigue of Les Alpilles — a landscape of limestone ridges, dense scrub oak, and deep valleys that is as much the boar's home as ours. The distances between hunters on their posts can stretch to 500 metres or more. Shots are not guaranteed. The animals escape, often. This is as it should be.</p>
+
+<blockquote class="border-l-4 border-terracotta pl-6 my-8 italic font-body text-charcoal/70">The boar never gets shot on the road. Oh no — it gets shot down in the valleys. The terrain is always against you.</blockquote>
+<img src="/images/hunting1/h1.jpg" alt="Wild boar hunting in Les Alpilles" style="width:100%;border-radius:2px;margin:2rem 0;" />
+
+<h2>The Structure of the Hunt</h2>
+<p>Every hunt has its hierarchy and its roles, as fixed and functional as any well-run operation. At the top sits <strong>le chef de battue</strong> — the Hunt Boss — who knows the ground, reads the signs, and assigns positions before anyone sets foot in the field. His word is final.</p>
+<p>The hunters divide into two groups. <strong>Postiers</strong> are the shooters: they walk to assigned positions — their posts — chosen by le chef de battue and wait in silence, reading the wind and the light. <strong>Piqueurs</strong>, the drivers, move through the hunting area with dogs, pushing boar from their daytime shelters and driving them toward the waiting postiers.</p>
+<p>The whole area is well-signalled. Safety is non-negotiable — it is not a suggestion or an afterthought, but the first order of business at every briefing. We do everything in our power to run a safe hunt. This is not sport shooting in a gallery. It demands discipline, awareness, and trust between every person in the field.</p>
+<img src="/images/hunting1/h2.jpg" alt="Hunters in the garrigue of Les Alpilles" style="width:100%;border-radius:2px;margin:2rem 0;" />
+
+<h2>After the Shot: The Hard Work Begins</h2>
+<p>When a boar is taken, the work is only half done. A mature sanglier is a heavy, solid animal, and it will never oblige you by dropping somewhere convenient. The terrain ensures that. You attach a rope to the animal's head and you drag — through the maquis, through the scrub, up the valley walls. In the old days, donkeys did this work. Now, we are the donkeys.</p>
+<p>There is something honest about it. The effort of recovery is part of the contract: if you harvest an animal, you do not leave it where it fell.</p>
+
+<h2>Back at the Club: Sharing the Harvest</h2>
+<p>The hunting club is where the day ends and the real Provençal ritual begins. The boars are emptied and skinned with practiced hands, and then the meat is distributed — among the hunters, the landowners, friends, and neighbours. Nothing is wasted. Nothing is hoarded.</p>
+<p>Wild boar meat is something to be proud of. It is dark, rich, and full of character — the taste of a free animal that ate acorns and roots in the garrigue. In Provençal kitchens it becomes civet, daube, terrines, and ragouts. It ends up in the slow-cooked, wine-braised dishes that belong to this landscape as much as lavender and thyme.</p>
+
+<blockquote class="border-l-4 border-terracotta pl-6 my-8 italic font-body text-charcoal/70">The meat is treasured. It passes through many hands before it reaches the table — and every one of those hands earned it.</blockquote>
+
+<p class="text-charcoal/50 text-sm mt-8">Les Alpilles, Provence · La Chasse</p>`,
+    image: '/images/hunting1/h1.jpg',
+    date: '2026-03-05',
+    category: 'Traditions',
+    tags: ['Hunting', 'Traditions', 'Les Alpilles'],
+    marcelTip: 'Never wear blue while boar hunting in the garrigue. The sanglier cannot see red, but blue stands out. Trust the old hunters — they did not survive this long by accident.',
+    marcelType: 'hunter',
   },
 ];
 
