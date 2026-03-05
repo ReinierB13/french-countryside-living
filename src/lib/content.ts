@@ -408,6 +408,14 @@ export const videos: Video[] = [
     date: '2025-07-16',
     category: 'Provence',
   },
+  {
+    id: 'eygalieres',
+    title: 'Eygalières',
+    description: 'One of the most beautiful villages in the Alpilles — ancient stone lanes, a hilltop chapel, and the quiet rhythm of a village that time has treated gently.',
+    youtubeId: 'NrPU7VQYjb0',
+    date: '2026-03-05',
+    category: 'Provence',
+  },
 ];
 
 // Helper functions
