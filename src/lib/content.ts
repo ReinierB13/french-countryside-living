@@ -178,6 +178,7 @@ export const articles: Article[] = [
 <p>The two small beds became a 50m² potager. The potager eventually became something altogether more serious — a large kitchen garden that our family now calls Die Plaas. Our Farm. It is not a metaphor. It is, genuinely, our farm. Small by farming standards, enormous by the standards of what two people can reasonably maintain while also holding down jobs and raising children, but ours entirely.</p>
 <p>The tomatoes are the heart of it. Every year, as the season turns, we make the trip together as a family to the pépinière — the local plant nursery — to choose the seedlings. Cherry tomatoes. Beefsteaks. Heirlooms in colours that range from deep crimson to a slightly alarming orange-yellow. We take the choosing seriously. We discuss the merits of various varieties with a solemnity that might seem disproportionate to people who have never grown their own food, and seems entirely proportionate to people who have.</p>
 <p>Planting day is an occasion. Everyone has a role. Photos are taken. Plans are made. Standing there with your hands in the soil, looking at a row of small seedlings that will, in three months, be taller than you and producing more tomatoes than you know what to do with — it is quietly one of the better days of the year.</p>
+<img src="/images/planting_day.png" alt="Planting day at Die Plaas" style="width:100%;border-radius:2px;margin:2rem 0;" />
 
 <h2>The Fish Trench (Which Sounds Worse Than It Is)</h2>
 <p>I should mention the fish scraps.</p>
@@ -194,12 +195,14 @@ export const articles: Article[] = [
 <p>The watering happens twice a week. It sounds simple, and it is — but there is something about the rhythm of it that becomes, over the course of a summer, almost meditative. You walk the rows. You check the plants. You pinch off the lateral shoots (or you mean to, and then you don't, and then you have a plant that is attempting to become a tree). You watch the green fruits slowly blush, first at the shoulders, then all the way through.</p>
 <p>When the first tomatoes of summer are ready, we make salads that need nothing more than good olive oil, a scattering of fleur de sel, and a few torn basil leaves. Later in the season, when the abundance becomes genuinely overwhelming, we slice them and lay them in the dehydrator — and those dehydrated tomatoes, preserved in olive oil with a little thyme and garlic, will make January pasta considerably more bearable.</p>
 <p>The children, who have grown up doing this, eat tomatoes from the vine without thinking anything special of it. Which is exactly right. This should be normal.</p>
+<img src="/images/t1.jpg" alt="Tomatoes ripening on the vine at Die Plaas" style="width:100%;border-radius:2px;margin:2rem 0;" />
 
 <h2>What a Real Tomato Tastes Like</h2>
 <p>It tastes like summer in Provence. It tastes like soil that was properly fed and plants that were properly tended. It tastes like the decision, six years ago, to put two small raised beds in a neighbour's garden and see what happened.</p>
 <p>It tastes like standing on a farm in South Africa as a child, holding something warm from the vine.</p>
 <p>The Spanish tomato, perfectly round and perfectly empty, will still be there in the supermarket. It will always be there. But once you've grown your own — once you've knelt in the dirt at planting day with your family around you, once you've smelled the particular green smell of tomato leaves on your hands, once you've eaten the first one still warm from the sun — you understand what all the fuss is about.</p>
 <p>Jan Tamatie knew. He always knew.</p>
+<img src="/images/t2.jpg" alt="Fresh tomatoes from Die Plaas" style="width:100%;border-radius:2px;margin:2rem 0;" />
 
 <p class="text-charcoal/50 text-sm mt-8">Provence, Spring 2026 · Die Plaas</p>`,
     image: '/images/hero-spring.jpg',
