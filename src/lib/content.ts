@@ -103,6 +103,58 @@ export const articles: Article[] = [
     marcelTip: 'The oil you press on the first day of harvest is the freshest, greenest, most peppery oil you will ever taste. Do not cook with it — pour it straight on bread.',
     marcelType: 'gardener',
   },
+  {
+    slug: 'spring-in-provence-luberon',
+    title: 'Spring in Provence: Hope, Rosé, and an Unreasonable Amount of Weeding',
+    excerpt:
+      'The almond trees are blooming, the potager is waiting, and the weekend rain has clearly made plans. Life in the Luberon as spring finally arrives.',
+    content: `<p class="text-olive text-xs font-heading uppercase tracking-widest mb-6">Life in the Luberon</p>
+
+<h2>The First Whisper of Spring</h2>
+<p>It begins subtly. One morning in late February, you step outside and something is different — not warm exactly, but less aggressively cold. The sky is doing that particular Provençal thing where it's simultaneously blue and apologetic, as if winter itself is clearing its throat to say it might, possibly, be nearly done. You don't want to get your hopes up. Winter has done this before. It's basically a tease in velvet fog.</p>
+<p>And then you see it: the almond trees are blooming.</p>
+<p>Not all at once — they're too dignified for that. It starts with one or two shy blossoms on a single branch, like a diver testing the water with a toe. Then, over the course of a week or so, the whole tree explodes in delicate white and pink, and suddenly the landscape that has spent three months looking like a charcoal sketch is hosting a full-colour renaissance. The almond trees are Provence's opening act, and they never disappoint.</p>
+<p>Then the green arrives. First in timid patches — a flush of new leaves here, a brave clump of grass there. Then it's everywhere, carpeting the garrigue, climbing the walls, filling in all the brown spaces winter left behind. The world, which has been very convincingly dead for several months, turns out to have been merely sleeping. Which is reassuring, really.</p>
+
+<img src="/images/springtime1.jpg" alt="Spring panorama in the Luberon" style="width:100%;border-radius:2px;margin:2rem 0;" />
+
+<h2>The Dream: L'Apéro on the Terrace</h2>
+<p>This is the point at which your mind, drunk on blossom and optimism, begins to wander. You are standing in the garden, still wearing two jumpers, but mentally you are already at a different version of this exact spot — it is July, the cicadas are providing enthusiastic background noise, and you are installed on the terrace with a glass of cold rosé, sweat forming on the outside of the bottle, a small plate of cornichons glistening like jewels, and a few slices of saucisson fanned out with entirely unnecessary elegance.</p>
+<p>This vision is so powerful, so vivid, so deeply motivating, that it will carry you through approximately four months of actual physical labour. Which brings us, somewhat abruptly, to the other side of spring in Provence.</p>
+
+<img src="/images/springtime2.jpg" alt="The potager in early spring" style="width:100%;border-radius:2px;margin:2rem 0;" />
+
+<h2>The Reality: 600 Square Metres of Opinion</h2>
+<p>The potager is waiting. It has been waiting all winter, quietly accumulating damage like an invoice you've been avoiding. Six hundred square metres of kitchen garden — which sounded romantic when you moved to Provence and sounds somewhat less romantic when you are facing it in early March with a rake and a bad back.</p>
+<p>The soil needs turning. The beds need clearing. Whatever that thing was that didn't work last year — the courgettes that staged a worker's revolt, the tomatoes that got some unpronounceable blight, the salad that immediately bolted in protest — needs to be rethought. You have plans. Clever plans. Crop rotation. Better drainage. A new trellising system that you have drawn in a notebook and are quietly proud of. Whether any of this will survive contact with actual ground remains, as ever, to be seen.</p>
+<p>The compost heap has strong feelings about the situation and is making them known.</p>
+
+<h2>The Scheduling Problem (A Comedy)</h2>
+<p>Here is where Provençal spring, lovely as it is, reveals a certain sadistic streak. The weather has apparently consulted your calendar.</p>
+<p>During the week — when you are sitting at a desk, or on calls, or doing all the things that constitute modern working life — the sun pours down in a manner that is frankly provocative. The light is extraordinary. The temperature is ideal. The garden is simply begging to be tended. You can see it from the window. You make a note to yourself that this weekend, finally, you will get everything done.</p>
+<p>The weekend arrives. So does the rain. Not polite, apologetic drizzle, but committed, load-bearing rain that has clearly made plans and intends to keep them. You stand at the window in your wellies, coffee in hand, staring at the sky with the expression of someone who has been personally wronged.</p>
+<p>This is not a coincidence. This is just spring.</p>
+
+<h2>And Then There Are the Parents</h2>
+<p>April, naturally, is when the parents arrive. This is wonderful — genuinely wonderful — but it does introduce a small logistical wrinkle, which is that they will be sleeping in a room that currently has wallpaper that needs to come off and a wall that needs plastering. These are not decorative choices. These are facts about the room in its current condition.</p>
+<p>So we add to the spring agenda: strip wallpaper, hire (or, more likely, become) a plasterer, paint, dry, furnish. Alongside the potager preparation, the composting, the bed rotations, and the ongoing negotiation with the courgettes. All of this while the sun shines mockingly Monday through Friday and the rain commits itself wholeheartedly to the weekends.</p>
+<p>Time is, as they say, limited.</p>
+
+<img src="/images/springtime3.jpg" alt="Spring in Provence" style="width:100%;border-radius:2px;margin:2rem 0;" />
+
+<h2>And Yet</h2>
+<p>Here's the thing about spring in Provence: it is, despite all of the above, genuinely magnificent. The light at six in the evening when the clouds clear. The smell of the earth after a morning of rain. The first evening warm enough to eat outside — really outside, without regret — with a simple meal and the birds making an unreasonable amount of noise about it.</p>
+<p>The almond trees don't know about the potager. The new green leaves don't care about the wallpaper. They're just doing what they do every year: waking up, stretching, getting on with it.</p>
+<p>We could probably learn something from that.</p>
+<p><em>Now if you'll excuse me, I have a wall to plaster.</em></p>
+<p class="text-charcoal/50 text-sm mt-8">Provence, March 2026</p>`,
+    image: '/images/springtime1.jpg',
+    date: '2026-03-05',
+    category: 'Potager',
+    tags: ['Provence', 'Potager'],
+    marcelTip: 'Do not turn the soil too early. Wait until it stops sticking to your boots. Cold, wet soil that gets compacted will take the whole season to recover.',
+    marcelType: 'gardener',
+  },
 ];
 
 export const recipes: Recipe[] = [

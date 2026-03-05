@@ -21,7 +21,9 @@ export default async function ProvencePage({
   const { locale } = await params;
   const t = await getTranslations('ProvencePage');
 
-  const provenceArticles = articles.filter((a) => a.category === 'Provence');
+  const provenceArticles = articles.filter(
+    (a) => a.category === 'Provence' || a.tags?.includes('Provence')
+  );
 
   return (
     <>
