@@ -59,13 +59,10 @@
     "printRecipe": "Imprimer la recette"
   },
   "FrancePage": {
-    "title": "France",
-    "subtitle": "Culture de la chasse, traditions rurales et âme de la campagne française.",
-    "huntingTitle": "La Chasse",
-    "huntingDesc": "La chasse est tissée dans la vie rurale française. Chaque automne, la campagne résonne des sons de la chasse — une tradition transmise de génération en génération.",
-    "traditionsTitle": "Traditions rurales",
-    "agricultureTitle": "Agriculture & Saisons",
-    "foodTitle": "Culture gastronomique saisonnière"
+    "title": "Traditions",
+    "subtitle": "Les fêtes, jeux et coutumes qui font la singularité de la vie rurale française.",
+    "traditionsTitle": "Le tissu de la vie rurale",
+    "articlesTitle": "Articles sur les traditions"
   },
   "ProvencePage": {
     "title": "Provence",

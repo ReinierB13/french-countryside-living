@@ -59,13 +59,10 @@
     "printRecipe": "Print Recipe"
   },
   "FrancePage": {
-    "title": "France",
-    "subtitle": "Hunting culture, rural traditions, and the soul of the French countryside.",
-    "huntingTitle": "La Chasse — The Hunt",
-    "huntingDesc": "Hunting is woven into the fabric of rural French life. Every autumn, the countryside rings with the sound of the hunt — a tradition passed down through generations.",
-    "traditionsTitle": "Rural Traditions",
-    "agricultureTitle": "Agriculture & Seasons",
-    "foodTitle": "Seasonal Food Culture"
+    "title": "Traditions",
+    "subtitle": "The festivals, games, and customs that make rural French life unique.",
+    "traditionsTitle": "The Fabric of Rural Life",
+    "articlesTitle": "Traditions Articles"
   },
   "ProvencePage": {
     "title": "Provence",
