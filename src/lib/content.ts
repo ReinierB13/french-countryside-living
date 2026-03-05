@@ -237,7 +237,7 @@ export const recipes: Recipe[] = [
     slug: 'daube-de-sanglier-provencale',
     title: 'Daube de Sanglier à la Provençale',
     excerpt: 'A classic Provençal wild boar daube — marinated for up to 48 hours, slow-cooked on the hearth, and even better the next day.',
-    image: '/images/recipe-sanglier.jpg',
+    image: '/images/sanglier_daube.png',
     date: '2026-01-15',
     category: 'wild-game',
     servings: 8,
