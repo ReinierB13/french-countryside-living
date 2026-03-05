@@ -41,15 +41,17 @@ export const articles: Article[] = [
     excerpt: 'In the shade of the plane trees, on a dusty court, pétanque continues as it has for generations — unhurried, argumentative, and deeply French.',
     content: `<p>Every village in Provence has a terrain de pétanque. It is usually in the shade of a row of plane trees, on bare, packed earth, somewhere near the bar. On summer evenings, you will find men of all ages here — though increasingly women too — playing the game that has defined French rural leisure for more than a century.</p>
 <p>Pétanque looks deceptively simple. Each player throws metal boules — heavy, satisfying spheres that clank together with a sound unlike any other — trying to land them as close as possible to the cochonnet, a small wooden jack. The team whose boules are closest when all have been thrown scores points. First to thirteen wins.</p>
+<img src="/images/petanque-1.jpg" alt="Pétanque in Provence" style="width:100%;border-radius:2px;margin:2rem 0;" />
 <h2>A Brief History</h2>
 <p>The game was formalised in La Ciotat, near Marseille, in 1907. Legend has it that a player with rheumatism could no longer take the running steps that the earlier game required, so the rules were adapted to allow throwing from a stationary position — les pieds tanqués, feet planted. From that adaptation, the name pétanque was born.</p>
 <p>But the roots go deeper. Boule games have been played across the Mediterranean since Greek and Roman times. The Provençal version simply refined and codified what rural communities had been doing for centuries — throwing things at other things, arguing about how close they were.</p>
 <h2>The Ritual</h2>
 <p>To watch a game of pétanque properly, you must understand that the game is as much about conversation as it is about boules. Every throw is debated. Every measurement is contested. The <em>baguette</em> — a small metal ruler used to settle disputes about distances — is produced with great ceremony and no small amount of theatre.</p>
 <p>The best players have a repertoire of shots. The <em>pointer</em> rolls the boule gently towards the cochonnet. The <em>tirer</em> — or <em>shooter</em> — throws hard to knock an opponent's boule away. A perfectly executed shot that sends an opponent's boule flying while leaving your own in its place is called a <em>carreau</em>, and it is greeted with the kind of applause normally reserved for great sporting moments.</p>
+<img src="/images/petanque-2.jpg" alt="Pétanque players in the village square" style="width:100%;border-radius:2px;margin:2rem 0;" />
 <h2>Come and Play</h2>
 <p>If you are in Provence and want to join a game, the etiquette is simple: watch for a few minutes, ask politely if you may join, and accept whatever side they put you on. Bring something to drink, because the game will last as long as the light holds. And do not argue too much about distances — that privilege is earned over years.</p>`,
-    image: '/images/french-countryside-banner.jpg',
+    image: '/images/petanque-1.jpg',
     date: '2026-02-20',
     category: 'Traditions',
     marcelTip: 'Stand still when you throw. Les pieds tanqués — both feet on the ground. Move your feet and everyone will notice, and nobody will let you forget it.',
