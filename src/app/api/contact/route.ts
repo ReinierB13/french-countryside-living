@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
   const resend = new Resend(process.env.RESEND_API_KEY);
   const { error } = await resend.emails.send({
     from: 'French Countryside Living <onboarding@resend.dev>',
-    to: 'french_countryside_living@outlook.com',
+    to: 'reinierbotha@hotmail.com',
     replyTo: email,
     subject: `Message from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
