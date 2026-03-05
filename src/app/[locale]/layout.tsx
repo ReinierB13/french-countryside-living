@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { Analytics } from '@vercel/analytics/next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import '../globals.css';
@@ -99,6 +100,7 @@ export default async function LocaleLayout({
           <main className="flex-1">{children}</main>
           <Footer locale={locale} />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
