@@ -17,6 +17,7 @@ export default function Navigation() {
     { href: '/recipes' as const, label: t('recipes') },
     { href: '/france' as const, label: t('france') },
     { href: '/provence' as const, label: t('provence') },
+    { href: '/potager' as const, label: t('potager') },
     { href: '/about' as const, label: t('about') },
     { href: '/contact' as const, label: t('contact') },
   ];

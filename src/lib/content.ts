@@ -31,7 +31,7 @@ export const articles: Article[] = [
 <p>We'll use the 1st of May, a public holiday in France, to get everything into the ground and officially start our new season. We look forward to homegrown tomatoes and crisp salads under the Provençal sun!</p>`,
     image: '/images/hero-spring.jpg',
     date: '2025-04-29',
-    category: 'Provence',
+    category: 'Potager',
     marcelTip: 'Plant your tomatoes after the Ice Saints — les Saints de Glace — in mid-May. The old farmers are right about this. Do not rush the tomatoes.',
     marcelType: 'gardener',
   },

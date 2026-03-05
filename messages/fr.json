@@ -6,6 +6,7 @@
     "recipes": "Recettes",
     "france": "Traditions",
     "provence": "Provence",
+    "potager": "Potager",
     "about": "À propos",
     "contact": "Contact",
     "siteName": "French Countryside Living"
@@ -71,6 +72,15 @@
     "marketsTitle": "Marchés & Gastronomie",
     "wineTitle": "Vin & Huile d'olive",
     "cultureTitle": "Culture & Traditions"
+  },
+  "PotagerPage": {
+    "title": "Le Potager",
+    "subtitle": "Cultiver sous le soleil provençal — légumes, herbes aromatiques et le rythme tranquille du jardin potager.",
+    "articlesTitle": "Articles Potager",
+    "videosTitle": "Vidéos Potager",
+    "introTitle": "Le Jardin Potager",
+    "noArticles": "Pas encore d'articles potager — revenez bientôt.",
+    "noVideos": "Pas encore de vidéos potager — revenez bientôt."
   },
   "AboutPage": {
     "title": "À propos",
