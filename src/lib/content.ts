@@ -153,7 +153,7 @@ export const recipes: Recipe[] = [
     excerpt: 'A Provençal take on the South African potjie — slow-cooked sanglier over open coals.',
     image: '/images/recipe-potjie.jpg',
     date: '2025-10-28',
-    category: 'braai',
+    category: 'potjie',
     servings: 8,
     prepTime: '45 min',
     cookTime: '4 hours',

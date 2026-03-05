@@ -6,16 +6,18 @@ interface RecipeCardProps {
   locale: string;
 }
 
-const categoryColors = {
+const categoryColors: Record<string, string> = {
   'wild-game': 'bg-charcoal text-parchment',
   braai: 'bg-terracotta text-white',
   provencal: 'bg-olive text-white',
+  potjie: 'bg-amber text-charcoal',
 };
 
-const categoryLabels = {
+const categoryLabels: Record<string, string> = {
   'wild-game': 'Wild Game',
   braai: 'Braai & Fire',
   provencal: 'Provençal',
+  potjie: 'Potjiekos',
 };
 
 export default function RecipeCard({ recipe, locale }: RecipeCardProps) {
