@@ -41,14 +41,14 @@ export const articles: Article[] = [
     excerpt: 'In the shade of the plane trees, on a dusty court, pétanque continues as it has for generations — unhurried, argumentative, and deeply French.',
     content: `<p>Every village in Provence has a terrain de pétanque. It is usually in the shade of a row of plane trees, on bare, packed earth, somewhere near the bar. On summer evenings, you will find men of all ages here — though increasingly women too — playing the game that has defined French rural leisure for more than a century.</p>
 <p>Pétanque looks deceptively simple. Each player throws metal boules — heavy, satisfying spheres that clank together with a sound unlike any other — trying to land them as close as possible to the cochonnet, a small wooden jack. The team whose boules are closest when all have been thrown scores points. First to thirteen wins.</p>
-<img src="/images/petanque-1.jpg" alt="Pétanque in Provence" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/petanque-1.jpg" alt="Pétanque in Provence" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 <h2>A Brief History</h2>
 <p>The game was formalised in La Ciotat, near Marseille, in 1907. Legend has it that a player with rheumatism could no longer take the running steps that the earlier game required, so the rules were adapted to allow throwing from a stationary position — les pieds tanqués, feet planted. From that adaptation, the name pétanque was born.</p>
 <p>But the roots go deeper. Boule games have been played across the Mediterranean since Greek and Roman times. The Provençal version simply refined and codified what rural communities had been doing for centuries — throwing things at other things, arguing about how close they were.</p>
 <h2>The Ritual</h2>
 <p>To watch a game of pétanque properly, you must understand that the game is as much about conversation as it is about boules. Every throw is debated. Every measurement is contested. The <em>baguette</em> — a small metal ruler used to settle disputes about distances — is produced with great ceremony and no small amount of theatre.</p>
 <p>The best players have a repertoire of shots. The <em>pointer</em> rolls the boule gently towards the cochonnet. The <em>tirer</em> — or <em>shooter</em> — throws hard to knock an opponent's boule away. A perfectly executed shot that sends an opponent's boule flying while leaving your own in its place is called a <em>carreau</em>, and it is greeted with the kind of applause normally reserved for great sporting moments.</p>
-<img src="/images/petanque-2.jpg" alt="Pétanque players in the village square" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/petanque-2.jpg" alt="Pétanque players in the village square" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 <h2>Come and Play</h2>
 <p>If you are in Provence and want to join a game, the etiquette is simple: watch for a few minutes, ask politely if you may join, and accept whatever side they put you on. Bring something to drink, because the game will last as long as the light holds. And do not argue too much about distances — that privilege is earned over years.</p>`,
     image: '/images/petanque-1.jpg',
@@ -116,13 +116,13 @@ export const articles: Article[] = [
 <p>Not all at once — they're too dignified for that. It starts with one or two shy blossoms on a single branch, like a diver testing the water with a toe. Then, over the course of a week or so, the whole tree explodes in delicate white and pink, and suddenly the landscape that has spent three months looking like a charcoal sketch is hosting a full-colour renaissance. The almond trees are Provence's opening act, and they never disappoint.</p>
 <p>Then the green arrives. First in timid patches — a flush of new leaves here, a brave clump of grass there. Then it's everywhere, carpeting the garrigue, climbing the walls, filling in all the brown spaces winter left behind. The world, which has been very convincingly dead for several months, turns out to have been merely sleeping. Which is reassuring, really.</p>
 
-<img src="/images/springtime1.jpg" alt="Spring panorama in Les Alpilles" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/springtime1.jpg" alt="Spring panorama in Les Alpilles" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>The Dream: L'Apéro on the Terrace</h2>
 <p>This is the point at which your mind, drunk on blossom and optimism, begins to wander. You are standing in the garden, still wearing two jumpers, but mentally you are already at a different version of this exact spot — it is July, the cicadas are providing enthusiastic background noise, and you are installed on the terrace with a glass of cold rosé, sweat forming on the outside of the bottle, a small plate of cornichons glistening like jewels, and a few slices of saucisson fanned out with entirely unnecessary elegance.</p>
 <p>This vision is so powerful, so vivid, so deeply motivating, that it will carry you through approximately four months of actual physical labour. Which brings us, somewhat abruptly, to the other side of spring in Provence.</p>
 
-<img src="/images/springtime2.jpg" alt="The potager in early spring" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/springtime2.jpg" alt="The potager in early spring" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>The Reality: 600 Square Metres of Opinion</h2>
 <p>The potager is waiting. It has been waiting all winter, quietly accumulating damage like an invoice you've been avoiding. Six hundred square metres of kitchen garden — which sounded romantic when you moved to Provence and sounds somewhat less romantic when you are facing it in early March with a rake and a bad back.</p>
@@ -140,7 +140,7 @@ export const articles: Article[] = [
 <p>So we add to the spring agenda: strip wallpaper, hire (or, more likely, become) a plasterer, paint, dry, furnish. Alongside the potager preparation, the composting, the bed rotations, and the ongoing negotiation with the courgettes. All of this while the sun shines mockingly Monday through Friday and the rain commits itself wholeheartedly to the weekends.</p>
 <p>Time is, as they say, limited.</p>
 
-<img src="/images/springtime3.jpg" alt="Spring in Provence" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/springtime3.jpg" alt="Spring in Provence" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>And Yet</h2>
 <p>Here's the thing about spring in Provence: it is, despite all of the above, genuinely magnificent. The light at six in the evening when the clouds clear. The smell of the earth after a morning of rain. The first evening warm enough to eat outside — really outside, without regret — with a simple meal and the birds making an unreasonable amount of noise about it.</p>
@@ -178,7 +178,7 @@ export const articles: Article[] = [
 <p>The two small beds became a 50m² potager. The potager eventually became something altogether more serious — a large kitchen garden that our family now calls Die Plaas. Our Farm. It is not a metaphor. It is, genuinely, our farm. Small by farming standards, enormous by the standards of what two people can reasonably maintain while also holding down jobs and raising children, but ours entirely.</p>
 <p>The tomatoes are the heart of it. Every year, as the season turns, we make the trip together as a family to the pépinière — the local plant nursery — to choose the seedlings. Cherry tomatoes. Beefsteaks. Heirlooms in colours that range from deep crimson to a slightly alarming orange-yellow. We take the choosing seriously. We discuss the merits of various varieties with a solemnity that might seem disproportionate to people who have never grown their own food, and seems entirely proportionate to people who have.</p>
 <p>Planting day is an occasion. Everyone has a role. Photos are taken. Plans are made. Standing there with your hands in the soil, looking at a row of small seedlings that will, in three months, be taller than you and producing more tomatoes than you know what to do with — it is quietly one of the better days of the year.</p>
-<img src="/images/planting_day.png" alt="Planting day at Die Plaas" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/planting_day.png" alt="Planting day at Die Plaas" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>The Fish Trench (Which Sounds Worse Than It Is)</h2>
 <p>I should mention the fish scraps.</p>
@@ -195,14 +195,14 @@ export const articles: Article[] = [
 <p>The watering happens twice a week. It sounds simple, and it is — but there is something about the rhythm of it that becomes, over the course of a summer, almost meditative. You walk the rows. You check the plants. You pinch off the lateral shoots (or you mean to, and then you don't, and then you have a plant that is attempting to become a tree). You watch the green fruits slowly blush, first at the shoulders, then all the way through.</p>
 <p>When the first tomatoes of summer are ready, we make salads that need nothing more than good olive oil, a scattering of fleur de sel, and a few torn basil leaves. Later in the season, when the abundance becomes genuinely overwhelming, we slice them and lay them in the dehydrator — and those dehydrated tomatoes, preserved in olive oil with a little thyme and garlic, will make January pasta considerably more bearable.</p>
 <p>The children, who have grown up doing this, eat tomatoes from the vine without thinking anything special of it. Which is exactly right. This should be normal.</p>
-<img src="/images/t1.jpg" alt="Tomatoes ripening on the vine at Die Plaas" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/t1.jpg" alt="Tomatoes ripening on the vine at Die Plaas" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>What a Real Tomato Tastes Like</h2>
 <p>It tastes like summer in Provence. It tastes like soil that was properly fed and plants that were properly tended. It tastes like the decision, six years ago, to put two small raised beds in a neighbour's garden and see what happened.</p>
 <p>It tastes like standing on a farm in South Africa as a child, holding something warm from the vine.</p>
 <p>The Spanish tomato, perfectly round and perfectly empty, will still be there in the supermarket. It will always be there. But once you've grown your own — once you've knelt in the dirt at planting day with your family around you, once you've smelled the particular green smell of tomato leaves on your hands, once you've eaten the first one still warm from the sun — you understand what all the fuss is about.</p>
 <p>Jan Tamatie knew. He always knew.</p>
-<img src="/images/t2.jpg" alt="Fresh tomatoes from Die Plaas" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/t2.jpg" alt="Fresh tomatoes from Die Plaas" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <p class="text-charcoal/50 text-sm mt-8">Provence, Spring 2026 · Die Plaas</p>`,
     image: '/images/hero-spring.jpg',
@@ -229,13 +229,13 @@ export const articles: Article[] = [
 <p>The boar is not a passive participant in this arrangement. It learns, adapts, and frequently wins. We hunt in the vast, rocky garrigue of Les Alpilles — a landscape of limestone ridges, dense scrub oak, and deep valleys that is as much the boar's home as ours. The distances between hunters on their posts can stretch to 500 metres or more. Shots are not guaranteed. The animals escape, often. This is as it should be.</p>
 
 <blockquote class="border-l-4 border-terracotta pl-6 my-8 italic font-body text-charcoal/70">The boar never gets shot on the road. Oh no — it gets shot down in the valleys. The terrain is always against you.</blockquote>
-<img src="/images/hunting1/h1.jpg" alt="Wild boar hunting in Les Alpilles" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/hunting1/h1.jpg" alt="Wild boar hunting in Les Alpilles" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>The Structure of the Hunt</h2>
 <p>Every hunt has its hierarchy and its roles, as fixed and functional as any well-run operation. At the top sits <strong>le chef de battue</strong> — the Hunt Boss — who knows the ground, reads the signs, and assigns positions before anyone sets foot in the field. His word is final.</p>
 <p>The hunters divide into two groups. <strong>Postiers</strong> are the shooters: they walk to assigned positions — their posts — chosen by le chef de battue and wait in silence, reading the wind and the light. <strong>Piqueurs</strong>, the drivers, move through the hunting area with dogs, pushing boar from their daytime shelters and driving them toward the waiting postiers.</p>
 <p>The whole area is well-signalled. Safety is non-negotiable — it is not a suggestion or an afterthought, but the first order of business at every briefing. We do everything in our power to run a safe hunt. This is not sport shooting in a gallery. It demands discipline, awareness, and trust between every person in the field.</p>
-<img src="/images/hunting1/h2.jpg" alt="Hunters in the garrigue of Les Alpilles" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/hunting1/h2.jpg" alt="Hunters in the garrigue of Les Alpilles" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>After the Shot: The Hard Work Begins</h2>
 <p>When a boar is taken, the work is only half done. A mature sanglier is a heavy, solid animal, and it will never oblige you by dropping somewhere convenient. The terrain ensures that. You attach a rope to the animal's head and you drag — through the maquis, through the scrub, up the valley walls. In the old days, donkeys did this work. Now, we are the donkeys.</p>
@@ -264,16 +264,14 @@ export const articles: Article[] = [
 
 <p class="font-body text-xl text-charcoal/80 italic leading-relaxed mb-10 border-l-4 border-amber pl-5">A few kilometres from Mouriès, a trail leads into the Alpilles. Follow it long enough, and the hills close in around you — the world narrows, the limestone rises, and the centuries begin to dissolve.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_093558_fixed.jpg" alt="Les Caisses de Jean Jean — the entrance valley" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/caisses_de_jean_jean/IMG_20250227_093558_fixed.jpg" alt="Les Caisses de Jean Jean — the entrance valley" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>The Path In: Where the Trail Becomes a Portal</h2>
 <p>The walk begins simply enough — a dusty track winding away from the golf course at Servanes, past rosemary and scrub oak, with the jagged ridgeline of the Alpilles rising ahead. The air carries the dry warmth of Provence: thyme crushed underfoot, the distant call of a blue rock thrush tucked into a crevice. There is nothing yet to suggest the extraordinary.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_093605_fixed.jpg" alt="The trail into Les Caisses" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<div style="display:flex;gap:10px;margin:1.5rem 0;"><img src="/images/caisses_de_jean_jean/IMG_20250227_093605_fixed.jpg" alt="The trail into Les Caisses" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_093640_fixed.jpg" alt="The narrowing entrance to the valley" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /></div>
 
 <p>Then the valley begins to narrow. The limestone walls tighten on either side — pale, ancient, scored by millennia of wind and rain — until you feel the landscape leaning in. The entrance to Les Caisses de Jean Jean is almost comically slender, a gap between cliffs that a determined man could defend with nothing more than courage and a good throwing arm. It is precisely for this reason that someone, long ago, decided this place was worth living in.</p>
-
-<img src="/images/caisses_de_jean_jean/IMG_20250227_093640_fixed.jpg" alt="The narrowing entrance to the valley" style="width:100%;border-radius:2px;margin:2rem 0;" />
 
 <p>Step through, and the world opens again — but changed. You are now inside something. A great stone box. Two parallel limestone ridges run on either side like the walls of a cathedral, closing at the eastern end to form a natural acropolis. The French word <em>caisses</em> — crates, or boxes — captures it perfectly: you are standing at the bottom of a vessel carved by geology and occupied by history.</p>
 
@@ -292,58 +290,48 @@ export const articles: Article[] = [
   </div>
 </div>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_094104_fixed.jpg" alt="Inside the oppidum" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/caisses_de_jean_jean/IMG_20250227_094104_fixed.jpg" alt="Inside the oppidum" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>The Oppidum: How the Village Was Built</h2>
 <p>Around the 7th century BC, in what archaeologists call the Iron Age, a Celtic people settled here and began building. What they created was an <em>oppidum</em> — a fortified hilltop village — one of the most intelligently designed in all of southern Gaul. They did not need to fight the landscape; they let the landscape fight for them.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_094305_fixed.jpg" alt="The limestone cliffs of Les Caisses" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<div style="display:flex;gap:10px;margin:1.5rem 0;"><img src="/images/caisses_de_jean_jean/IMG_20250227_094305_fixed.jpg" alt="The limestone cliffs of Les Caisses" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_094311_fixed.jpg" alt="The ancient ramparts" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /></div>
 
 <p>Nature had already provided two impregnable walls in the limestone cliffs to the north and south. The genius lay in what the settlers added at the western entrance — the only approach not sealed by rock. There, they raised not one rampart, but two, rebuilt and reinforced across centuries until the outermost wall grew to more than ten metres thick. Visitors walking the site today still encounter it as a looming earthen ridge that seems, improbably, to be a natural hill — until you realise it is entirely man-made, a colossus of stacked limestone, packed earth and compressed time.</p>
-
-<img src="/images/caisses_de_jean_jean/IMG_20250227_094311_fixed.jpg" alt="The ancient ramparts" style="width:100%;border-radius:2px;margin:2rem 0;" />
 
 <p>Between the 4th and 3rd centuries BC, the builders did something remarkable: they dismantled an older sanctuary on the site and reused its carved votive steles as raw material for the rampart's core. These stones — engraved with the image of a horseman carrying a javelin, the symbol of a warrior conducted to the afterlife — were buried inside the very walls meant to protect the living. Sacred objects, repurposed as mortar. Whether this was an act of pragmatism or a deliberate consecration of the fortifications, we will never know.</p>
 
 <blockquote class="border-l-4 border-terracotta pl-6 my-8 italic font-body text-charcoal/70 text-lg">Walking the site today, one stands before what appears to be a natural hill rising between the cliffs — until the realisation dawns that it is entirely the work of human hands, a monument built generation by generation over six centuries.</blockquote>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_094317_fixed.jpg" alt="The man-made rampart ridge" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<div style="display:flex;gap:10px;margin:1.5rem 0;"><img src="/images/caisses_de_jean_jean/IMG_20250227_094317_fixed.jpg" alt="The man-made rampart ridge" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_094520_fixed.jpg" alt="The defensive ditches and approach" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /></div>
 
 <p>In front of the ramparts, the inhabitants dug four successive ditches alternating with earthen embankments, and lined the approach with a jagged palisade of projecting rocks. Any attacker who breached the first trench would face another, and another. The entrance itself was cunningly angled so that an approaching enemy could never charge in a straight line, always exposed to defenders on the walls above.</p>
-
-<img src="/images/caisses_de_jean_jean/IMG_20250227_094520_fixed.jpg" alt="The defensive ditches and approach" style="width:100%;border-radius:2px;margin:2rem 0;" />
 
 <h2>Daily Life: A Thousand Lives, Lived in Stone</h2>
 <p>At its height, roughly a thousand people called this stone valley home. Archaeological excavations between 1933 and 1942 by Fernand Benoit revealed the true scale of the settlement. The site covers roughly fourteen hectares and may have supported close to a thousand inhabitants at its peak.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_095231_fixed.jpg" alt="Terraced house foundations on the cliff face" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<div style="display:flex;gap:10px;margin:1.5rem 0;"><img src="/images/caisses_de_jean_jean/IMG_20250227_095231_fixed.jpg" alt="Terraced house foundations on the cliff face" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_095303_fixed.jpg" alt="Stone walls and settlement remains" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /></div>
 
 <p>Archaeologists have uncovered houses arranged in terraces against the cliff faces, their walls bonded with earth and later, as Hellenistic influence filtered up from Massalia (Marseille), with dressed limestone cut in the manner of the Greeks. Ceramic shards tell of trade — wine amphorae from Italy, fine-ware cups from the Greek colonies of the coast. This was no isolated backwater but a community woven into the commerce of the ancient Mediterranean world.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_095303_fixed.jpg" alt="Stone walls and settlement remains" style="width:100%;border-radius:2px;margin:2rem 0;" />
-
 <p>At the foot of the southern cliff, an enormous millstone — over a metre across and weighing an estimated 1,600 kilograms — still sits unfinished in the living rock, abandoned mid-cut sometime in the 17th century. It is a haunting detail: the interrupted work of someone who laid down their tools one afternoon and never returned. Time has a way of doing this, collecting the paused gestures of the past and holding them perfectly still.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_100809_fixed.jpg" alt="The unfinished millstone in the living rock" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/caisses_de_jean_jean/IMG_20250227_100809_fixed.jpg" alt="The unfinished millstone in the living rock" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <p>The settlement endured for nearly a millennium — from the Iron Age through the full arc of Roman conquest and into the 3rd century AD, when the inhabitants gradually drifted down into the plain below to occupy the Roman villas spreading across the Crau. The hilltop was left to the wind, the wild lavender, and the slow patient work of the limestone.</p>
 
 <h2>The Wonder: What Silence Does to the Imagination</h2>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_102105_fixed.jpg" alt="The silence of Les Caisses de Jean Jean" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<img src="/images/caisses_de_jean_jean/IMG_20250227_102105_fixed.jpg" alt="The silence of Les Caisses de Jean Jean" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <p>Standing inside the Caisses today, what strikes you most is not the archaeology — it is the silence. Not an empty silence, but a full one, weighted with presence. The cliffs hold the air still. The light falls at an angle that has not changed in three thousand years. And the mind, stripped of easy distraction by the simplicity of the landscape, begins quietly to people the place: a child running along the base of the rampart; smoke rising from a cooking fire; the sound of a hammer shaping stone; someone standing at the entrance to this narrow valley, looking west, watching.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_102256_fixed.jpg" alt="Light on the limestone" style="width:100%;border-radius:2px;margin:2rem 0;" />
-
 <p>The name of the site carries its own small history. It derives from a man called Jehan who once owned these lands, and his son — also Jehan — after him. In the local dialect, the "lands of Jehan, son of Jehan" became simply Jean Jean, the name of a property becoming the name of a civilisation. There is something rather beautiful in that: an Iron Age oppidum remembered not by its ancient Gaulish name — possibly <em>Tericiae</em>, which once appeared on Roman road maps between Aix and the Rhône — but by the name of a medieval farmer who happened to graze his sheep here.</p>
-
-<img src="/images/caisses_de_jean_jean/IMG_20250227_102302_fixed.jpg" alt="Looking out from the valley" style="width:100%;border-radius:2px;margin:2rem 0;" />
 
 <p>The Alpilles have always done this — absorbed history quietly, layer by layer, the way the limestone absorbs rain. A sanctuary becomes a rampart. A rampart becomes a hill. A hill becomes a walk one afternoon in the Provençal sun, with the scent of wild herbs rising around you, and the sudden, vertiginous sense that you are very small, and the world is very old, and some places hold their past more tenderly than others.</p>
 <p>Les Caisses de Jean Jean is one of those places.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_103002_fixed.jpg" alt="Les Caisses de Jean Jean, Les Alpilles" style="width:100%;border-radius:2px;margin:2rem 0;" />
+<div style="display:flex;gap:10px;margin:2.5rem 0 1rem;"><img src="/images/caisses_de_jean_jean/IMG_20250227_102256_fixed.jpg" alt="Light on the limestone" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_102302_fixed.jpg" alt="Looking out from the valley" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_103002_fixed.jpg" alt="Les Caisses de Jean Jean, Les Alpilles" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /></div>
 
 <p class="text-charcoal/40 text-xs mt-10 font-body uppercase tracking-widest">Les Alpilles · Bouches-du-Rhône · Provence · Classified Historic Monument 1937 · Parc Naturel Régional des Alpilles</p>`,
     image: '/images/caisses_de_jean_jean/IMG_20250227_093558_fixed.jpg',
