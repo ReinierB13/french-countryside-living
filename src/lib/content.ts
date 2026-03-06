@@ -167,7 +167,7 @@ export const articles: Article[] = [
 <p>We eat them, of course, because they're there. But we don't talk about them. Nobody has ever bitten into a supermarket tomato and been transported anywhere.</p>
 
 <h2>Jan Tamatie</h2>
-<p>My grandfather was a farmer in South Africa. He grew tomatoes and grapes, and he was apparently so well-known for the former that people called him Jan Tamatie — Jan the Tomato. I didn't think about that name much when I was a child, standing on his farm eating tomatoes straight from the vine with a pinch of rock salt. It just seemed normal. Of course tomatoes tasted like that. What else would they taste like?</p>
+<p>My grandfather was a farmer in South Africa. He grew tomatoes and grapes, and he was apparently so well-known for the former that people called him Jan Tamatie — Jan Tomato. I didn't think about that name much when I was a child, standing on his farm eating tomatoes straight from the vine with a pinch of rock salt. It just seemed normal. Of course tomatoes tasted like that. What else would they taste like?</p>
 <p>The answer, I discovered some decades later in a French supermarket, is: considerably less.</p>
 <p>It was 2018. We were living in Provence, our neighbour had a corner of garden going spare, and I had two small raised beds — 1m x 1.2m each, not exactly Die Plaas — and a modest ambition. I wanted to show my children where food actually comes from. I planted some cherry tomatoes and a few beefsteaks, tended them with perhaps more enthusiasm than expertise, and waited.</p>
 <p>The first ripe tomato of that summer, I picked early in the morning while it was still warm from the previous day's sun. I ate it standing in the garden, still in my pyjamas, with no salt, no ceremony, no audience.</p>
