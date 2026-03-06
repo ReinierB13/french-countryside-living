@@ -21,10 +21,16 @@ export default function NewsletterSignup({
     e.preventDefault();
     if (!email) return;
     setLoading(true);
-    // Placeholder: integrate with Mailchimp, ConvertKit, etc.
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
-    setLoading(false);
+    try {
+      await fetch('/api/newsletter', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+    } finally {
+      setSubmitted(true);
+      setLoading(false);
+    }
   };
 
   if (compact) {
