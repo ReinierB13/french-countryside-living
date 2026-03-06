@@ -205,7 +205,7 @@ export const articles: Article[] = [
 <img src="/images/t2.jpg" alt="Fresh tomatoes from Die Plaas" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <p class="text-charcoal/50 text-sm mt-8">Provence, Spring 2026 · Die Plaas</p>`,
-    image: '/images/hero-spring.jpg',
+    image: '/images/t2.jpg',
     date: '2026-03-05',
     category: 'Potager',
     tags: ['Provence', 'Potager'],
