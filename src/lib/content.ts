@@ -54,7 +54,7 @@ export const articles: Article[] = [
     image: '/images/petanque-1.jpg',
     date: '2026-02-20',
     category: 'Traditions',
-    marcelTip: 'Stand still when you throw. Les pieds tanqués — both feet on the ground. Move your feet and everyone will notice, and nobody will let you forget it.',
+    marcelTip: 'If playing with a partner, discuss the shot beofore you throw. You don\'t want a "Oh la la" after a throw',
     marcelType: 'petanque',
   },
   {
@@ -70,7 +70,7 @@ export const articles: Article[] = [
     image: '/images/hero-hunting.jpg',
     date: '2025-09-20',
     category: 'Hunting',
-    marcelTip: 'Never wear blue while boar hunting. They cannot see red, but blue stands out to them in the forest. Trust the old hunters on this one.',
+    marcelTip: 'Make 100% sure of your post with the chef de battuee before the hunt starts. The old hunters know the terrain and likeley exits.',
     marcelType: 'hunter',
   },
   {
