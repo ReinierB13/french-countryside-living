@@ -82,7 +82,7 @@ export const articles: Article[] = [
 <p>The village is classified among the Plus Beaux Villages de France — the most beautiful villages in France — and rightly so. Every stone here has a story. The lords of Les Baux were powerful and sometimes terrifying figures in medieval Provence, claiming descent from the Magi of the Nativity and using a star as their heraldic symbol.</p>
 <h2>The Old Town</h2>
 <p>Today the village is wonderfully preserved. The honey-coloured limestone buildings glow in the afternoon sun. Boutiques sell lavender sachets and olive oil. Restaurants serve tapenade and daube. But walk to the edge of the village, away from the main street, and you can find quieter corners where the history is still palpable.</p>`,
-    image: '/images/hero-lesbaux.jpg',
+    image: '/images/les_baux.jpg',
     date: '2025-08-12',
     category: 'Provence',
     marcelTip: 'Visit Les Baux on a Tuesday morning in summer. The coach parties haven\'t arrived yet and you can actually hear the wind in the ruins.',
