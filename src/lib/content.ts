@@ -257,21 +257,21 @@ export const articles: Article[] = [
   },
   {
     slug: 'les-caisses-de-jean-jean',
-    title: 'Les Caisses de Jean Jean: A Village Forgotten by Time',
+    title: 'Les Caisses de Jean-Jean: A Village Forgotten by Time',
     excerpt:
       'A few kilometres from Mouriès, a trail leads into the Alpilles — and 2,700 years of silence, written in limestone.',
     content: `<p class="text-olive text-xs font-heading uppercase tracking-widest mb-6">Les Alpilles · Mouriès · Provence</p>
 
 <p class="font-body text-xl text-charcoal/80 italic leading-relaxed mb-10 border-l-4 border-amber pl-5">A few kilometres from Mouriès, a trail leads into the Alpilles. Follow it long enough, and the hills close in around you — the world narrows, the limestone rises, and the centuries begin to dissolve.</p>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_093558_fixed.jpg" alt="Les Caisses de Jean Jean — the entrance valley" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<img src="/images/caisses_de_jean_jean/IMG_20250227_093558_fixed.jpg" alt="Les Caisses de Jean-Jean — the entrance valley" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <h2>The Path In: Where the Trail Becomes a Portal</h2>
 <p>The walk begins simply enough — a dusty track winding away from the golf course at Servanes, past rosemary and scrub oak, with the jagged ridgeline of the Alpilles rising ahead. The air carries the dry warmth of Provence: thyme crushed underfoot, the distant call of a blue rock thrush tucked into a crevice. There is nothing yet to suggest the extraordinary.</p>
 
 <div style="display:flex;gap:10px;margin:1.5rem 0;"><img src="/images/caisses_de_jean_jean/IMG_20250227_093605_fixed.jpg" alt="The trail into Les Caisses" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_093640_fixed.jpg" alt="The narrowing entrance to the valley" style="flex:1;min-width:0;height:250px;object-fit:cover;border-radius:2px;" /></div>
 
-<p>Then the valley begins to narrow. The limestone walls tighten on either side — pale, ancient, scored by millennia of wind and rain — until you feel the landscape leaning in. The entrance to Les Caisses de Jean Jean is almost comically slender, a gap between cliffs that a determined man could defend with nothing more than courage and a good throwing arm. It is precisely for this reason that someone, long ago, decided this place was worth living in.</p>
+<p>Then the valley begins to narrow. The limestone walls tighten on either side — pale, ancient, scored by millennia of wind and rain — until you feel the landscape leaning in. The entrance to Les Caisses de Jean-Jean is almost comically slender, a gap between cliffs that a determined man could defend with nothing more than courage and a good throwing arm. It is precisely for this reason that someone, long ago, decided this place was worth living in.</p>
 
 <p>Step through, and the world opens again — but changed. You are now inside something. A great stone box. Two parallel limestone ridges run on either side like the walls of a cathedral, closing at the eastern end to form a natural acropolis. The French word <em>caisses</em> — crates, or boxes — captures it perfectly: you are standing at the bottom of a vessel carved by geology and occupied by history.</p>
 
@@ -322,16 +322,16 @@ export const articles: Article[] = [
 
 <h2>The Wonder: What Silence Does to the Imagination</h2>
 
-<img src="/images/caisses_de_jean_jean/IMG_20250227_102105_fixed.jpg" alt="The silence of Les Caisses de Jean Jean" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<img src="/images/caisses_de_jean_jean/IMG_20250227_102105_fixed.jpg" alt="The silence of Les Caisses de Jean-Jean" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
 
 <p>Standing inside the Caisses today, what strikes you most is not the archaeology — it is the silence. Not an empty silence, but a full one, weighted with presence. The cliffs hold the air still. The light falls at an angle that has not changed in three thousand years. And the mind, stripped of easy distraction by the simplicity of the landscape, begins quietly to people the place: a child running along the base of the rampart; smoke rising from a cooking fire; the sound of a hammer shaping stone; someone standing at the entrance to this narrow valley, looking west, watching.</p>
 
-<p>The name of the site carries its own small history. It derives from a man called Jehan who once owned these lands, and his son — also Jehan — after him. In the local dialect, the "lands of Jehan, son of Jehan" became simply Jean Jean, the name of a property becoming the name of a civilisation. There is something rather beautiful in that: an Iron Age oppidum remembered not by its ancient Gaulish name — possibly <em>Tericiae</em>, which once appeared on Roman road maps between Aix and the Rhône — but by the name of a medieval farmer who happened to graze his sheep here.</p>
+<p>The name of the site carries its own small history. It derives from a man called Jehan who once owned these lands, and his son — also Jehan — after him. In the local dialect, the "lands of Jehan, son of Jehan" became simply Jean-Jean, the name of a property becoming the name of a civilisation. There is something rather beautiful in that: an Iron Age oppidum remembered not by its ancient Gaulish name — possibly <em>Tericiae</em>, which once appeared on Roman road maps between Aix and the Rhône — but by the name of a medieval farmer who happened to graze his sheep here.</p>
 
 <p>The Alpilles have always done this — absorbed history quietly, layer by layer, the way the limestone absorbs rain. A sanctuary becomes a rampart. A rampart becomes a hill. A hill becomes a walk one afternoon in the Provençal sun, with the scent of wild herbs rising around you, and the sudden, vertiginous sense that you are very small, and the world is very old, and some places hold their past more tenderly than others.</p>
-<p>Les Caisses de Jean Jean is one of those places.</p>
+<p>Les Caisses de Jean-Jean is one of those places.</p>
 
-<div style="display:flex;gap:10px;margin:2.5rem 0 1rem;"><img src="/images/caisses_de_jean_jean/IMG_20250227_102256_fixed.jpg" alt="Light on the limestone" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_102302_fixed.jpg" alt="Looking out from the valley" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_103002_fixed.jpg" alt="Les Caisses de Jean Jean, Les Alpilles" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /></div>
+<div style="display:flex;gap:10px;margin:2.5rem 0 1rem;"><img src="/images/caisses_de_jean_jean/IMG_20250227_102256_fixed.jpg" alt="Light on the limestone" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_102302_fixed.jpg" alt="Looking out from the valley" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /><img src="/images/caisses_de_jean_jean/IMG_20250227_103002_fixed.jpg" alt="Les Caisses de Jean-Jean, Les Alpilles" style="flex:1;min-width:0;height:200px;object-fit:cover;border-radius:2px;" /></div>
 
 <p class="text-charcoal/40 text-xs mt-10 font-body uppercase tracking-widest">Les Alpilles · Bouches-du-Rhône · Provence · Classified Historic Monument 1937 · Parc Naturel Régional des Alpilles</p>`,
     image: '/images/caisses_de_jean_jean/IMG_20250227_093558_fixed.jpg',
