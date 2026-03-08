@@ -40,11 +40,11 @@ export default async function RecipePage({ params }: Props) {
   return (
     <>
       {/* Hero */}
-      <div
-        className="relative min-h-[50vh] flex items-end bg-cover bg-center"
-        style={{ backgroundImage: `url(${recipe.image})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/0 via-transparent to-transparent" />
+      <div className="relative min-h-[50vh] flex items-end">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${recipe.image})`, filter: 'brightness(1.3)' }}
+        />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 w-full pb-12 pt-24">
           <span className="inline-block bg-terracotta text-white text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide mb-4">
             {categoryConfig[recipe.category]?.label ?? recipe.category}
