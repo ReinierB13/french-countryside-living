@@ -25,8 +25,8 @@ export default function Hero({
 
   const overlays = {
     light: 'bg-black/0',
-    medium: 'bg-black/10',
-    dark: 'bg-black/25',
+    medium: 'bg-black/0',
+    dark: 'bg-black/10',
   };
 
   return (
@@ -44,7 +44,7 @@ export default function Hero({
 
       {/* Gradient overlay */}
       <div className={`absolute inset-0 ${overlays[overlay]}`} />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/0 via-transparent to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto py-20">
