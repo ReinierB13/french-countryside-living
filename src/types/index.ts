@@ -39,6 +39,7 @@ export interface Video {
   youtubeId: string;
   date: string;
   category: string;
+  image?: string;
 }
 
 export interface NavLink {

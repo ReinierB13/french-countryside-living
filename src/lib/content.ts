@@ -614,6 +614,15 @@ export const recipes: Recipe[] = [
 
 export const videos: Video[] = [
   {
+    id: 'van-gogh-land',
+    title: 'The Land That Inspired Van Gogh',
+    description: 'The light, the landscapes, and the wild beauty of Provence that drove Vincent van Gogh to paint some of the greatest works in history.',
+    youtubeId: 'bmg7c9Al6pk',
+    date: '2026-03-08',
+    category: 'Provence',
+    image: '/images/starry-night.jpg',
+  },
+  {
     id: 'year-in-provence',
     title: 'A Year in Provence',
     description: 'Listen to the spirit of the seasons through this original song — the almond blossom of February, the lavender of July, the harvest of autumn.',
