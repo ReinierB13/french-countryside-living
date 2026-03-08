@@ -20,22 +20,6 @@ export const articles: Article[] = [
     marcelType: 'default',
   },
   {
-    slug: 'springtime-in-provence',
-    title: 'Springtime in Provence: A New Beginning',
-    excerpt:
-      'As the chill of winter fades, Provence awakens once more — wildflowers, birdsong, and the first work in the potager.',
-    content: `<p>As the chill of winter fades, Provence awakens once more. The plane trees unfurl their fresh green leaves, and wildflowers sprinkle vibrant colors across the countryside. The air is filled with birdsong, and the world feels reborn — a beautiful reminder that life always returns.</p>
-<p>With spring also comes a lot of hard work. It is time to prepare the potager for the new growing season. Last Saturday, we visited the local market to select young plants for our garden. This year, we're planting tomatoes, aubergines, peppers, chillis, and an abundance of salads.</p>
-<h2>The Potager</h2>
-<p>A Provençal potager is not just a vegetable garden. It is a statement of intent. You are saying: I belong here. I will tend this soil. I will eat what this ground gives me. There is something deeply satisfying about pulling a tomato from a plant you have watered every day since May.</p>
-<p>We'll use the 1st of May, a public holiday in France, to get everything into the ground and officially start our new season. We look forward to homegrown tomatoes and crisp salads under the Provençal sun!</p>`,
-    image: '/images/hero-spring.jpg',
-    date: '2025-04-29',
-    category: 'Potager',
-    marcelTip: 'Plant your tomatoes after the Ice Saints — les Saints de Glace — in mid-May. The old farmers are right about this. Do not rush the tomatoes.',
-    marcelType: 'gardener',
-  },
-  {
     slug: 'petanque',
     title: 'Pétanque: The Soul of the Village Square',
     excerpt: 'In the shade of the plane trees, on a dusty court, pétanque continues as it has for generations — unhurried, argumentative, and deeply French.',
