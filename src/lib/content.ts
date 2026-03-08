@@ -622,38 +622,6 @@ export const videos: Video[] = [
     category: 'Provence',
   },
   {
-    id: 'wild-boar-hunt-var',
-    title: 'Wild Boar Hunt in the Var',
-    description: 'A full day out with the société de chasse — from the pre-dawn coffee to the evening hunt dinner. This is what hunting in rural France really looks like.',
-    youtubeId: 'F-bIW2j-Ajc',
-    date: '2025-10-05',
-    category: 'Hunting',
-  },
-  {
-    id: 'cooking-sanglier-fire',
-    title: 'Cooking Sanglier Over Fire',
-    description: 'After the hunt, the real work begins. A whole sanglier slow-cooked over wood coals — the most satisfying meal you can imagine.',
-    youtubeId: 'F-bIW2j-Ajc',
-    date: '2025-10-12',
-    category: 'Cooking',
-  },
-  {
-    id: 'alpilles-walk',
-    title: 'Walking the Alpilles',
-    description: 'A sunrise walk through the limestone ridges and olive groves of Les Alpilles — the wild heart of Provence.',
-    youtubeId: 'F-bIW2j-Ajc',
-    date: '2025-09-03',
-    category: 'Provence',
-  },
-  {
-    id: 'market-st-remy',
-    title: 'Market Day in Saint-Rémy',
-    description: 'Every Wednesday morning, Saint-Rémy-de-Provence hosts one of the finest markets in France. Come along for a wander.',
-    youtubeId: 'F-bIW2j-Ajc',
-    date: '2025-07-16',
-    category: 'Provence',
-  },
-  {
     id: 'eygalieres',
     title: 'Eygalières',
     description: 'One of the most beautiful villages in the Alpilles — ancient stone lanes, a hilltop chapel, and the quiet rhythm of a village that time has treated gently.',
@@ -670,6 +638,8 @@ export const videos: Video[] = [
     category: 'Provence',
   },
 ];
+
+
 
 // Helper functions
 export function getFeaturedArticles(count = 3): Article[] {

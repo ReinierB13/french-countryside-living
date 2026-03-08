@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import Marcel from '@/components/Marcel';
 import ArticleCard from '@/components/ArticleCard';
 import NewsletterSignup from '@/components/NewsletterSignup';
+import ShareButtons from '@/components/ShareButtons';
 import { getArticleBySlug, getRelatedArticles, articles } from '@/lib/content';
 import { routing } from '@/i18n/routing';
 
@@ -97,6 +98,18 @@ export default async function ArticlePage({ params }: Props) {
             ))}
           </div>
         )}
+
+        {/* Share */}
+        <ShareButtons
+          title={article.title}
+          path={`/${locale}/articles/${article.slug}`}
+          labels={{
+            share: t('share'),
+            copyLink: t('copyLink'),
+            copied: t('copied'),
+            email: t('shareByEmail'),
+          }}
+        />
       </div>
 
       {/* Newsletter CTA */}

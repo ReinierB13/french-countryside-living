@@ -34,7 +34,11 @@
   },
   "ArticlePage": {
     "backToArticles": "← Retour aux articles",
-    "relatedArticles": "À lire aussi"
+    "relatedArticles": "À lire aussi",
+    "share": "Partager",
+    "copyLink": "Copier le lien",
+    "copied": "Copié !",
+    "shareByEmail": "Par email"
   },
   "VideosPage": {
     "title": "Vidéos",
@@ -57,7 +61,11 @@
     "serves": "Personnes",
     "prepTime": "Préparation",
     "cookTime": "Cuisson",
-    "printRecipe": "Imprimer la recette"
+    "printRecipe": "Imprimer la recette",
+    "share": "Partager",
+    "copyLink": "Copier le lien",
+    "copied": "Copié !",
+    "shareByEmail": "Par email"
   },
   "FrancePage": {
     "title": "Traditions",

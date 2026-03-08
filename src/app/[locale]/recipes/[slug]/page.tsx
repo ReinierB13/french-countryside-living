@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import Marcel from '@/components/Marcel';
 import NewsletterSignup from '@/components/NewsletterSignup';
+import ShareButtons from '@/components/ShareButtons';
 import { categoryConfig } from '@/components/RecipeCard';
 import { getRecipeBySlug, recipes } from '@/lib/content';
 import { routing } from '@/i18n/routing';
@@ -152,6 +153,18 @@ export default async function RecipePage({ params }: Props) {
             )}
           </div>
         </div>
+
+        {/* Share */}
+        <ShareButtons
+          title={recipe.title}
+          path={`/${locale}/recipes/${recipe.slug}`}
+          labels={{
+            share: t('share'),
+            copyLink: t('copyLink'),
+            copied: t('copied'),
+            email: t('shareByEmail'),
+          }}
+        />
       </div>
 
       {/* Newsletter CTA */}

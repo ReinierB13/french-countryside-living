@@ -34,7 +34,11 @@
   },
   "ArticlePage": {
     "backToArticles": "← Back to Articles",
-    "relatedArticles": "More Reading"
+    "relatedArticles": "More Reading",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "copied": "Copied!",
+    "shareByEmail": "Email"
   },
   "VideosPage": {
     "title": "Videos",
@@ -57,7 +61,11 @@
     "serves": "Serves",
     "prepTime": "Prep",
     "cookTime": "Cook",
-    "printRecipe": "Print Recipe"
+    "printRecipe": "Print Recipe",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "copied": "Copied!",
+    "shareByEmail": "Email"
   },
   "FrancePage": {
     "title": "Traditions",
