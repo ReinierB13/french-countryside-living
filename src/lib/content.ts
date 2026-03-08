@@ -58,22 +58,6 @@ export const articles: Article[] = [
     marcelType: 'petanque',
   },
   {
-    slug: 'wild-boar-hunting-season',
-    title: 'Wild Boar Season in the Var',
-    excerpt:
-      'When September arrives, the hunters emerge. The sanglier season in the Var is a serious business — and a serious pleasure.',
-    content: `<p>There is a particular quality to a September morning in the Var. The air is still warm from summer but carries a hint of something different — a dryness, a crispness that puts the dogs on edge. The hunters notice it too. The season is beginning.</p>
-<p>Wild boar — sanglier — are the great quarry of the Provençal hunter. They are intelligent, powerful, and destructive. Farmers curse them for uprooting fields overnight. Hunters revere them for exactly the same qualities. There is nothing easy about a boar hunt.</p>
-<h2>La Battue</h2>
-<p>The traditional hunt is the battue — a driven hunt where beaters move through the garrigue pushing the game towards waiting hunters. Every village in the Var has its own société de chasse, its hunting society, with strict rules about membership, territory, and conduct.</p>
-<p>The hunt begins before dawn. Strong coffee is poured into thermoses. The dogs — Gascon Saintongeois hounds with their mournful eyes and extraordinary noses — are released. And then you wait, listening, watching the pale light grow between the pine trees.</p>`,
-    image: '/images/hero-hunting.jpg',
-    date: '2025-09-20',
-    category: 'Hunting',
-    marcelTip: 'Make 100% sure of your post with the chef de battuee before the hunt starts. The old hunters know the terrain and likeley exits.',
-    marcelType: 'hunter',
-  },
-  {
     slug: 'les-baux-de-provence',
     title: 'Les Baux: The Eagle\'s Nest of Provence',
     excerpt:
