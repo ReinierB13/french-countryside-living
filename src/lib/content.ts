@@ -401,7 +401,7 @@ export const recipes: Recipe[] = [
     slug: 'poulet-provencal',
     title: 'Poulet Rôti à la Provençale',
     excerpt: 'A classic roast chicken with all the herbs and flavours of the Provençal summer.',
-    image: '/images/recipe-poulet.jpg',
+    image: '/images/chicken.png',
     date: '2025-07-20',
     category: 'provencal',
     servings: 4,
