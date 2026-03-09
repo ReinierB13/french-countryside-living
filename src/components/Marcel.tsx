@@ -26,11 +26,11 @@ export default function Marcel({ type = 'default', text, className = '' }: Marce
   return (
     <>
       <div
-        className={`flex flex-col sm:flex-row items-center gap-6 bg-amber/10 border-l-4 border-terracotta rounded-r-xl p-6 my-10 shadow-md ${className}`}
+        className={`flex flex-col items-center text-center bg-amber/10 border-l-4 border-terracotta rounded-r-xl px-6 pt-6 pb-7 my-10 shadow-md ${className}`}
       >
         <button
           onClick={() => setLightboxOpen(true)}
-          className="flex-shrink-0 w-32 h-32 sm:w-40 sm:h-40 relative cursor-zoom-in hover:scale-105 transition-transform duration-200"
+          className="w-36 h-36 relative cursor-zoom-in hover:scale-105 transition-transform duration-200 mb-4"
           aria-label="View Marcel full size"
           title="Click to enlarge"
         >
@@ -44,12 +44,10 @@ export default function Marcel({ type = 'default', text, className = '' }: Marce
             }}
           />
         </button>
-        <div className="flex-1 text-center sm:text-left">
-          <p className="text-sm font-heading font-bold text-terracotta uppercase tracking-widest mb-3">
-            🐸 Marcel says:
-          </p>
-          <p className="font-body text-charcoal text-base italic leading-relaxed">{text}</p>
-        </div>
+        <p className="text-sm font-heading font-bold text-terracotta uppercase tracking-widest mb-3">
+          🐸 Marcel says:
+        </p>
+        <p className="font-body text-charcoal text-base italic leading-relaxed">{text}</p>
       </div>
 
       {/* Lightbox */}
