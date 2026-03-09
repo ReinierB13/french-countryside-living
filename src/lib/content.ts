@@ -309,6 +309,57 @@ export const articles: Article[] = [
     marcelTip: 'Go in the morning, before the heat. The light inside the valley is extraordinary at eight o\'clock, and you will almost certainly have the place to yourself.',
     marcelType: 'rose',
   },
+  {
+    slug: 'good-samaritan-pepper-spray',
+    title: 'Why Being a Good Samaritan Sometimes Backfires',
+    excerpt: 'A quiet afternoon drive home through the Alpilles turns into a dog fight, a pepper spray incident, and one of the most painful lessons in the chemistry of capsaicin.',
+    content: `<p>There is a road between our old village and Saint-Andiol that most people ignore in favour of the main route. We always take it. The road via Le Destet winds through olive groves and vineyards, and comes out beside the small parking spot where people leave their cars to walk up to Les Caisses de Jean-Jean. It is one of those roads that reminds you why you live here.</p>
+<p>We had spent the afternoon at our old potager outside Mausanne — pulling weeds, watering, making plans for the season ahead. The kind of afternoon that leaves you with dirty fingernails and a good feeling in your chest. We had a beer at the potager when the work was done. One beer. I want to be clear about that, because what happened next is the kind of story that sounds better if the man at the centre of it was sober, which he was.</p>
+<h2>A Rottweiler, a Malinois, and a Saturday Afternoon</h2>
+<p>We came around the bend and I saw them before I understood what I was seeing.</p>
+<p>Two people — a man and a woman — rolling in the dust at the side of the road with a large black shape and a Belgian Malinois thrashing between them. My first thought, I will admit, was <em>sanglier</em> — wild boar. You spend enough time hunting wild boar in these hills and your brain starts to see them everywhere. But no. It was a Rottweiler — a big one, maybe fifty kilograms of pure bad intention — and it and the Malinois were doing their absolute level best to kill each other. These were not a couple — just two people who had made the unfortunate decision to walk their dogs off-leash on the same stretch of road at the same time.</p>
+<p>I stopped the car. The kids were in the back. My wife said “be careful.” I told her I couldn't just drive past — there is too much of the Samaritan in me for that. But it was more than instinct. The woman was in real danger. She was trying to drag her Malinois away from the Rottweiler, and the Rottweiler's teeth were flashing centimetres from her face.</p>
+<p>I grabbed the pepper spray from the door pocket — I had been keeping it there as insurance against a neighbour's dog, a large animal that barked ferociously and liked to throw itself at the low fence between our houses whenever the kids were in the garden. I had never needed to use it.</p>
+<p>The man was perhaps sixty-five kilograms if he was soaking wet, wrestling with an animal that was nearly half his weight and entirely committed to the fight. The woman was smaller still. They were losing.</p>
+<p>“Can I help? I have pepper spray — shall I use it?”</p>
+<p>“Yes,” they said. “Do it.”</p>
+<h2>The Great Pepper Spray Experiment</h2>
+<p>I gave both dogs a light spray. A cautious, introductory sort of spray. The kind of spray that says “perhaps reconsider your life choices.”</p>
+<p>Nothing. The dogs fought harder.</p>
+<p>The man yelled at me. “In the eyes. Spray it in the eyes.”</p>
+<p>I gave the Rottweiler a proper squirt. A long one. Direct.</p>
+<p>The dogs fought harder still.</p>
+<p>I gave the Malinois the same treatment. I held the nozzle and let it go.</p>
+<p>The fight intensified. Somewhere in the academic literature on capsaicin and canine behaviour, I suspect there is a footnote that reads: “in some cases, pepper spray may increase aggression in the short term.” I was discovering this footnote in real time, on a Provençal back road, with blood on the tarmac.</p>
+<p>Then the Rottweiler had a moment of doubt. The Malinois, displaying either tremendous courage or a complete absence of self-preservation instinct, came back for more. For one brief second, the dogs separated.</p>
+<p>I reached for the Malinois's collar.</p>
+<p>The Rottweiler bit my hand.</p>
+<p>Not a graze — the thumb was properly punctured — but it bit the hand that was holding the pepper spray canister, and pierced the canister, and the entire remaining contents emptied themselves directly down the Rottweiler's throat and across my entire hand.</p>
+<p>The fight was over.</p>
+<h2>Aftermath</h2>
+<p>The Rottweiler stood very still, breathing foam. The Malinois looked confused. The man and the woman, without a word of discussion, picked up both dogs and threw them into the canal.</p>
+<p>I walked back to the car to wash the blood off my thumb and reassure my children that Papa was fine and that this sort of thing happens sometimes on country roads. My wife looked at my hand. She did not say anything. She has seen worse — fifteen years with an ex-rugby player will do that to a woman.</p>
+<p>I went back to check on them. They were managing. The woman thanked me warmly. The man was somewhat preoccupied with his dog, which I understood. We said goodnight and drove on.</p>
+<h2>The Part I Did Not Anticipate</h2>
+<p>A few kilometres down the road, I needed what the French politely call <em>une pause pipi</em>. I pulled over, stepped out, and took care of business. I zipped up, got back in the car, and continued driving.</p>
+<p>Within minutes, there was a sensation.</p>
+<p>Then the sensation became a feeling.</p>
+<p>Then the feeling became a fire.</p>
+<p>My wife, when I explained what was happening, laughed until she could not breathe. My elder daughter, once she understood, nearly required medical attention herself. The youngest was mercifully too young to comprehend the precise geography of the situation. I drove the remaining kilometres home in a silence that was not, technically, silent at all.</p>
+<p>At home, I headed straight for the shower. Logical. Responsible. The thing to do. Our bathroom is on the third floor — a reasonable distance from the front door under normal circumstances. I stepped in, reached for the water, and did what anyone does at the end of a long day: cupped my hands and washed my face first.</p>
+<p>What followed is difficult to describe with appropriate dignity. I will say only that I came very close to removing the bathroom door from its hinges from the inside, and that my family — who could hear everything from two floors below — did not come to assist. They were laughing too hard.</p>
+<p>The shower did, eventually, help. The eyes took longer.</p>
+<h2>What I Learned</h2>
+<p>Pepper spray works. Enthusiastically, indiscriminately, and with a half-life on human skin that no one warns you about at the point of sale. The Rottweiler, for what it's worth, survived and was presumably fine after a thorough rinse in a Provençal canal. My thumb healed in a few days. My dignity took somewhat longer.</p>
+<p>Some lessons you only need to learn once.</p>
+<p>The road via Le Destet remains, despite everything, one of the finest afternoon drives in the Alpilles. We still take it every time.</p>`,
+    image: '/images/les_alpilles_road.jpg',
+    date: '2026-03-09',
+    category: 'Provence',
+    tags: ['Provence', 'Les Alpilles', 'Life in France'],
+    marcelTip: "If you ever find yourself holding pepper spray near a dog fight — and I sincerely hope you do not — keep your mouth closed, your eyes squinted, and under no circumstances touch your face afterwards.",
+    marcelType: 'hunter',
+  },
 ];
 
 export const recipes: Recipe[] = [
