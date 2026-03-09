@@ -9,9 +9,8 @@ export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const t = useTranslations('Navigation');
   const locale = useLocale();
-  const pathname = usePathname(); // locale-stripped pathname from next-intl
+  const pathname = usePathname();
 
-  // href values are locale-agnostic paths — next-intl Link adds prefix automatically
   const links = [
     { href: '/articles' as const, label: t('articles') },
     { href: '/videos' as const, label: t('videos') },
@@ -31,20 +30,20 @@ export default function Navigation() {
   return (
     <nav className="bg-olive text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-24">
           {/* Brand */}
           <Link
             href="/"
-            className="flex items-center gap-3 shrink-0 group"
+            className="flex items-center gap-4 shrink-0 group"
           >
             <Image
               src="/icons/Logo1.png"
               alt="French Countryside Living"
-              width={40}
-              height={40}
+              width={64}
+              height={64}
               className="rounded-full"
             />
-            <span className="font-heading font-bold text-lg md:text-xl text-parchment group-hover:text-amber transition-colors">
+            <span className="font-heading font-bold text-xl md:text-2xl text-parchment group-hover:text-amber transition-colors">
               French Countryside Living
             </span>
           </Link>
