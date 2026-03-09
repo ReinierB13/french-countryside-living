@@ -14,6 +14,7 @@ export default function Comments({ contentType, contentSlug }: Props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [honeypot, setHoneypot] = useState(''); // invisible to humans, filled by bots
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState('');
@@ -36,7 +37,7 @@ export default function Comments({ contentType, contentSlug }: Props) {
     const res = await fetch('/api/comments', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, message, content_type: contentType, content_slug: contentSlug }),
+      body: JSON.stringify({ name, email, message, honeypot, content_type: contentType, content_slug: contentSlug }),
     });
 
     setSubmitting(false);
@@ -90,6 +91,20 @@ export default function Comments({ contentType, contentSlug }: Props) {
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           <h3 className="font-heading text-lg font-semibold text-charcoal">Leave a comment</h3>
+
+          {/* Honeypot — hidden from humans, bots fill it in */}
+          <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
+            <label htmlFor="comment-website">Website (leave blank)</label>
+            <input
+              id="comment-website"
+              name="website"
+              type="text"
+              value={honeypot}
+              onChange={(e) => setHoneypot(e.target.value)}
+              tabIndex={-1}
+              autoComplete="off"
+            />
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>

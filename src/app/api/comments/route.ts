@@ -38,7 +38,12 @@ export async function GET(request: NextRequest) {
 // POST /api/comments
 export async function POST(request: NextRequest) {
   const body = await request.json();
-  const { name, email, message, content_type, content_slug } = body;
+  const { name, email, message, honeypot, content_type, content_slug } = body;
+
+  // Honeypot check — bots fill this field, humans never see it
+  if (honeypot) {
+    return NextResponse.json({ success: true }); // silently discard
+  }
 
   if (!name?.trim() || !email?.trim() || !message?.trim() || !content_type || !content_slug) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
