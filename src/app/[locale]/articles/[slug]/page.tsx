@@ -46,27 +46,43 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <>
       {/* Article hero */}
-      <div
-        className="relative min-h-[50vh] flex items-end bg-cover bg-center"
-        style={{ backgroundImage: `url(${article.image})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-black/0 via-transparent to-transparent" />
+      <div className="relative min-h-[50vh] flex items-end">
+        {/* Brightened background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${article.image})`, filter: 'brightness(1.3)' }}
+        />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 w-full pb-12 pt-24">
           <span className="inline-block bg-terracotta text-white text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide mb-4">
             {article.category}
           </span>
-          <h1 className="font-heading text-3xl sm:text-5xl font-bold text-white leading-tight mb-3">
+          <h1 className="font-heading text-3xl sm:text-5xl font-bold text-white leading-tight mb-3 drop-shadow-lg">
             {article.title}
           </h1>
-          <p className="font-body text-parchment/80 text-sm">{formattedDate}</p>
+          <p className="font-body text-parchment/90 text-sm drop-shadow">{formattedDate}</p>
         </div>
       </div>
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-        <Link href={`/${locale}/articles`} className="text-terracotta font-body text-sm hover:underline mb-8 block">
-          {t('backToArticles')}
-        </Link>
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+          <Link href={`/${locale}/articles`} className="text-terracotta font-body text-sm hover:underline">
+            {t('backToArticles')}
+          </Link>
+          <ShareButtons
+            title={article.title}
+            path={`/${locale}/articles/${article.slug}`}
+            labels={{
+              share: t('share'),
+              copyLink: t('copyLink'),
+              copied: t('copied'),
+              email: t('shareByEmail'),
+              whatsapp: t('shareWhatsApp'),
+              facebook: t('shareFacebook'),
+            }}
+            compact
+          />
+        </div>
 
         {/* Excerpt / intro */}
         <p className="font-body text-xl text-charcoal/80 italic leading-relaxed mb-8 border-l-4 border-amber pl-5">
@@ -108,6 +124,8 @@ export default async function ArticlePage({ params }: Props) {
             copyLink: t('copyLink'),
             copied: t('copied'),
             email: t('shareByEmail'),
+            whatsapp: t('shareWhatsApp'),
+            facebook: t('shareFacebook'),
           }}
         />
       </div>

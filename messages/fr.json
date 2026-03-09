@@ -35,15 +35,23 @@
   "ArticlePage": {
     "backToArticles": "← Retour aux articles",
     "relatedArticles": "À lire aussi",
-    "share": "Partager",
+    "share": "Partager cet article",
     "copyLink": "Copier le lien",
     "copied": "Copié !",
-    "shareByEmail": "Par email"
+    "shareByEmail": "Par email",
+    "shareWhatsApp": "WhatsApp",
+    "shareFacebook": "Facebook"
   },
   "VideosPage": {
     "title": "Vidéos",
     "subtitle": "Regardez la vie se dérouler dans la campagne provençale.",
-    "watchOnYoutube": "Voir sur YouTube"
+    "watchOnYoutube": "Voir sur YouTube",
+    "share": "Partager nos vidéos",
+    "copyLink": "Copier le lien",
+    "copied": "Copié !",
+    "shareByEmail": "Par email",
+    "shareWhatsApp": "WhatsApp",
+    "shareFacebook": "Facebook"
   },
   "RecipesPage": {
     "title": "Recettes",
@@ -62,10 +70,12 @@
     "prepTime": "Préparation",
     "cookTime": "Cuisson",
     "printRecipe": "Imprimer la recette",
-    "share": "Partager",
+    "share": "Partager cette recette",
     "copyLink": "Copier le lien",
     "copied": "Copié !",
-    "shareByEmail": "Par email"
+    "shareByEmail": "Par email",
+    "shareWhatsApp": "WhatsApp",
+    "shareFacebook": "Facebook"
   },
   "FrancePage": {
     "title": "Traditions",

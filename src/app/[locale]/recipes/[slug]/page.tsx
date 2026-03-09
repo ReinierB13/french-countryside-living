@@ -83,9 +83,24 @@ export default async function RecipePage({ params }: Props) {
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-        <Link href={`/${locale}/recipes`} className="text-terracotta font-body text-sm hover:underline mb-10 block">
-          {t('backToRecipes')}
-        </Link>
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-10">
+          <Link href={`/${locale}/recipes`} className="text-terracotta font-body text-sm hover:underline">
+            {t('backToRecipes')}
+          </Link>
+          <ShareButtons
+            title={recipe.title}
+            path={`/${locale}/recipes/${recipe.slug}`}
+            labels={{
+              share: t('share'),
+              copyLink: t('copyLink'),
+              copied: t('copied'),
+              email: t('shareByEmail'),
+              whatsapp: t('shareWhatsApp'),
+              facebook: t('shareFacebook'),
+            }}
+            compact
+          />
+        </div>
 
         {recipe.story && (
           <div className="max-w-none mb-12 pb-12 border-b border-charcoal/10">
@@ -163,6 +178,8 @@ export default async function RecipePage({ params }: Props) {
             copyLink: t('copyLink'),
             copied: t('copied'),
             email: t('shareByEmail'),
+            whatsapp: t('shareWhatsApp'),
+            facebook: t('shareFacebook'),
           }}
         />
       </div>

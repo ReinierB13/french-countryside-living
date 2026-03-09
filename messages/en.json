@@ -35,15 +35,23 @@
   "ArticlePage": {
     "backToArticles": "← Back to Articles",
     "relatedArticles": "More Reading",
-    "share": "Share",
+    "share": "Share this article",
     "copyLink": "Copy link",
     "copied": "Copied!",
-    "shareByEmail": "Email"
+    "shareByEmail": "Email",
+    "shareWhatsApp": "WhatsApp",
+    "shareFacebook": "Facebook"
   },
   "VideosPage": {
     "title": "Videos",
     "subtitle": "Watch life unfold in the Provençal countryside.",
-    "watchOnYoutube": "Watch on YouTube"
+    "watchOnYoutube": "Watch on YouTube",
+    "share": "Share our videos",
+    "copyLink": "Copy link",
+    "copied": "Copied!",
+    "shareByEmail": "Email",
+    "shareWhatsApp": "WhatsApp",
+    "shareFacebook": "Facebook"
   },
   "RecipesPage": {
     "title": "Recipes",
@@ -62,10 +70,12 @@
     "prepTime": "Prep",
     "cookTime": "Cook",
     "printRecipe": "Print Recipe",
-    "share": "Share",
+    "share": "Share this recipe",
     "copyLink": "Copy link",
     "copied": "Copied!",
-    "shareByEmail": "Email"
+    "shareByEmail": "Email",
+    "shareWhatsApp": "WhatsApp",
+    "shareFacebook": "Facebook"
   },
   "FrancePage": {
     "title": "Traditions",
