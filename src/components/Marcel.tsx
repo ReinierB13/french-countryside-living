@@ -26,11 +26,11 @@ export default function Marcel({ type = 'default', text, className = '' }: Marce
   return (
     <>
       <div
-        className={`flex items-start gap-5 bg-amber/10 border-l-4 border-terracotta rounded-r-lg p-5 my-8 shadow-sm ${className}`}
+        className={`flex items-center gap-6 bg-amber/10 border-l-4 border-terracotta rounded-r-lg p-5 my-8 shadow-sm ${className}`}
       >
         <button
           onClick={() => setLightboxOpen(true)}
-          className="flex-shrink-0 w-24 h-24 relative cursor-zoom-in hover:scale-105 transition-transform duration-200"
+          className="flex-shrink-0 w-36 h-36 relative cursor-zoom-in hover:scale-105 transition-transform duration-200"
           aria-label="View Marcel full size"
           title="Click to enlarge"
         >
@@ -58,7 +58,7 @@ export default function Marcel({ type = 'default', text, className = '' }: Marce
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
           onClick={() => setLightboxOpen(false)}
         >
-          <div className="relative w-72 h-72 sm:w-96 sm:h-96">
+          <div className="relative w-80 h-80 sm:w-[480px] sm:h-[480px]">
             <Image
               src={src}
               alt="Marcel the Frog"
