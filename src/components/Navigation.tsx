@@ -30,7 +30,7 @@ export default function Navigation() {
   return (
     <nav className="bg-olive text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-32">
           {/* Brand */}
           <Link
             href="/"
@@ -39,11 +39,11 @@ export default function Navigation() {
             <Image
               src="/icons/Logo1.png"
               alt="French Countryside Living"
-              width={64}
-              height={64}
+              width={80}
+              height={80}
               className="rounded-full"
             />
-            <span className="font-heading font-bold text-xl md:text-2xl text-parchment group-hover:text-amber transition-colors">
+            <span className="font-heading font-bold text-2xl md:text-3xl text-parchment group-hover:text-amber transition-colors">
               French Countryside Living
             </span>
           </Link>
