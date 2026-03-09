@@ -2,12 +2,12 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { Resend } from 'resend';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY! // service role key for server-side writes
-);
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+function getSupabase() {
+  return createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
+}
 
 // GET /api/comments?slug=xxx&type=article
 export async function GET(request: NextRequest) {
@@ -19,6 +19,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: 'Missing slug or type' }, { status: 400 });
   }
 
+  const supabase = getSupabase();
   const { data, error } = await supabase
     .from('comments')
     .select('id, name, message, created_at')
@@ -47,6 +48,8 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Message too long' }, { status: 400 });
   }
 
+  const supabase = getSupabase();
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const { error } = await supabase.from('comments').insert({
     name: name.trim(),
     email: email.trim().toLowerCase(),
