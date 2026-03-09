@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import NewsletterSignup from './NewsletterSignup';
 
 interface FooterProps {
@@ -34,8 +35,17 @@ export default function Footer({ locale }: FooterProps) {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href={`/${locale}`} className="font-heading text-xl font-bold text-parchment hover:text-amber transition-colors">
-              French Countryside Living
+            <Link href={`/${locale}`} className="inline-flex items-center gap-3 group mb-1">
+              <Image
+                src="/icons/Logo1.png"
+                alt="French Countryside Living"
+                width={52}
+                height={52}
+                className="rounded-full opacity-90 group-hover:opacity-100 transition-opacity"
+              />
+              <span className="font-heading text-xl font-bold text-parchment group-hover:text-amber transition-colors">
+                French Countryside Living
+              </span>
             </Link>
             <p className="font-body text-sm text-parchment/60 mt-3 leading-relaxed max-w-sm">
               Living, cooking and life in rural Provence — stories from the South of France.

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
+import Image from 'next/image';
 
 export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -34,9 +35,18 @@ export default function Navigation() {
           {/* Brand */}
           <Link
             href="/"
-            className="font-heading font-bold text-lg md:text-xl text-parchment hover:text-amber transition-colors shrink-0"
+            className="flex items-center gap-3 shrink-0 group"
           >
-            French Countryside Living
+            <Image
+              src="/icons/Logo1.png"
+              alt="French Countryside Living"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
+            <span className="font-heading font-bold text-lg md:text-xl text-parchment group-hover:text-amber transition-colors">
+              French Countryside Living
+            </span>
           </Link>
 
           {/* Desktop nav */}
