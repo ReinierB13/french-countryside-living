@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import Marcel from '@/components/Marcel';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import ShareButtons from '@/components/ShareButtons';
+import Comments from '@/components/Comments';
 import { categoryConfig } from '@/components/RecipeCard';
 import { getRecipeBySlug, recipes } from '@/lib/content';
 import { routing } from '@/i18n/routing';
@@ -182,6 +183,9 @@ export default async function RecipePage({ params }: Props) {
             facebook: t('shareFacebook'),
           }}
         />
+
+        {/* Comments */}
+        <Comments contentType="recipe" contentSlug={recipe.slug} />
       </div>
 
       {/* Newsletter CTA */}

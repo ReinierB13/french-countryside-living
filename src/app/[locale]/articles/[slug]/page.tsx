@@ -6,6 +6,7 @@ import Marcel from '@/components/Marcel';
 import ArticleCard from '@/components/ArticleCard';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import ShareButtons from '@/components/ShareButtons';
+import Comments from '@/components/Comments';
 import { getArticleBySlug, getRelatedArticles, articles } from '@/lib/content';
 import { routing } from '@/i18n/routing';
 
@@ -128,6 +129,9 @@ export default async function ArticlePage({ params }: Props) {
             facebook: t('shareFacebook'),
           }}
         />
+
+        {/* Comments */}
+        <Comments contentType="article" contentSlug={article.slug} />
       </div>
 
       {/* Newsletter CTA */}
