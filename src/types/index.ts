@@ -27,6 +27,7 @@ export interface Recipe {
   ingredients: string[];
   instructions: string[];
   story?: string;
+  notes?: string[];
   marcelTip?: string;
   marcelType?: MarcelType;
   videoId?: string;

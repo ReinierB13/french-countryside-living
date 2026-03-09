@@ -152,6 +152,20 @@ export default async function RecipePage({ params }: Props) {
               ))}
             </ol>
 
+            {/* Notes */}
+            {recipe.notes && recipe.notes.length > 0 && (
+              <div className="mt-10 pt-8 border-t border-charcoal/10">
+                <h3 className="font-heading text-xl font-semibold text-charcoal mb-5">Notes</h3>
+                <ul className="space-y-4">
+                  {recipe.notes.map((note, i) => (
+                    <li key={i} className="font-body text-sm text-charcoal/70 leading-relaxed">
+                      {note}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
             {/* Embedded video if available */}
             {recipe.videoId && (
               <div className="mt-10">

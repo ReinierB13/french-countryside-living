@@ -349,6 +349,12 @@ export const recipes: Recipe[] = [
       'Taste and correct seasoning. Stir in the crème fraîche and cook for a further 5 minutes. Remove from heat and stir in the butter until melted and glossy. Serve over pasta, spooned onto soft polenta, or alongside thick-cut rustic bread.',
     ],
     story: `There is a particular kind of boar that nobody fights over at the meat share after a battue in Les Alpilles. The older males — the big ones, the ones that have been routing through the garrigue for a decade — come with character. Strong character. The kind that announces itself the moment you open the cool box. Put one of those on the braai and you will know about it. The neighbours will know about it. Marcel will make a face and pour himself another glass of wine.\n\nWhat you do instead is mince it. A long Bolognese — red wine, anchovies, tomatoes, two hours on the stove — and that assertive wild odour slowly surrenders into something rich, deep, and genuinely worth eating. The older boar, it turns out, was perfect all along. It just needed the right treatment.\n\nI run a professional mincer through a fair few kilos of sanglier each hunting season. A small Lidl machine works just as well for a single shoulder. Either way, a coarse mince is what you want — enough texture to remind you this is not supermarket beef, but fine enough to melt into the sauce over the long braise. Serve over pasta, soft polenta, or with bread thick enough to hold its own against the sauce.`,
+    notes: [
+      'On the meat: Shoulder is ideal — it has enough connective tissue to break down beautifully over the long cook. Older boar, despite its reputation, is actually well-suited to this preparation. The bold aromatics, wine, and slow heat tame the gaminess entirely.',
+      'On mincing: A coarse mince gives more texture than a fine one. If you\'re hand-chopping, aim for rough 5mm pieces — some variation in size adds character.',
+      'On the anchovies: Don\'t skip them. They\'re not there to make it taste of fish; they dissolve completely and add the kind of savoury depth that makes people ask what your secret is.',
+      'Food safety: Wild boar can carry trichinella. Always cook minced boar to a core temperature of 71 °C (160 °F) minimum. With a braise of this length, that\'s easily achieved — but it\'s worth knowing.',
+    ],
     marcelTip: 'Do not skip the anchovies. They dissolve completely and add the kind of savoury depth that makes people ask what your secret is.',
     marcelType: 'cooking',
   },
