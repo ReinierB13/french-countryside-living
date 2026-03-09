@@ -316,7 +316,7 @@ export const recipes: Recipe[] = [
     slug: 'sanglier-bolognese',
     title: 'Sanglier Bolognese',
     excerpt: 'A long, slow Bolognese made with minced wild boar — red wine, anchovies, tomatoes, and two hours on the stove.',
-    image: '/images/recipe-bolognese.jpg',
+    image: '/images/ecipe-bolognese.jpg',
     date: '2026-03-09',
     category: 'wild-game',
     servings: 6,
