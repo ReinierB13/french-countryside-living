@@ -353,7 +353,7 @@ export const articles: Article[] = [
 <p>Pepper spray works. Enthusiastically, indiscriminately, and with a half-life on human skin that no one warns you about at the point of sale. The Rottweiler, for what it's worth, survived and was presumably fine after a thorough rinse in a Provençal canal. My thumb healed in a few days. My dignity took somewhat longer.</p>
 <p>Some lessons you only need to learn once.</p>
 <p>The road via Le Destet remains, despite everything, one of the finest afternoon drives in the Alpilles. We still take it every time.</p>`,
-    image: '/images/les_alpilles_road.jpg',
+    image: '/images/caisses.png',
     date: '2026-03-09',
     category: 'Provence',
     tags: ['Provence', 'Les Alpilles', 'Life in France'],
