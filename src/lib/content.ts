@@ -320,7 +320,7 @@ export const articles: Article[] = [
 <p>Two people — a man and a woman — rolling in the dust at the side of the road with a large black shape and a Belgian Malinois thrashing between them. My first thought, I will admit, was <em>sanglier</em> — wild boar. You spend enough time hunting wild boar in these hills and your brain starts to see them everywhere. But no. It was a Rottweiler — a big one, maybe fifty kilograms of pure bad intention — and it and the Malinois were doing their absolute level best to kill each other. These were not a couple — just two people who had made the unfortunate decision to walk their dogs off-leash on the same stretch of road at the same time.</p>
 <p>I stopped the car. The kids were in the back. My wife said “be careful.” I told her I couldn't just drive past — there is too much of the Samaritan in me for that. But it was more than instinct. The woman was in real danger. She was trying to drag her Malinois away from the Rottweiler, and the Rottweiler's teeth were flashing centimetres from her face.</p>
 <p>I grabbed the pepper spray from the door pocket — I had been keeping it there as insurance against a neighbour's dog, a large animal that barked ferociously and liked to throw itself at the low fence between our houses whenever the kids were in the garden. I had never needed to use it.</p>
-<p>The man was perhaps sixty-five kilograms if he was soaking wet, wrestling with an animal that was nearly half his weight and entirely committed to the fight. The woman was smaller still. They were losing.</p>
+<p>The man was perhaps sixty-five kilograms if he was soaking wet, wrestling with an animal that was almost his weight and entirely committed to the fight. The woman was smaller still. They were losing.</p>
 <p>“Can I help? I have pepper spray — shall I use it?”</p>
 <p>“Yes,” they said. “Do it.”</p>
 <h2>The Great Pepper Spray Experiment</h2>
@@ -357,7 +357,7 @@ export const articles: Article[] = [
     date: '2026-03-09',
     category: 'Provence',
     tags: ['Provence', 'Les Alpilles', 'Life in France'],
-    marcelTip: "If you ever find yourself holding pepper spray near a dog fight — and I sincerely hope you do not — keep your mouth closed, your eyes squinted, and under no circumstances touch your face afterwards.",
+    marcelTip: "Walk softly and carry a big stick.",
     marcelType: 'hunter',
   },
 ];
