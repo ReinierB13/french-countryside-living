@@ -27,7 +27,7 @@ export default function Footer({ locale }: FooterProps) {
       {/* Newsletter strip */}
       <NewsletterSignup
         title="Join the Countryside"
-        description="Stories, recipes, and seasonal updates from rural Provence — delivered to your inbox."
+        description="Stories, recipes, and seasonal updates from rural Provence - delivered to your inbox."
       />
 
       {/* Main footer */}
@@ -48,7 +48,7 @@ export default function Footer({ locale }: FooterProps) {
               </span>
             </Link>
             <p className="font-body text-sm text-parchment/60 mt-3 leading-relaxed max-w-sm">
-              Living, cooking and life in rural Provence — stories from the South of France.
+              Living, cooking and life in rural Provence - stories from the South of France.
             </p>
             <div className="flex gap-4 mt-5">
               <a

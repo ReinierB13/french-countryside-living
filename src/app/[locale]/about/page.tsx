@@ -7,7 +7,7 @@ import NewsletterSignup from '@/components/NewsletterSignup';
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'About',
-    description: 'About French Countryside Living — stories from rural Provence.',
+    description: 'About French Countryside Living - stories from rural Provence.',
   };
 }
 
@@ -41,13 +41,13 @@ export default async function AboutPage({
               This site grew from a simple impulse: to document the life that exists here, in the hills and villages of Provence, before it changes or disappears. The hunts at dawn. The long meals that start at noon and end somewhere near sunset. The olive harvest in November with the whole family. The winter truffle markets. The first tomatoes of summer.
             </p>
             <p>
-              It is not about a single person. It is about a place — rural southern France — and a way of living that still works. A life close to the land, close to the seasons, close to the fire.
+              It is not about a single person. It is about a place - rural southern France - and a way of living that still works. A life close to the land, close to the seasons, close to the fire.
             </p>
             <p>
-              The cooking here is not refined cooking. It is peasant cooking in the best sense — honest, generous, and deeply satisfying. Wild boar that has been marinated for two days and cooked for four hours. Lamb chops grilled over wood coals. Tapenade made with olives from the tree in the courtyard. These are not restaurant dishes. They are real food.
+              The cooking here is not refined cooking. It is peasant cooking in the best sense - honest, generous, and deeply satisfying. Wild boar that has been marinated for two days and cooked for four hours. Lamb chops grilled over wood coals. Tapenade made with olives from the tree in the courtyard. These are not restaurant dishes. They are real food.
             </p>
             <p>
-              We also cook South African — the braai, the potjie, the fire cooking traditions that translate perfectly to the Provençal outdoor kitchen. The garrigue makes excellent fire. The wine is better than in the Karoo. The principle is the same: cook outside, cook slowly, cook together.
+              We also cook South African - the braai, the potjie, the fire cooking traditions that translate perfectly to the Provençal outdoor kitchen. The garrigue makes excellent fire. The wine is better than in the Karoo. The principle is the same: cook outside, cook slowly, cook together.
             </p>
           </div>
         </section>
@@ -61,7 +61,7 @@ export default async function AboutPage({
               <h2 className="font-heading text-2xl font-bold text-charcoal mb-4">{t('marcelTitle')}</h2>
               <p className="font-body text-charcoal/75 leading-relaxed">{t('marcelDesc')}</p>
               <p className="font-body text-charcoal/75 leading-relaxed mt-4">
-                Marcel is inspired by the great Franco-Belgian comic tradition — Tintin, Astérix — characters with big personalities, dry wit, and an unshakeable confidence in their own way of doing things. He is a small frog with very strong opinions about food, hunting, and the correct way to make tapenade.
+                Marcel is inspired by the great Franco-Belgian comic tradition - Tintin, Astérix - characters with big personalities, dry wit, and an unshakeable confidence in their own way of doing things. He is a small frog with very strong opinions about food, hunting, and the correct way to make tapenade.
               </p>
             </div>
             <div>
@@ -88,12 +88,12 @@ export default async function AboutPage({
               {
                 icon: '📝',
                 title: 'Articles',
-                desc: 'Stories from the countryside — hunting, the olive harvest, village life, seasonal food, and the slow rhythms of Provence.',
+                desc: 'Stories from the countryside - hunting, the olive harvest, village life, seasonal food, and the slow rhythms of Provence.',
               },
               {
                 icon: '🍲',
                 title: 'Recipes',
-                desc: 'Wild boar daube, potjiekos, braai lamb, tapenade — honest food from field and fire.',
+                desc: 'Wild boar daube, potjiekos, braai lamb, tapenade - honest food from field and fire.',
               },
               {
                 icon: '▶',

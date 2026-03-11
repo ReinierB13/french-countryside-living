@@ -44,12 +44,12 @@ export default async function FrancePage({
               {
                 icon: '🥖',
                 title: 'The Boulangerie',
-                desc: 'Every village, however small, has its baker. Fresh bread in the morning is not a luxury in France — it is a right.',
+                desc: 'Every village, however small, has its baker. Fresh bread in the morning is not a luxury in France - it is a right.',
               },
               {
                 icon: '🍷',
                 title: 'Le Marché',
-                desc: 'The weekly market is the heartbeat of rural France. Farmers, cheesemakers, fishmongers — all gathered in the village square.',
+                desc: 'The weekly market is the heartbeat of rural France. Farmers, cheesemakers, fishmongers - all gathered in the village square.',
               },
               {
                 icon: '🎳',
@@ -59,7 +59,7 @@ export default async function FrancePage({
               {
                 icon: '🐂',
                 title: 'Les Abrivados',
-                desc: 'The thundering Camargue bulls driven through village streets — a spectacle of horsemanship, courage, and ancient tradition.',
+                desc: 'The thundering Camargue bulls driven through village streets - a spectacle of horsemanship, courage, and ancient tradition.',
               },
             ].map((item) => (
               <div key={item.title} className="bg-white border border-parchment shadow-sm rounded-sm p-6">

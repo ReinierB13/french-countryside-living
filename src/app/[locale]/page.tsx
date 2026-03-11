@@ -10,7 +10,7 @@ import { getFeaturedArticles, getLatestVideos, getFeaturedRecipes } from '@/lib/
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: 'French Countryside Living — Hunting, Cooking & Life in Rural Provence',
+    title: 'French Countryside Living - Hunting, Cooking & Life in Rural Provence',
     description: 'Stories, recipes, and countryside life from rural Provence.',
   };
 }
@@ -162,7 +162,7 @@ export default async function HomePage({
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <Marcel
           type="cooking"
-          text="Brown the meat properly — if it doesn't smell amazing yet, you're doing it wrong. Take your time with the daube. Three hours is not optional."
+          text="Brown the meat properly - if it doesn't smell amazing yet, you're doing it wrong. Take your time with the daube. Three hours is not optional."
         />
       </div>
 
@@ -197,7 +197,7 @@ export default async function HomePage({
               },
               {
                 title: 'Wine & Olive Oil',
-                desc: 'The ancient traditions of vine and olive — Provence at its purest.',
+                desc: 'The ancient traditions of vine and olive - Provence at its purest.',
                 icon: '🫒',
                 href: `/${locale}/provence`,
               },

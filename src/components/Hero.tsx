@@ -14,19 +14,12 @@ export default function Hero({
   imageSrc,
   imageAlt,
   height = 'large',
-  overlay = 'medium',
   children,
 }: HeroProps) {
   const heights = {
     full: 'min-h-screen',
     large: 'min-h-[70vh]',
     medium: 'min-h-[40vh]',
-  };
-
-  const overlays = {
-    light: 'bg-black/0',
-    medium: 'bg-black/0',
-    dark: 'bg-black/10',
   };
 
   return (
@@ -37,14 +30,10 @@ export default function Hero({
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${imageSrc})` }}
+        style={{ backgroundImage: `url(${imageSrc})`, filter: 'brightness(1.3)' }}
         role="img"
         aria-label={imageAlt}
       />
-
-      {/* Gradient overlay */}
-      <div className={`absolute inset-0 ${overlays[overlay]}`} />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/0 via-transparent to-transparent" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto py-20">

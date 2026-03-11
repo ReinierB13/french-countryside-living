@@ -9,7 +9,7 @@ import { videos } from '@/lib/content';
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Videos',
-    description: 'Watch life unfold in the Provençal countryside — hunting, cooking, and village life.',
+    description: 'Watch life unfold in the Provençal countryside - hunting, cooking, and village life.',
   };
 }
 
@@ -44,7 +44,7 @@ export default async function VideosPage({
       <section className="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
         <div className="mb-10 flex flex-wrap items-center justify-between gap-4">
           <p className="font-body text-charcoal/60 text-sm">
-            {videos.length} videos — and more on our{' '}
+            {videos.length} videos - and more on our{' '}
             <a
               href="https://www.youtube.com/@christophereinier"
               target="_blank"
@@ -55,7 +55,7 @@ export default async function VideosPage({
             </a>
           </p>
           <ShareButtons
-            title="French Countryside Living — Videos"
+            title="French Countryside Living - Videos"
             path={`/${locale}/videos`}
             labels={shareLabels}
             compact
@@ -68,13 +68,13 @@ export default async function VideosPage({
       <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-8">
         <Marcel
           type="default"
-          text="Subscribe to the YouTube channel. We add new videos every month — hunts, recipes, walks through the countryside. It's free, and it's better than television."
+          text="Subscribe to the YouTube channel. We add new videos every month - hunts, recipes, walks through the countryside. It's free, and it's better than television."
         />
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
         <ShareButtons
-          title="French Countryside Living — Videos"
+          title="French Countryside Living - Videos"
           path={`/${locale}/videos`}
           labels={shareLabels}
         />

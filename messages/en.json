@@ -19,17 +19,17 @@
     "recipes": "From the Kitchen",
     "viewAll": "View all",
     "exploreProvence": "Explore Provence",
-    "exploreProvenceDesc": "Stone villages, lavender fields, ancient olive groves — the soul of the South of France.",
+    "exploreProvenceDesc": "Stone villages, lavender fields, ancient olive groves - the soul of the South of France.",
     "franceTitle": "Life in Rural France",
     "franceDesc": "France is not just Paris. Beyond the boulevards lies an ancient countryside of hunting traditions, seasonal markets, and a way of life unchanged for centuries. Come discover the real France.",
     "exploreFrance": "Explore France",
     "discoverMore": "Discover more",
     "newsletterTitle": "Stay Connected",
-    "newsletterDesc": "Join us for stories from the Provençal countryside — hunting seasons, recipes, and the slow rhythm of rural life."
+    "newsletterDesc": "Join us for stories from the Provençal countryside - hunting seasons, recipes, and the slow rhythm of rural life."
   },
   "ArticlesPage": {
     "title": "Articles",
-    "subtitle": "Stories from the countryside — hunting, cooking, and the rhythm of Provençal life.",
+    "subtitle": "Stories from the countryside - hunting, cooking, and the rhythm of Provençal life.",
     "readMore": "Read more"
   },
   "ArticlePage": {
@@ -93,19 +93,19 @@
   },
   "PotagerPage": {
     "title": "Le Potager",
-    "subtitle": "Growing food in the Provençal sun — vegetables, herbs, and the quiet rhythm of the kitchen garden.",
+    "subtitle": "Growing food in the Provençal sun - vegetables, herbs, and the quiet rhythm of the kitchen garden.",
     "articlesTitle": "Potager Articles",
     "videosTitle": "Potager Videos",
     "introTitle": "The Kitchen Garden",
-    "noArticles": "No potager articles yet — check back soon.",
-    "noVideos": "No potager videos yet — check back soon."
+    "noArticles": "No potager articles yet - check back soon.",
+    "noVideos": "No potager videos yet - check back soon."
   },
   "AboutPage": {
     "title": "About",
     "subtitle": "Welcome to French Countryside Living.",
-    "content": "This is a place dedicated to documenting real life in rural Provence — the hunts, the harvests, the meals cooked over fire, and the slow rhythms of countryside living.",
+    "content": "This is a place dedicated to documenting real life in rural Provence - the hunts, the harvests, the meals cooked over fire, and the slow rhythms of countryside living.",
     "marcelTitle": "Meet Marcel",
-    "marcelDesc": "Marcel the Frog is our cheerful mascot — a countryside philosopher who appears throughout the site to offer tips, wisdom, and the occasional wry observation about life in the South of France."
+    "marcelDesc": "Marcel the Frog is our cheerful mascot - a countryside philosopher who appears throughout the site to offer tips, wisdom, and the occasional wry observation about life in the South of France."
   },
   "ContactPage": {
     "title": "Contact",
@@ -119,7 +119,7 @@
   },
   "Newsletter": {
     "title": "Join the Countryside",
-    "desc": "Stories, recipes, and seasonal updates from rural Provence — delivered to your inbox.",
+    "desc": "Stories, recipes, and seasonal updates from rural Provence - delivered to your inbox.",
     "placeholder": "Your email address",
     "button": "Subscribe",
     "privacy": "No spam, ever. Unsubscribe any time."

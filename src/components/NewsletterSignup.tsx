@@ -10,7 +10,7 @@ interface NewsletterSignupProps {
 
 export default function NewsletterSignup({
   title = 'Join the Countryside',
-  description = 'Stories, recipes, and seasonal updates from rural Provence — delivered to your inbox.',
+  description = 'Stories, recipes, and seasonal updates from rural Provence - delivered to your inbox.',
   compact = false,
 }: NewsletterSignupProps) {
   const [email, setEmail] = useState('');

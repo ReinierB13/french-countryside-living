@@ -7,7 +7,7 @@ import { articles } from '@/lib/content';
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Articles',
-    description: 'Stories from the countryside — hunting, cooking, and the rhythm of Provençal life.',
+    description: 'Stories from the countryside - hunting, cooking, and the rhythm of Provençal life.',
   };
 }
 

@@ -112,7 +112,7 @@ export default function Navigation() {
                 locale={otherLocale}
                 className="inline-block text-parchment/60 hover:text-amber text-sm font-body font-semibold uppercase tracking-widest transition-colors border border-parchment/20 hover:border-amber/50 px-3 py-1.5 rounded-sm"
               >
-                {otherLocale === 'fr' ? 'FR — Français' : 'EN — English'}
+                {otherLocale === 'fr' ? 'FR - Français' : 'EN - English'}
               </Link>
             </div>
           </div>

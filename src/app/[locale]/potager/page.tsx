@@ -10,7 +10,7 @@ import { articles, videos } from '@/lib/content';
 export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Le Potager',
-    description: 'Growing food in the Provençal sun — vegetables, herbs, and the quiet rhythm of the kitchen garden.',
+    description: 'Growing food in the Provençal sun - vegetables, herbs, and the quiet rhythm of the kitchen garden.',
   };
 }
 
@@ -49,7 +49,7 @@ export default async function PotagerPage({
                 A Provençal potager is not just a vegetable garden. It is a statement of intent. You are saying: I belong here. I will tend this soil. I will eat what this ground gives me.
               </p>
               <p>
-                In spring, the planning begins — rows of tomatoes, aubergines, courgettes, peppers, and salads. In summer, the garden gives back everything you put in, and more. In autumn, the last harvests before the ground rests.
+                In spring, the planning begins - rows of tomatoes, aubergines, courgettes, peppers, and salads. In summer, the garden gives back everything you put in, and more. In autumn, the last harvests before the ground rests.
               </p>
               <p>
                 There is something deeply satisfying about pulling a tomato from a plant you have watered every day since May. The potager is patience made edible.
@@ -95,7 +95,7 @@ export default async function PotagerPage({
         <div className="max-w-3xl mx-auto mb-20">
           <Marcel
             type="gardener"
-            text="Plant your tomatoes after the Ice Saints — les Saints de Glace — in mid-May. The old farmers are right about this. Do not rush the tomatoes."
+            text="Plant your tomatoes after the Ice Saints - les Saints de Glace - in mid-May. The old farmers are right about this. Do not rush the tomatoes."
           />
         </div>
 

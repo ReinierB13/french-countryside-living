@@ -37,7 +37,7 @@ export default function ContactForm() {
         <p className="text-3xl mb-3">🐸</p>
         <p className="font-heading text-xl font-semibold text-charcoal mb-2">Message received!</p>
         <p className="font-body text-charcoal/70 text-sm">
-          Thank you — we&apos;ll get back to you when we return from the field.
+          Thank you - we&apos;ll get back to you when we return from the field.
         </p>
       </div>
     );

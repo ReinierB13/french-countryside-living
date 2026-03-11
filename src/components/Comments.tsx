@@ -76,7 +76,7 @@ export default function Comments({ contentType, contentSlug }: Props) {
         </div>
       ) : (
         <p className="font-body text-sm text-charcoal/50 mb-10">
-          No comments yet — be the first to share your thoughts.
+          No comments yet - be the first to share your thoughts.
         </p>
       )}
 
@@ -85,14 +85,14 @@ export default function Comments({ contentType, contentSlug }: Props) {
         <div className="bg-olive/10 border border-olive/20 p-5">
           <p className="font-heading font-semibold text-olive mb-1">Thank you for your comment!</p>
           <p className="font-body text-sm text-charcoal/70">
-            It will appear here once approved — usually within a day or two.
+            It will appear here once approved - usually within a day or two.
           </p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-4">
           <h3 className="font-heading text-lg font-semibold text-charcoal">Leave a comment</h3>
 
-          {/* Honeypot — hidden from humans, bots fill it in */}
+          {/* Honeypot - hidden from humans, bots fill it in */}
           <div aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}>
             <label htmlFor="comment-website">Website (leave blank)</label>
             <input

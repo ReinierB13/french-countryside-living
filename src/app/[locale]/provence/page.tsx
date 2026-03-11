@@ -45,13 +45,13 @@ export default async function ProvencePage({
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="prose-countryside">
               <p>
-                Provence is a landscape of extraordinary variety compressed into a relatively small area. From the white limestone ridges of the Alpilles to the red ochre cliffs of the Lubéron, from the salt marshes of the Camargue to the lavender plateaus of the Vaucluse — every corner is different and every corner is beautiful.
+                Provence is a landscape of extraordinary variety compressed into a relatively small area. From the white limestone ridges of the Alpilles to the red ochre cliffs of the Lubéron, from the salt marshes of the Camargue to the lavender plateaus of the Vaucluse - every corner is different and every corner is beautiful.
               </p>
               <p>
-                The villages are perched. This is the first thing you notice. The medieval builders of Provence had good reason to build high — protection from raiders and bandits who swept across the plains. The result, centuries later, is a series of villages that seem to grow organically from the rock itself.
+                The villages are perched. This is the first thing you notice. The medieval builders of Provence had good reason to build high - protection from raiders and bandits who swept across the plains. The result, centuries later, is a series of villages that seem to grow organically from the rock itself.
               </p>
               <p>
-                Les Baux-de-Provence, Gordes, Roussillon, Moustiers-Sainte-Marie — these are the famous names. But the real Provence is in the less-visited places. The village with three hundred inhabitants, one bar, one boulangerie, and a church that rings the hours with a slightly flat bell.
+                Les Baux-de-Provence, Gordes, Roussillon, Moustiers-Sainte-Marie - these are the famous names. But the real Provence is in the less-visited places. The village with three hundred inhabitants, one bar, one boulangerie, and a church that rings the hours with a slightly flat bell.
               </p>
             </div>
 
@@ -74,7 +74,7 @@ export default async function ProvencePage({
                 },
                 {
                   name: 'Roussillon',
-                  desc: 'The village of ochre — every building painted in shades of red, orange, and gold.',
+                  desc: 'The village of ochre - every building painted in shades of red, orange, and gold.',
                   region: 'Lubéron',
                 },
               ].map((village) => (
@@ -98,7 +98,7 @@ export default async function ProvencePage({
         <div className="max-w-3xl mx-auto mb-20">
           <Marcel
             type="rose"
-            text="Visit the villages in the off-season. October is perfect — the light is extraordinary, the crowds are gone, and the restaurants are still open. You can actually hear yourself think."
+            text="Visit the villages in the off-season. October is perfect - the light is extraordinary, the crowds are gone, and the restaurants are still open. You can actually hear yourself think."
           />
         </div>
 
@@ -113,7 +113,7 @@ export default async function ProvencePage({
               {
                 icon: '🍅',
                 title: 'The Produce Market',
-                desc: 'Tomatoes, aubergines, peppers, courgettes, salads — the vegetables of the South, sold by the farmers who grew them. Come early. The best is gone by 9am.',
+                desc: 'Tomatoes, aubergines, peppers, courgettes, salads - the vegetables of the South, sold by the farmers who grew them. Come early. The best is gone by 9am.',
               },
               {
                 icon: '🧀',
@@ -166,10 +166,10 @@ export default async function ProvencePage({
               <h3 className="font-heading text-xl font-semibold text-charcoal mb-4">🍷 Wine</h3>
               <div className="prose-countryside">
                 <p>
-                  Provence is France&apos;s oldest wine region. The Greeks planted vines here before the Romans arrived, and wine has been made on these hillsides for more than 2,600 years. The great appellations of the region — Châteauneuf-du-Pape, Gigondas, Bandol, Palette — represent some of the finest wines in France.
+                  Provence is France&apos;s oldest wine region. The Greeks planted vines here before the Romans arrived, and wine has been made on these hillsides for more than 2,600 years. The great appellations of the region - Châteauneuf-du-Pape, Gigondas, Bandol, Palette - represent some of the finest wines in France.
                 </p>
                 <p>
-                  But it is rosé that Provence is most famous for today. The pale, dry rosé of Provence — utterly unlike the sweet rosés of elsewhere — is the wine of summer in the South. Served cold, in a café in the shade of the plane trees, it is perfection.
+                  But it is rosé that Provence is most famous for today. The pale, dry rosé of Provence - utterly unlike the sweet rosés of elsewhere - is the wine of summer in the South. Served cold, in a café in the shade of the plane trees, it is perfection.
                 </p>
               </div>
             </div>
@@ -177,10 +177,10 @@ export default async function ProvencePage({
               <h3 className="font-heading text-xl font-semibold text-charcoal mb-4">🫒 Olive Oil</h3>
               <div className="prose-countryside">
                 <p>
-                  The olive trees of Provence are among the oldest cultivated plants in France. Some of the trees in the Alpilles were already ancient when the Romans arrived. The oil they produce — fruity, peppery, complex — is classified under the AOP designation, guaranteeing its origin and quality.
+                  The olive trees of Provence are among the oldest cultivated plants in France. Some of the trees in the Alpilles were already ancient when the Romans arrived. The oil they produce - fruity, peppery, complex - is classified under the AOP designation, guaranteeing its origin and quality.
                 </p>
                 <p>
-                  The moulin — the olive mill — is an essential part of November in Provence. Families bring their harvest in sacks and crates, and within 24 hours it is converted to oil. The cooperative mills operate around the clock during the harvest season, seven days a week.
+                  The moulin - the olive mill - is an essential part of November in Provence. Families bring their harvest in sacks and crates, and within 24 hours it is converted to oil. The cooperative mills operate around the clock during the harvest season, seven days a week.
                 </p>
               </div>
             </div>

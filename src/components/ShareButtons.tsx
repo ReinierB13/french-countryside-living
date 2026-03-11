@@ -13,7 +13,7 @@ interface Props {
     whatsapp: string;
     facebook: string;
   };
-  /** Compact mode: icon-only buttons, no heading, no top border — for use at the top of a page */
+  /** Compact mode: icon-only buttons, no heading, no top border - for use at the top of a page */
   compact?: boolean;
 }
 
