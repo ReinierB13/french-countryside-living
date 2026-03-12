@@ -311,7 +311,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'good-samaritan-pepper-spray',
-    title: 'Why Being a Good Samaritan Sometimes Backfires',
+    title: 'A dog fight, pepper spray and OH MY!',
     excerpt: 'A quiet afternoon drive home through the Alpilles turns into a dog fight, a pepper spray incident, and one of the most painful lessons in the chemistry of capsaicin.',
     content: `<p>There is a road between our old village and Saint-Andiol that most people ignore in favour of the main route. We always take it. The road via Le Destet winds through olive groves and vineyards, and comes out beside the small parking spot where people leave their cars to walk up to Les Caisses de Jean-Jean. It is one of those roads that reminds you why you live here.</p>
 <p>We had spent the afternoon at our old potager outside Mausanne - pulling weeds, watering, making plans for the season ahead. The kind of afternoon that leaves you with dirty fingernails and a good feeling in your chest. We had a beer at the potager when the work was done. One beer. I want to be clear about that, because what happened next is the kind of story that sounds better if the man at the centre of it was sober, which he was.</p>
