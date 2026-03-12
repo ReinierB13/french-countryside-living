@@ -18,8 +18,7 @@ export default function Navigation() {
     { href: '/france' as const, label: t('france') },
     { href: '/provence' as const, label: t('provence') },
     { href: '/potager' as const, label: t('potager') },
-    { href: '/tools' as const, label: t('tools') },
-    { href: '/about' as const, label: t('about') },
+{ href: '/about' as const, label: t('about') },
     { href: '/contact' as const, label: t('contact') },
   ];
 
