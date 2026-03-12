@@ -117,6 +117,11 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         )}
 
+        {/* Like */}
+        <div className="mt-8 pt-6 border-t border-charcoal/10">
+          <LikeButton contentType="article" contentSlug={article.slug} />
+        </div>
+
         {/* Share */}
         <ShareButtons
           title={article.title}
@@ -130,11 +135,6 @@ export default async function ArticlePage({ params }: Props) {
             facebook: t('shareFacebook'),
           }}
         />
-
-        {/* Like */}
-        <div className="mt-10 pt-8 border-t border-charcoal/10">
-          <LikeButton contentType="article" contentSlug={article.slug} />
-        </div>
 
         {/* Comments */}
         <Comments contentType="article" contentSlug={article.slug} />

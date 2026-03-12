@@ -185,6 +185,11 @@ export default async function RecipePage({ params }: Props) {
           </div>
         </div>
 
+        {/* Like */}
+        <div className="mt-8 pt-6 border-t border-charcoal/10">
+          <LikeButton contentType="recipe" contentSlug={recipe.slug} />
+        </div>
+
         {/* Share */}
         <ShareButtons
           title={recipe.title}
@@ -198,11 +203,6 @@ export default async function RecipePage({ params }: Props) {
             facebook: t('shareFacebook'),
           }}
         />
-
-        {/* Like */}
-        <div className="mt-10 pt-8 border-t border-charcoal/10">
-          <LikeButton contentType="recipe" contentSlug={recipe.slug} />
-        </div>
 
         {/* Comments */}
         <Comments contentType="recipe" contentSlug={recipe.slug} />
