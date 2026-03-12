@@ -6,6 +6,7 @@ import Marcel from '@/components/Marcel';
 import NewsletterSignup from '@/components/NewsletterSignup';
 import ShareButtons from '@/components/ShareButtons';
 import Comments from '@/components/Comments';
+import LikeButton from '@/components/LikeButton';
 import { categoryConfig } from '@/components/RecipeCard';
 import { getRecipeBySlug, recipes } from '@/lib/content';
 import { routing } from '@/i18n/routing';
@@ -197,6 +198,11 @@ export default async function RecipePage({ params }: Props) {
             facebook: t('shareFacebook'),
           }}
         />
+
+        {/* Like */}
+        <div className="mt-10 pt-8 border-t border-charcoal/10">
+          <LikeButton contentType="recipe" contentSlug={recipe.slug} />
+        </div>
 
         {/* Comments */}
         <Comments contentType="recipe" contentSlug={recipe.slug} />
