@@ -518,6 +518,7 @@ export const recipes: Recipe[] = [
     story: `This is the real daube - the version that takes two days and is worth every hour of them. In the old villages of Provence, the daube was not a weekday meal. It was a winter occasion. You made it when the hunting season had been good, when you had proper wine and time, and when the cold outside made the idea of something rich and dark and slow-cooked feel entirely necessary.\n\nThe word daube itself tells you something. It derives from the daubière - a tall, wide-bottomed clay pot with a tight-fitting lid, designed to sit in the embers of a hearth and barely simmer for hours. The clay absorbed and regulated heat in a way no metal pot could match. The result was meat that fell apart in threads, a sauce that had reduced to something glossy and profound, and a smell that filled the house from mid-afternoon until well after midnight.\n\nWild boar is the natural choice in the south. It has the strength of flavour and the texture to survive long cooking - in fact, it improves dramatically with time. The marinade is not optional. Give it a full 24 hours if you can. The red wine, the thyme, the rosemary - these are not flavourings added at the end. They become the dish.`,
     marcelTip: 'The anchovy fillets are the secret. Do not skip them. They disappear entirely but leave behind a richness that makes people ask what your secret is. You don\'t have to tell them.',
     marcelType: 'cooking',
+    toolIds: ['potjie-pot'],
   },
   {
     slug: 'smoked-mackerel-pate',
