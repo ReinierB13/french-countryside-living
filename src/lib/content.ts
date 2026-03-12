@@ -630,6 +630,11 @@ export const videos: Video[] = [
 
 
 
+// Sort all collections newest first
+articles.sort((a, b) => b.date.localeCompare(a.date));
+recipes.sort((a, b) => b.date.localeCompare(a.date));
+videos.sort((a, b) => b.date.localeCompare(a.date));
+
 // Helper functions
 export function getFeaturedArticles(count = 3): Article[] {
   return articles.slice(0, count);
