@@ -186,15 +186,15 @@ export default async function RecipePage({ params }: Props) {
           </div>
         </div>
 
-        {/* Tools used */}
-        {recipe.toolIds && recipe.toolIds.length > 0 && (
-          <RecipeTools toolIds={recipe.toolIds} />
-        )}
-
         {/* Like */}
         <div className="mt-8 pt-6 border-t border-charcoal/10">
           <LikeButton contentType="recipe" contentSlug={recipe.slug} />
         </div>
+
+        {/* Tools used */}
+        {recipe.toolIds && recipe.toolIds.length > 0 && (
+          <RecipeTools toolIds={recipe.toolIds} />
+        )}
 
         {/* Share */}
         <ShareButtons

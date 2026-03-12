@@ -106,9 +106,14 @@ export default async function ArticlePage({ params }: Props) {
           />
         )}
 
+        {/* Like */}
+        <div className="mt-8 pt-6 border-t border-charcoal/10">
+          <LikeButton contentType="article" contentSlug={article.slug} />
+        </div>
+
         {/* Tags */}
         {article.tags && article.tags.length > 0 && (
-          <div className="flex flex-wrap gap-2 mt-8 pt-6 border-t border-charcoal/10">
+          <div className="flex flex-wrap gap-2 mt-6">
             {article.tags.map((tag) => (
               <span key={tag} className="bg-parchment border border-charcoal/15 font-body text-xs text-charcoal/60 px-3 py-1 rounded-sm">
                 {tag}
@@ -116,11 +121,6 @@ export default async function ArticlePage({ params }: Props) {
             ))}
           </div>
         )}
-
-        {/* Like */}
-        <div className="mt-8 pt-6 border-t border-charcoal/10">
-          <LikeButton contentType="article" contentSlug={article.slug} />
-        </div>
 
         {/* Share */}
         <ShareButtons
