@@ -7,6 +7,7 @@ import NewsletterSignup from '@/components/NewsletterSignup';
 import ShareButtons from '@/components/ShareButtons';
 import Comments from '@/components/Comments';
 import LikeButton from '@/components/LikeButton';
+import RecipeTools from '@/components/RecipeTools';
 import { categoryConfig } from '@/components/RecipeCard';
 import { getRecipeBySlug, recipes } from '@/lib/content';
 import { routing } from '@/i18n/routing';
@@ -184,6 +185,11 @@ export default async function RecipePage({ params }: Props) {
             )}
           </div>
         </div>
+
+        {/* Tools used */}
+        {recipe.toolIds && recipe.toolIds.length > 0 && (
+          <RecipeTools toolIds={recipe.toolIds} />
+        )}
 
         {/* Like */}
         <div className="mt-8 pt-6 border-t border-charcoal/10">
