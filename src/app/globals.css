@@ -29,11 +29,11 @@
   }
 
   .prose-countryside h2 {
-    @apply font-heading text-2xl font-semibold text-olive mt-10 mb-4 pb-2 border-b border-parchment;
+    @apply font-heading text-[26px] font-semibold text-olive mt-10 mb-4 pb-2 border-b border-parchment;
   }
 
   .prose-countryside h3 {
-    @apply font-heading text-xl font-semibold text-charcoal mt-8 mb-3;
+    @apply font-heading text-[22px] font-semibold text-charcoal mt-8 mb-3;
   }
 
   .prose-countryside p {
