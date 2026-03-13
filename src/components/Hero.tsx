@@ -36,12 +36,12 @@ export default function Hero({
       />
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto py-20">
-        <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-xl leading-tight">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto py-20">
+        <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-sm leading-tight text-charcoal">
           {title}
         </h1>
         {subtitle && (
-          <p className="font-body text-lg sm:text-xl md:text-2xl text-parchment/90 italic drop-shadow-md max-w-2xl mx-auto">
+          <p className="font-body text-lg sm:text-xl md:text-2xl text-charcoal/80 italic drop-shadow-sm max-w-2xl mx-auto">
             {subtitle}
           </p>
         )}
