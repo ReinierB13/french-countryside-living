@@ -5,6 +5,7 @@ interface HeroProps {
   imageAlt: string;
   height?: 'full' | 'large' | 'medium';
   overlay?: 'light' | 'medium' | 'dark';
+  darkText?: boolean;
   children?: React.ReactNode;
 }
 
@@ -14,6 +15,7 @@ export default function Hero({
   imageSrc,
   imageAlt,
   height = 'large',
+  darkText = false,
   children,
 }: HeroProps) {
   const heights = {
@@ -37,11 +39,11 @@ export default function Hero({
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto py-20">
-        <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-sm leading-tight text-charcoal">
+        <h1 className={`font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-sm leading-tight ${darkText ? 'text-charcoal' : 'text-white'}`}>
           {title}
         </h1>
         {subtitle && (
-          <p className="font-body text-lg sm:text-xl md:text-2xl text-charcoal/80 italic drop-shadow-sm max-w-2xl mx-auto">
+          <p className={`font-body text-lg sm:text-xl md:text-2xl italic drop-shadow-sm max-w-2xl mx-auto ${darkText ? 'text-charcoal/80' : 'text-parchment/90'}`}>
             {subtitle}
           </p>
         )}

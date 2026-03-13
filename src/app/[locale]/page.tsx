@@ -36,6 +36,7 @@ export default async function HomePage({
         imageSrc="/images/la_vallongue.png"
         imageAlt="Provence countryside at golden hour"
         height="full"
+        darkText
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <Link
