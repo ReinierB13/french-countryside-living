@@ -627,6 +627,14 @@ export const videos: Video[] = [
     date: '2026-03-05',
     category: 'Provence',
   },
+  {
+    id: 'video-LrrtOP9kUf0',
+    title: '',
+    description: '',
+    youtubeId: 'LrrtOP9kUf0',
+    date: '2026-03-13',
+    category: 'Provence',
+  },
 ];
 
 
