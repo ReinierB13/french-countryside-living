@@ -55,7 +55,7 @@ export default async function RecipePage({ params }: Props) {
           <h1 className={`font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 ${recipe.slug === 'monkey-gland-sauce' ? 'text-charcoal' : 'text-white'}`}>
             {recipe.title}
           </h1>
-          <p className="font-body text-parchment/80 italic text-lg">{recipe.excerpt}</p>
+          <p className={`font-body italic text-lg ${recipe.slug === 'monkey-gland-sauce' ? 'text-charcoal/80' : 'text-parchment/80'}`}>{recipe.excerpt}</p>
         </div>
       </div>
 
