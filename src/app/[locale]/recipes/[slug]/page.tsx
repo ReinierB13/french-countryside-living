@@ -52,7 +52,7 @@ export default async function RecipePage({ params }: Props) {
           <span className="inline-block bg-terracotta text-white text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide mb-4">
             {categoryConfig[recipe.category]?.label ?? recipe.category}
           </span>
-          <h1 className="font-heading text-3xl sm:text-5xl font-bold text-white leading-tight mb-3">
+          <h1 className={`font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 ${recipe.slug === 'monkey-gland-sauce' ? 'text-charcoal' : 'text-white'}`}>
             {recipe.title}
           </h1>
           <p className="font-body text-parchment/80 italic text-lg">{recipe.excerpt}</p>
