@@ -22,7 +22,7 @@ export default function NewsletterSignup({
     if (!email) return;
     setLoading(true);
     try {
-      await fetch('/api/newsletter', {
+      await fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email }),
