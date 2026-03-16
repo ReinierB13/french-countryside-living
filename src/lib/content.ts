@@ -623,7 +623,7 @@ export const recipes: Recipe[] = [
       'Add the crushed garlic and chilli if using. Continue simmering for another 5 minutes.',
       'Taste and adjust - add the remaining vinegar if it needs more bite, and season with salt and black pepper.',
     ],
-    story: `Despite the name, no monkeys were harmed. This iconic South African steakhouse sauce is believed to have been invented by a French chef working in South Africa - which gives it a certain legitimacy in your kitchen. Use it on steak, hamburgers, ribs, or anything coming off the braai. It contains less sugar than most commercial BBQ sauces, meaning it handles high heat without burning.\n\nBottle hot into clean sterilised jars and refrigerate. Good for up to 7 days, and likely longer given the vinegar content.`,
+    story: `Despite the name, no monkeys were harmed. This iconic South African steakhouse sauce is believed to have been invented by a French chef working in South Africa — which gives it a certain legitimacy in your kitchen. Use it on steak, hamburgers, ribs, or anything coming off the braai. It contains less sugar than most commercial BBQ sauces, meaning it handles high heat without burning.\n\nTraditionally, Mrs Ball's Chutney is used in place of — or alongside — the apricot jam, and if you can get your hands on a bottle, use it. This version is built for those of us living outside South Africa who can't just grab one off the shelf. The apricot jam gets you very close to that same sweet, fruity depth.`,
     marcelTip: 'Despite the strange name, Monkey Gland Sauce contains almost no monkeys.',
     marcelType: 'cooking',
   },
