@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import ArticleGrid from '@/components/ArticleGrid';
-import { articles } from '@/lib/content';
+import { getArticles } from '@/lib/content';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -31,7 +31,7 @@ export default async function ArticlesPage({
       />
 
       <section className="py-16 px-4 sm:px-6 max-w-7xl mx-auto">
-        <ArticleGrid articles={articles} locale={locale} />
+        <ArticleGrid articles={getArticles(locale)} locale={locale} />
       </section>
     </>
   );

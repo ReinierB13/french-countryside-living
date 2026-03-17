@@ -44,7 +44,7 @@ export default function ArticleCard({ article, locale }: ArticleCardProps) {
             {article.excerpt}
           </p>
           <p className="mt-4 text-terracotta text-sm font-body font-semibold group-hover:underline">
-            Read more →
+            {locale === 'fr' ? 'Lire la suite →' : 'Read more →'}
           </p>
         </div>
       </article>

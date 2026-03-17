@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import RecipeGrid from '@/components/RecipeGrid';
-import { recipes } from '@/lib/content';
+import { getRecipes } from '@/lib/content';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -31,7 +31,7 @@ export default async function RecipesPage({
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
-        <RecipeGrid recipes={recipes} locale={locale} />
+        <RecipeGrid recipes={getRecipes(locale)} locale={locale} />
       </div>
     </>
   );

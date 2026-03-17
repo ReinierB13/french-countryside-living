@@ -38,7 +38,7 @@ export default async function ArticlePage({ params }: Props) {
   const article = getArticleBySlug(slug, locale);
   if (!article) notFound();
 
-  const related = getRelatedArticles(slug, 3);
+  const related = getRelatedArticles(slug, 3, locale);
 
   const formattedDate = new Date(article.date).toLocaleDateString(
     locale === 'fr' ? 'fr-FR' : 'en-GB',

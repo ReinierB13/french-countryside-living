@@ -1213,6 +1213,16 @@ export function getRecipeBySlug(slug: string, locale?: string): Recipe | undefin
   return { ...recipe, ...recipe.fr };
 }
 
-export function getRelatedArticles(currentSlug: string, count = 3): Article[] {
-  return articles.filter((a) => a.slug !== currentSlug).slice(0, count);
+export function getArticles(locale?: string): Article[] {
+  if (locale !== 'fr') return articles;
+  return articles.map((a) => (a.fr ? { ...a, ...a.fr } : a));
+}
+
+export function getRecipes(locale?: string): Recipe[] {
+  if (locale !== 'fr') return recipes;
+  return recipes.map((r) => (r.fr ? { ...r, ...r.fr } : r));
+}
+
+export function getRelatedArticles(currentSlug: string, count = 3, locale?: string): Article[] {
+  return getArticles(locale).filter((a) => a.slug !== currentSlug).slice(0, count);
 }
