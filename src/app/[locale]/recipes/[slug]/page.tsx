@@ -23,8 +23,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const recipe = getRecipeBySlug(slug);
+  const { locale, slug } = await params;
+  const recipe = getRecipeBySlug(slug, locale);
   if (!recipe) return { title: 'Not Found' };
   return {
     title: recipe.title,
@@ -37,7 +37,7 @@ export default async function RecipePage({ params }: Props) {
   const { locale, slug } = await params;
   const t = await getTranslations('RecipePage');
 
-  const recipe = getRecipeBySlug(slug);
+  const recipe = getRecipeBySlug(slug, locale);
   if (!recipe) notFound();
 
   return (

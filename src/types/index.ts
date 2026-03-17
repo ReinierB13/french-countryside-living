@@ -11,6 +11,12 @@ export interface Article {
   tags?: string[];
   marcelTip?: string;
   marcelType?: MarcelType;
+  fr?: {
+    title: string;
+    excerpt: string;
+    content: string;
+    marcelTip?: string;
+  };
 }
 
 export interface Recipe {
@@ -32,6 +38,15 @@ export interface Recipe {
   marcelType?: MarcelType;
   videoId?: string;
   toolIds?: string[];
+  fr?: {
+    title: string;
+    excerpt: string;
+    story?: string;
+    ingredients: string[];
+    instructions: string[];
+    notes?: string[];
+    marcelTip?: string;
+  };
 }
 
 export interface Video {

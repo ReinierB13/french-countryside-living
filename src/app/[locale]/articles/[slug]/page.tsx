@@ -22,8 +22,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const { locale, slug } = await params;
+  const article = getArticleBySlug(slug, locale);
   if (!article) return { title: 'Not Found' };
   return {
     title: article.title,
@@ -35,7 +35,7 @@ export default async function ArticlePage({ params }: Props) {
   const { locale, slug } = await params;
   const t = await getTranslations('ArticlePage');
 
-  const article = getArticleBySlug(slug);
+  const article = getArticleBySlug(slug, locale);
   if (!article) notFound();
 
   const related = getRelatedArticles(slug, 3);
