@@ -94,7 +94,7 @@ export default function MarketPopup({ market }: Props) {
           href={market.mairie_url}
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full text-center bg-terracotta text-white text-xs font-medium py-1.5 px-3 rounded-sm hover:bg-terracotta-dark transition-colors mb-1.5"
+          className="block w-full text-center bg-charcoal/8 text-charcoal text-xs font-medium py-1.5 px-3 rounded-sm hover:bg-charcoal/15 transition-colors mb-1.5"
         >
           {t('checkMairie')} →
         </a>
