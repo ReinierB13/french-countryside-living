@@ -1076,7 +1076,7 @@ export const recipes: Recipe[] = [
     slug: 'creamy-veal-tail-potjie',
     title: 'Creamy Veal Tail & Mushroom Potjie',
     excerpt: 'How we won the 2024 Annual PotjieKos Competition in the south of France - a veal tail potjie that sits between a French blanquette de veau and a South African fireside classic.',
-    image: '/images/p1.jpg',
+    image: '/images/p4.PNG',
     images: ['/images/p1.jpg', '/images/p2.jpg', '/images/p3.jpg'],
     date: '2026-03-18',
     category: 'braai',
