@@ -59,7 +59,7 @@ export async function generateMetadata({
       siteName: 'French Countryside Living',
       images: [
         {
-          url: `${BASE_URL}/images/markets.png`,
+          url: `${BASE_URL}/images/market.png`,
           width: 1200,
           height: 630,
           alt: 'Interactive map of weekly markets across Provence, France',
@@ -70,7 +70,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [`${BASE_URL}/images/markets.png`],
+      images: [`${BASE_URL}/images/market.png`],
     },
   };
 }
@@ -199,7 +199,7 @@ export default async function MarketsPage({
       <Hero
         title={t('title')}
         subtitle={t('subtitle')}
-        imageSrc="/images/markets.png"
+        imageSrc="/images/market.png"
         imageAlt="A busy Provençal market with stalls selling garlic, produce, and local goods under plane trees"
         height="medium"
         overlay="medium"
