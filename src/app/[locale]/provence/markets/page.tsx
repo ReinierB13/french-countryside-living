@@ -1,28 +1,10 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import Hero from '@/components/Hero';
+import MarketsMapClient from '@/components/markets/MarketsMapClient';
 import { supabase } from '@/lib/supabase';
 import type { Market } from '@/components/markets/marketsData';
-
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: 'Provençal Markets Map',
-    description:
-      'Find weekly markets across all of Provence — filtered by day, type, and department, with direct links to each village mairie.',
-  };
-}
-
-// Dynamically import the map to avoid SSR issues with Leaflet
-const MarketsMap = dynamic(() => import('@/components/markets/MarketsMap'), {
-  ssr: false,
-  loading: () => (
-    <div className="w-full h-[calc(100dvh-56px)] bg-parchment animate-pulse flex items-center justify-center">
-      <span className="font-body text-charcoal/40 text-sm">Loading map…</span>
-    </div>
-  ),
-});
 
 async function fetchMarkets(): Promise<Market[]> {
   try {
@@ -97,7 +79,7 @@ export default async function MarketsPage({
           </p>
         </div>
       ) : (
-        <MarketsMap markets={markets} />
+        <MarketsMapClient markets={markets} />
       )}
 
       {/* Disclaimer */}
