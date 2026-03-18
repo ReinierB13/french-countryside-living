@@ -69,13 +69,13 @@ export default function Navigation() {
             {/* Featured: Interactive Market Map */}
             <Link
               href={featuredLink.href}
-              className={`font-body text-sm px-3 py-1.5 rounded-sm border transition-colors ml-1 ${
+              className={`font-body text-sm px-3 py-2 rounded-sm transition-colors ${
                 isActive(featuredLink.href)
-                  ? 'bg-amber text-charcoal border-amber font-semibold'
-                  : 'border-amber/60 text-amber hover:bg-amber hover:text-charcoal'
+                  ? 'text-amber font-semibold'
+                  : 'text-parchment/85 hover:text-amber'
               }`}
             >
-              🗺️ {featuredLink.label}
+              {featuredLink.label}
             </Link>
 
             {/* Language switcher */}
@@ -109,14 +109,14 @@ export default function Navigation() {
             {/* Featured link at top of mobile menu */}
             <Link
               href={featuredLink.href}
-              className={`flex items-center gap-2 font-body py-2.5 px-2 mb-1 border-b-2 transition-colors ${
+              className={`block font-body py-2.5 px-2 border-b border-olive-light/50 transition-colors ${
                 isActive(featuredLink.href)
-                  ? 'text-amber border-amber font-semibold'
-                  : 'text-amber/80 border-amber/30 hover:text-amber'
+                  ? 'text-amber font-semibold'
+                  : 'text-parchment/90 hover:text-amber'
               }`}
               onClick={() => setMobileOpen(false)}
             >
-              🗺️ {featuredLink.label}
+              {featuredLink.label}
             </Link>
             {links.map((link) => (
               <Link
