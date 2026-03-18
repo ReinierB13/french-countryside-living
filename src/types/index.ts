@@ -24,6 +24,7 @@ export interface Recipe {
   title: string;
   excerpt: string;
   image: string;
+  images?: string[];
   date: string;
   category: string;
   servings: number;

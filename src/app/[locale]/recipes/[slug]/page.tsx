@@ -189,6 +189,23 @@ export default async function RecipePage({ params }: Props) {
           </div>
         </div>
 
+        {/* Photo gallery */}
+        {recipe.images && recipe.images.length > 1 && (
+          <div className="mt-12 pt-8 border-t border-charcoal/10">
+            <div className={`grid gap-3 ${recipe.images.length === 2 ? 'grid-cols-2' : 'grid-cols-3'}`}>
+              {recipe.images.map((src, i) => (
+                <div key={i} className="aspect-square overflow-hidden rounded-sm bg-charcoal/5">
+                  <img
+                    src={src}
+                    alt={`${recipe.title} - photo ${i + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Like */}
         <div className="mt-8 pt-6 border-t border-charcoal/10">
           <LikeButton contentType="recipe" contentSlug={recipe.slug} />
