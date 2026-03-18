@@ -41,7 +41,7 @@ export default async function MarketsPage({
       <Hero
         title={t('title')}
         subtitle={t('subtitle')}
-        imageSrc="/images/provence-markets-hero.jpg"
+        imageSrc="/images/markets.png"
         imageAlt="A busy Provençal market with stalls selling garlic, produce, and local goods"
         height="medium"
         overlay="medium"
