@@ -134,6 +134,15 @@ export default async function ProvencePage({
             ))}
           </div>
 
+          <div className="mt-8 text-center">
+            <Link
+              href={`/${locale}/provence/markets`}
+              className="inline-flex items-center gap-2 bg-olive text-white font-body text-sm font-medium px-6 py-3 rounded-sm hover:bg-olive-dark transition-colors"
+            >
+              🗺️ Find markets on the interactive map →
+            </Link>
+          </div>
+
           <div className="mt-8 bg-charcoal text-parchment rounded-sm p-6">
             <h3 className="font-heading text-lg font-bold text-amber mb-4">Major Markets Near Les Alpilles</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 font-body text-sm">
