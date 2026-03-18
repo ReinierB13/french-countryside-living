@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import Hero from '@/components/Hero';
 import { supabase } from '@/lib/supabase';
 import type { Market } from '@/components/markets/marketsData';
 
@@ -54,30 +55,29 @@ export default async function MarketsPage({
 
   return (
     <>
-      {/* Page header — compact, above the full-height map */}
-      <div className="bg-charcoal text-parchment px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-4">
-          <Link
-            href={`/${locale}/provence`}
-            className="text-parchment/50 hover:text-parchment text-sm font-body transition-colors shrink-0"
-          >
-            {t('backToProvence')}
-          </Link>
-          <div className="h-4 w-px bg-parchment/20 hidden sm:block" />
-          <div>
-            <h1 className="font-heading font-bold text-parchment text-lg leading-tight">
-              {t('title')}
-            </h1>
-            <p className="font-body text-parchment/55 text-xs mt-0.5 hidden sm:block">
-              {t('subtitle')}
-            </p>
-          </div>
-        </div>
+      {/* Hero */}
+      <Hero
+        title={t('title')}
+        subtitle={t('subtitle')}
+        imageSrc="/images/provence-markets-hero.jpg"
+        imageAlt="A busy Provençal market with stalls selling garlic, produce, and local goods"
+        height="medium"
+        overlay="medium"
+      />
 
+      {/* Breadcrumb */}
+      <div className="bg-charcoal text-parchment px-4 sm:px-6 py-2.5 flex items-center gap-3">
+        <Link
+          href={`/${locale}/provence`}
+          className="text-parchment/50 hover:text-parchment text-xs font-body transition-colors"
+        >
+          {t('backToProvence')}
+        </Link>
         {markets.length > 0 && (
-          <span className="font-body text-xs text-parchment/40 shrink-0">
-            {markets.length} marchés
-          </span>
+          <>
+            <span className="text-parchment/20 text-xs">·</span>
+            <span className="font-body text-xs text-parchment/35">{markets.length} marchés</span>
+          </>
         )}
       </div>
 
