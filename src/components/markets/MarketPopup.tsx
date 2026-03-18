@@ -33,6 +33,9 @@ export default function MarketPopup({ market }: Props) {
         </h3>
         <p className="text-sm text-charcoal/60 mt-0.5">
           {market.village}
+          {market.postcode && (
+            <span className="text-charcoal/40"> {market.postcode}</span>
+          )}
           {market.department !== market.village && (
             <span className="text-charcoal/40"> · {market.department}</span>
           )}

@@ -9,6 +9,7 @@ export interface Market {
   market_type: string[];
   seasonality: 'year_round' | 'summer' | 'seasonal';
   season_months?: number[] | null;
+  postcode?: string | null;
   mairie_url?: string | null;
   mairie_phone?: string | null;
   notes?: string | null;
