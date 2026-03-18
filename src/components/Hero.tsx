@@ -32,14 +32,17 @@ export default function Hero({
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${imageSrc})`, filter: 'brightness(1.3)' }}
+        style={{ backgroundImage: `url(${imageSrc})` }}
         role="img"
         aria-label={imageAlt}
       />
 
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto py-20">
-        <h1 className={`font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-sm leading-tight ${darkText ? 'text-charcoal' : 'text-white'}`}>
+        <h1
+          className="font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-sm leading-tight"
+          style={{ color: 'white', mixBlendMode: 'difference' }}
+        >
           {title}
         </h1>
         {subtitle && (

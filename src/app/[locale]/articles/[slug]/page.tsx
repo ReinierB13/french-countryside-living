@@ -49,16 +49,19 @@ export default async function ArticlePage({ params }: Props) {
     <>
       {/* Article hero */}
       <div className="relative min-h-[50vh] flex items-end">
-        {/* Brightened background image */}
+        {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${article.image})`, filter: 'brightness(1.3)' }}
+          style={{ backgroundImage: `url(${article.image})` }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 w-full pb-12 pt-24">
           <span className="inline-block bg-terracotta text-white text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide mb-4">
             {article.category}
           </span>
-          <h1 className="font-heading text-3xl sm:text-5xl font-bold text-white leading-tight mb-3 drop-shadow-lg">
+          <h1
+            className="font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 drop-shadow-lg"
+            style={{ color: 'white', mixBlendMode: 'difference' }}
+          >
             {article.title}
           </h1>
           <p className="font-body text-parchment/90 text-sm drop-shadow">{formattedDate}</p>

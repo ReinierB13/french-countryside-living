@@ -46,16 +46,19 @@ export default async function RecipePage({ params }: Props) {
       <div className="relative min-h-[50vh] flex items-end">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${recipe.image})`, filter: 'brightness(1.3)' }}
+          style={{ backgroundImage: `url(${recipe.image})` }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 w-full pb-12 pt-24">
           <span className="inline-block bg-terracotta text-white text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide mb-4">
             {categoryConfig[recipe.category]?.label ?? recipe.category}
           </span>
-          <h1 className={`font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 ${recipe.slug === 'monkey-gland-sauce' ? 'text-charcoal' : 'text-white'}`}>
+          <h1
+            className="font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 drop-shadow-lg"
+            style={{ color: 'white', mixBlendMode: 'difference' }}
+          >
             {recipe.title}
           </h1>
-          <p className={`font-body italic text-lg ${recipe.slug === 'monkey-gland-sauce' ? 'text-charcoal/80' : 'text-parchment/80'}`}>{recipe.excerpt}</p>
+          <p className="font-body italic text-lg text-parchment/80">{recipe.excerpt}</p>
         </div>
       </div>
 
