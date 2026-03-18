@@ -206,6 +206,30 @@ export default async function RecipePage({ params }: Props) {
           </div>
         )}
 
+        {/* Related recipes */}
+        {recipe.relatedRecipes && recipe.relatedRecipes.length > 0 && (() => {
+          const related = recipe.relatedRecipes.map(s => recipes.find(r => r.slug === s)).filter(Boolean);
+          if (!related.length) return null;
+          return (
+            <div className="mt-12 pt-8 border-t border-charcoal/10">
+              <h3 className="font-heading text-xl font-semibold text-charcoal mb-5">You will also need</h3>
+              <div className="flex flex-col gap-4">
+                {related.map(r => (
+                  <Link key={r!.slug} href={`/${locale}/recipes/${r!.slug}`} className="flex items-center gap-4 group">
+                    <div className="w-20 h-20 shrink-0 overflow-hidden rounded-sm bg-charcoal/5">
+                      <img src={r!.image} alt={r!.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                    </div>
+                    <div>
+                      <p className="font-heading font-semibold text-charcoal group-hover:text-terracotta transition-colors">{r!.title}</p>
+                      <p className="font-body text-sm text-charcoal/60 mt-1">{r!.excerpt}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
         {/* Like */}
         <div className="mt-8 pt-6 border-t border-charcoal/10">
           <LikeButton contentType="recipe" contentSlug={recipe.slug} />

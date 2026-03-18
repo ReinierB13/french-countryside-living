@@ -39,6 +39,7 @@ export interface Recipe {
   marcelType?: MarcelType;
   videoId?: string;
   toolIds?: string[];
+  relatedRecipes?: string[];
   fr?: {
     title: string;
     excerpt: string;
