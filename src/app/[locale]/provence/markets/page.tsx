@@ -6,6 +6,75 @@ import MarketsMapClient from '@/components/markets/MarketsMapClient';
 import { supabase } from '@/lib/supabase';
 import type { Market } from '@/components/markets/marketsData';
 
+const BASE_URL = 'https://www.french-countryside-living.com';
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isEn = locale === 'en';
+
+  const title = isEn
+    ? 'Provençal Markets Map — Find Weekly Markets in Provence'
+    : 'Carte des Marchés de Provence — Marchés Hebdomadaires';
+
+  const description = isEn
+    ? 'Interactive map of 68+ weekly markets across all of Provence — Bouches-du-Rhône, Var, Vaucluse, and Alpes-de-Haute-Provence. Filter by day, market type, and department. Direct links to each village mairie for live cancellation information.'
+    : 'Carte interactive de plus de 68 marchés hebdomadaires en Provence — Bouches-du-Rhône, Var, Vaucluse et Alpes-de-Haute-Provence. Filtrez par jour, type et département. Liens directs vers chaque mairie.';
+
+  const canonical = isEn
+    ? `${BASE_URL}/provence/markets`
+    : `${BASE_URL}/fr/provence/markets`;
+
+  return {
+    title,
+    description,
+    keywords: isEn
+      ? [
+          'Provence markets', 'Provençal markets', 'markets in Provence', 'weekly markets Provence',
+          'marché Provence', 'Provence market map', 'Apt Saturday market', "L'Isle-sur-la-Sorgue market",
+          'Saint-Rémy-de-Provence market', 'Arles market', 'Forcalquier market', 'Vaucluse markets',
+          'Var markets', 'Alpes-de-Haute-Provence markets', 'brocante Provence', 'antique markets Provence',
+          'food markets south of France', 'Luberon markets', 'Alpilles markets',
+        ]
+      : [
+          'marchés Provence', 'marchés hebdomadaires Provence', 'carte marchés Provence',
+          'marché Apt', 'marché Isle-sur-la-Sorgue', 'marché Saint-Rémy-de-Provence',
+          'brocante Provence', 'marchés Vaucluse', 'marchés Var',
+        ],
+    alternates: {
+      canonical,
+      languages: {
+        'en': `${BASE_URL}/provence/markets`,
+        'fr': `${BASE_URL}/fr/provence/markets`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      url: canonical,
+      siteName: 'French Countryside Living',
+      images: [
+        {
+          url: `${BASE_URL}/images/markets.png`,
+          width: 1200,
+          height: 630,
+          alt: 'Interactive map of weekly markets across Provence, France',
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [`${BASE_URL}/images/markets.png`],
+    },
+  };
+}
+
 async function fetchMarkets(): Promise<Market[]> {
   try {
     const { data, error } = await supabase
@@ -26,6 +95,88 @@ async function fetchMarkets(): Promise<Market[]> {
   }
 }
 
+function buildJsonLd(markets: Market[], locale: string) {
+  const isEn = locale === 'en';
+  const pageUrl = isEn
+    ? `${BASE_URL}/provence/markets`
+    : `${BASE_URL}/fr/provence/markets`;
+
+  // BreadcrumbList
+  const breadcrumb = {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'French Countryside Living', item: BASE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Provence', item: `${BASE_URL}/provence` },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: isEn ? 'Markets Map' : 'Carte des Marchés',
+        item: pageUrl,
+      },
+    ],
+  };
+
+  // Dataset describing the collection
+  const dataset = {
+    '@type': 'Dataset',
+    name: isEn
+      ? 'Weekly Markets of Provence — Interactive Map'
+      : 'Marchés Hebdomadaires de Provence — Carte Interactive',
+    description: isEn
+      ? 'A curated dataset of 68+ weekly recurring markets across the four departments of Provence, France: Bouches-du-Rhône, Var, Vaucluse, and Alpes-de-Haute-Provence.'
+      : 'Base de données de plus de 68 marchés hebdomadaires dans les quatre départements de Provence : Bouches-du-Rhône, Var, Vaucluse et Alpes-de-Haute-Provence.',
+    url: pageUrl,
+    spatialCoverage: {
+      '@type': 'Place',
+      name: 'Provence, France',
+      geo: {
+        '@type': 'GeoShape',
+        box: '43.1 4.6 44.4 6.8',
+      },
+    },
+    includedInDataCatalog: {
+      '@type': 'DataCatalog',
+      name: 'French Countryside Living',
+      url: BASE_URL,
+    },
+  };
+
+  // ItemList of individual markets (top ~20 to keep payload reasonable)
+  const itemList = {
+    '@type': 'ItemList',
+    name: isEn ? 'Provençal Markets' : 'Marchés de Provence',
+    url: pageUrl,
+    numberOfItems: markets.length,
+    itemListElement: markets.slice(0, 20).map((m, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'LocalBusiness',
+        name: m.name,
+        description: m.notes ?? undefined,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: m.village,
+          addressRegion: m.department,
+          addressCountry: 'FR',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: m.lat,
+          longitude: m.lng,
+        },
+        url: m.mairie_url ?? undefined,
+        openingHours: `We ${m.day_of_week.slice(0, 2).toUpperCase()}`,
+      },
+    })),
+  };
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [breadcrumb, dataset, itemList],
+  };
+}
+
 export default async function MarketsPage({
   params,
 }: {
@@ -34,20 +185,27 @@ export default async function MarketsPage({
   const { locale } = await params;
   const t = await getTranslations('MarketsPage');
   const markets = await fetchMarkets();
+  const jsonLd = buildJsonLd(markets, locale);
 
   return (
     <>
+      {/* Structured data for Google */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Hero */}
       <Hero
         title={t('title')}
         subtitle={t('subtitle')}
         imageSrc="/images/markets.png"
-        imageAlt="A busy Provençal market with stalls selling garlic, produce, and local goods"
+        imageAlt="A busy Provençal market with stalls selling garlic, produce, and local goods under plane trees"
         height="medium"
         overlay="medium"
       />
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb bar */}
       <div className="bg-charcoal text-parchment px-4 sm:px-6 py-2.5 flex items-center gap-3">
         <Link
           href={`/${locale}/provence`}
@@ -63,7 +221,7 @@ export default async function MarketsPage({
         )}
       </div>
 
-      {/* Map — full height below the header */}
+      {/* Map */}
       {markets.length === 0 ? (
         <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center bg-parchment">
           <span className="text-4xl mb-4">🗺️</span>

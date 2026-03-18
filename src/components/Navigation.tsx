@@ -18,9 +18,11 @@ export default function Navigation() {
     { href: '/france' as const, label: t('france') },
     { href: '/provence' as const, label: t('provence') },
     { href: '/potager' as const, label: t('potager') },
-{ href: '/about' as const, label: t('about') },
+    { href: '/about' as const, label: t('about') },
     { href: '/contact' as const, label: t('contact') },
   ];
+
+  const featuredLink = { href: '/provence/markets' as const, label: t('markets') };
 
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(href + '/');
@@ -64,6 +66,18 @@ export default function Navigation() {
               </Link>
             ))}
 
+            {/* Featured: Interactive Market Map */}
+            <Link
+              href={featuredLink.href}
+              className={`font-body text-sm px-3 py-1.5 rounded-sm border transition-colors ml-1 ${
+                isActive(featuredLink.href)
+                  ? 'bg-amber text-charcoal border-amber font-semibold'
+                  : 'border-amber/60 text-amber hover:bg-amber hover:text-charcoal'
+              }`}
+            >
+              🗺️ {featuredLink.label}
+            </Link>
+
             {/* Language switcher */}
             <div className="ml-3 pl-3 border-l border-olive-light flex items-center">
               <Link
@@ -92,6 +106,18 @@ export default function Navigation() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div className="lg:hidden py-4 border-t border-olive-light">
+            {/* Featured link at top of mobile menu */}
+            <Link
+              href={featuredLink.href}
+              className={`flex items-center gap-2 font-body py-2.5 px-2 mb-1 border-b-2 transition-colors ${
+                isActive(featuredLink.href)
+                  ? 'text-amber border-amber font-semibold'
+                  : 'text-amber/80 border-amber/30 hover:text-amber'
+              }`}
+              onClick={() => setMobileOpen(false)}
+            >
+              🗺️ {featuredLink.label}
+            </Link>
             {links.map((link) => (
               <Link
                 key={link.href}
