@@ -31,7 +31,7 @@ export interface Recipe {
   prepTime: string;
   cookTime: string;
   difficulty: 'Easy' | 'Medium' | 'Advanced';
-  ingredients: string[];
+  ingredients: (string | { text: string; recipeSlug: string })[];
   instructions: string[];
   story?: string;
   notes?: string[];

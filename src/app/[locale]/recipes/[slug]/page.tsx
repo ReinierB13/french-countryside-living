@@ -128,7 +128,13 @@ export default async function RecipePage({ params }: Props) {
               {recipe.ingredients.map((ing, i) => (
                 <li key={i} className="flex items-start gap-3 font-body text-sm text-charcoal/80">
                   <span className="text-terracotta mt-1 shrink-0">•</span>
-                  <span>{ing}</span>
+                  {typeof ing === 'string' ? (
+                    <span>{ing}</span>
+                  ) : (
+                    <Link href={`/${locale}/recipes/${ing.recipeSlug}`} className="underline underline-offset-2 decoration-terracotta/50 hover:text-terracotta transition-colors">
+                      {ing.text}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
