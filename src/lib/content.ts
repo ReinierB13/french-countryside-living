@@ -1212,7 +1212,7 @@ export const recipes: Recipe[] = [
       'Wash until the water is completely clear. The keeping quality of the butter depends on it.',
       'Spring butter - made when cows are on new pasture - is noticeably richer and more yellow. If you can make it in spring, do.',
       'For the herb butter, chop the herbs fine and mince the garlic almost to a paste. Coarse pieces do not distribute evenly.',
-      'Fleur de sel is the right salt. Coarse sea salt gives uneven pockets; fine table salt is too sharp.',
+      'Fleur de sel is the right salt. Coarse sea salt gives uneven pockets; fine table salt is too sharp. Fleur de sel is worth finding - it is available online and in most good food shops, and Maldon flaky sea salt is a reasonable substitute if you cannot.',
       'Refrigerated and salted: keeps up to 3 weeks. Vacuum-packed and frozen: up to 6 months.',
     ],
     marcelTip: 'If the water is still cloudy, keep going. Buttermilk left in the butter is what makes it go off. Wash it properly and it keeps for three weeks in the fridge without complaint.',
