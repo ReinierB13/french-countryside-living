@@ -1208,7 +1208,7 @@ export const recipes: Recipe[] = [
       'Use full-fat creme fraiche. Low-fat versions do not have enough butterfat to churn properly.',
       'Start the mixer on medium speed until the cream thickens, then increase to high. Going straight to high with liquid cream creates splatter.',
       'Cold cream churns better. If your creme fraiche is near room temperature, chill the bowl and cream in the freezer for 10 minutes before starting.',
-      'The buttermilk left in the bowl is genuine cultured buttermilk. Keep it - use it in bread, pancakes, or braai potbread dough.',
+      'The buttermilk left in the bowl is genuine cultured buttermilk. Keep it. Use it to bake rusks (recipe coming soon), or use it to marinate chicken before making fried chicken - it tenderises the meat and keeps it moist throughout the cook.',
       'Wash until the water is completely clear. The keeping quality of the butter depends on it.',
       'Spring butter - made when cows are on new pasture - is noticeably richer and more yellow. If you can make it in spring, do.',
       'For the herb butter, chop the herbs fine and mince the garlic almost to a paste. Coarse pieces do not distribute evenly.',
