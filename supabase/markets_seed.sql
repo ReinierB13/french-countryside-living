@@ -102,7 +102,8 @@ INSERT INTO markets (name, village, department, lat, lng, day_of_week, market_ty
 ('Marché de Vidauban', 'Vidauban', 'Var', 43.4165, 6.4395, 'Sunday', ARRAY['food','brocante'], 'year_round', NULL, '83550', 'https://www.vidauban.fr', 'Sunday morning market in the Argens valley. Good brocante mixed with local produce. Wine country - excellent local Côtes de Provence.'),
 ('Marché de La Garde-Freinet', 'La Garde-Freinet', 'Var', 43.3204, 6.4740, 'Thursday', ARRAY['food','crafts'], 'seasonal', ARRAY[5,6,7,8,9,10], '83680', 'https://www.lagarde-freinet-mairie.fr', 'Village in the Massif des Maures. Thursday market in summer. Cork oak forests surround the village. Cork products, chestnut goods, and local produce.'),
 ('Marché de Grimaud', 'Grimaud', 'Var', 43.2782, 6.5178, 'Thursday', ARRAY['food','mixed'], 'seasonal', ARRAY[5,6,7,8,9,10], '83310', 'https://www.grimaud.fr', 'Atmospheric summer market in a medieval village above the Gulf of Saint-Tropez. Local produce and crafts.'),
-('Marché de Fréjus', 'Fréjus', 'Var', 43.4330, 6.7370, 'Wednesday', ARRAY['food','mixed'], 'year_round', NULL, '83600', 'https://www.frejus.fr', 'Large market in the Roman city. Wednesday and Saturday. Good for Estérel hinterland produce and local wine.');
+('Marché de Fréjus', 'Fréjus', 'Var', 43.4330, 6.7370, 'Wednesday', ARRAY['food','mixed'], 'year_round', NULL, '83600', 'https://www.frejus.fr', 'Large market in the Roman city. Wednesday and Saturday. Good for Estérel hinterland produce and local wine.'),
+('Marché de Giens', 'Giens', 'Var', 43.0333, 6.1500, 'Tuesday', ARRAY['food','mixed'], 'year_round', NULL, '83400', 'https://www.ot-lelavandou.fr/agenda-fetes-animations-lelavandou/le-marche-de-giens/', 'Charming Provençal market on the Giens peninsula, part of the Hyères commune. Local produce and regional specialities.');
 
 -- ============================================================
 -- ALPES-DE-HAUTE-PROVENCE
