@@ -1,4 +1,6 @@
-import Image from 'next/image';
+'use client';
+
+import { useState } from 'react';
 import { toolSections } from '@/lib/tools';
 import type { Product } from '@/lib/tools';
 
@@ -8,6 +10,38 @@ function findToolById(id: string): Product | undefined {
     if (product) return product;
   }
   return undefined;
+}
+
+function ToolCard({ tool }: { tool: Product }) {
+  const [imgError, setImgError] = useState(false);
+
+  return (
+    <a
+      href={tool.affiliateUrl}
+      target="_blank"
+      rel="noopener noreferrer nofollow"
+      className="group flex items-center gap-4 bg-white border border-charcoal/10 p-4 hover:border-terracotta/40 hover:shadow-md transition-all"
+    >
+      <div className="relative w-16 h-16 shrink-0 bg-parchment overflow-hidden rounded-sm flex items-center justify-center">
+        {!imgError ? (
+          <img
+            src={tool.image}
+            alt={tool.name}
+            className="w-full h-full object-contain p-1"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <span className="text-2xl">🛒</span>
+        )}
+      </div>
+      <div className="min-w-0">
+        <p className="font-heading font-semibold text-charcoal text-sm leading-snug group-hover:text-terracotta transition-colors line-clamp-2">
+          {tool.name}
+        </p>
+        <p className="font-body text-xs text-terracotta mt-1">View on Amazon →</p>
+      </div>
+    </a>
+  );
 }
 
 interface Props {
@@ -30,29 +64,7 @@ export default function RecipeTools({ toolIds }: Props) {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {tools.map((tool) => (
-          <a
-            key={tool.id}
-            href={tool.affiliateUrl}
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-            className="group flex items-center gap-4 bg-white border border-charcoal/10 p-4 hover:border-terracotta/40 hover:shadow-md transition-all"
-          >
-            <div className="relative w-16 h-16 shrink-0 bg-parchment overflow-hidden rounded-sm">
-              <Image
-                src={tool.image}
-                alt={tool.name}
-                fill
-                className="object-contain p-1"
-                sizes="64px"
-              />
-            </div>
-            <div className="min-w-0">
-              <p className="font-heading font-semibold text-charcoal text-sm leading-snug group-hover:text-terracotta transition-colors line-clamp-2">
-                {tool.name}
-              </p>
-              <p className="font-body text-xs text-terracotta mt-1">View on Amazon →</p>
-            </div>
-          </a>
+          <ToolCard key={tool.id} tool={tool} />
         ))}
       </div>
     </div>
