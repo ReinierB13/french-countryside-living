@@ -116,7 +116,7 @@ export const toolSections: ProductSection[] = [
         description: 'Traditional South African cast iron pot with three legs. Designed for slow cooking over coals or an open fire. The natural vessel for a daube, a civet, or a potjiekos.',
         whyIUseIt: 'I use this for the daube and for any slow braise cooked over the hearth. The legs mean it sits directly in the coals. The cast iron holds and distributes heat perfectly for a three-hour cook. Bring this into a Provençal kitchen and it belongs there immediately.',
         image: '/images/tools/potjie-pot.jpg',
-        affiliateUrl: 'https://www.amazon.fr/dp/B09DG3DFCN?tag=frenchcoun050-20',
+        affiliateUrl: 'https://amzn.to/4bvOwy4',
       },
     ],
   },

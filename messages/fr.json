@@ -180,6 +180,7 @@
     "sidebarTitle": "Marchés",
     "closeList": "Fermer",
     "legendTitle": "Type",
-    "openMairie": "Site de la mairie"
+    "openMairie": "Site de la mairie",
+    "submitMarket": "+ Soumettre un marché"
   }
 }
