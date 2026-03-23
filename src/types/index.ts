@@ -1,4 +1,4 @@
-export type MarcelType = 'default' | 'cooking' | 'hunter' | 'gardener' | 'rose' | 'petanque';
+export type MarcelType = 'default' | 'cooking' | 'hunter' | 'gardener' | 'rose' | 'petanque' | 'rugby';
 
 export interface Article {
   slug: string;

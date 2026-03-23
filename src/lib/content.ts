@@ -708,7 +708,7 @@ export const articles: Article[] = [
     date: '2026-03-23',
     category: 'Traditions',
     marcelTip: 'The pre-match pasta is always overcooked. Nobody knows why. Nobody questions it. This is France.',
-    marcelType: 'default',
+    marcelType: 'rugby',
     fr: {
       title: 'Six-Fours-les-Plages',
       excerpt: 'Un déplacement de Fédérale 2 sur la côte méditerranéenne, une équipe sans rien à perdre, deux cartons rouges avant la cinquième minute, et un rein qui a déposé une plainte officielle.',

@@ -17,6 +17,7 @@ const marcelImages: Record<MarcelType, string> = {
   gardener: '/images/marcel-gardener.png',
   rose: '/images/marcel-rose.png',
   petanque: '/images/marcel-petanque.png',
+  rugby: '/images/marcel-rugby.png',
 };
 
 export default function Marcel({ type = 'default', text, className = '' }: MarcelProps) {
