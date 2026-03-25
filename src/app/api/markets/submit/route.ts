@@ -16,8 +16,8 @@ export async function POST(request: NextRequest) {
   } = body;
 
   // Validate required fields
-  if (!name?.trim() || !village?.trim() || !department?.trim()) {
-    return NextResponse.json({ error: 'Name, village, and department are required.' }, { status: 400 });
+  if (!name?.trim() || !village?.trim() || !department?.trim() || !postcode?.trim()) {
+    return NextResponse.json({ error: 'Name, village, postcode, and department are required.' }, { status: 400 });
   }
   if (!DAYS.includes(day_of_week)) {
     return NextResponse.json({ error: 'Invalid day of week.' }, { status: 400 });

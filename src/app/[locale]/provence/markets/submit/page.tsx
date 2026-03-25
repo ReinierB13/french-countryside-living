@@ -168,13 +168,14 @@ export default function SubmitMarketPage() {
                 </div>
                 <div>
                   <label className="block font-heading text-sm font-semibold text-charcoal mb-1.5">
-                    Postcode
+                    Postcode <span className="text-terracotta">*</span>
                   </label>
                   <input
                     type="text"
                     name="postcode"
                     value={form.postcode}
                     onChange={handleChange}
+                    required
                     placeholder="e.g. 13210"
                     className="w-full border border-charcoal/20 rounded-sm px-4 py-2.5 font-body text-sm text-charcoal bg-white focus:outline-none focus:border-terracotta"
                   />
