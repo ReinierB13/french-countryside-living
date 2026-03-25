@@ -207,21 +207,20 @@ export default async function MarketsPage({
       />
 
       {/* Breadcrumb bar */}
-      <div className="bg-charcoal text-parchment px-4 sm:px-6 py-2.5 flex items-center justify-between gap-3">
-        <div className="flex items-center gap-3">
-          <Link
-            href={`/${locale}/provence`}
-            className="text-parchment/50 hover:text-parchment text-xs font-body transition-colors"
-          >
-            {t('backToProvence')}
-          </Link>
-          {markets.length > 0 && (
-            <>
-              <span className="text-parchment/20 text-xs">·</span>
-              <span className="font-body text-xs text-parchment/35">{markets.length} marchés</span>
-            </>
-          )}
-        </div>
+      <div className="bg-charcoal text-parchment px-4 sm:px-6 py-2.5 flex items-center gap-3">
+        <Link
+          href={`/${locale}/provence`}
+          className="text-parchment/50 hover:text-parchment text-xs font-body transition-colors"
+        >
+          {t('backToProvence')}
+        </Link>
+        {markets.length > 0 && (
+          <>
+            <span className="text-parchment/20 text-xs">·</span>
+            <span className="font-body text-xs text-parchment/35">{markets.length} marchés</span>
+          </>
+        )}
+        <span className="text-parchment/20 text-xs">·</span>
         <Link
           href={`/${locale}/provence/markets/submit`}
           className="inline-flex items-center gap-1.5 bg-amber hover:bg-amber/90 text-charcoal text-xs font-heading font-semibold px-3 py-1.5 rounded transition-colors"
