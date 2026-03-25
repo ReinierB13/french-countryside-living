@@ -224,9 +224,9 @@ export default async function MarketsPage({
         </div>
         <Link
           href={`/${locale}/provence/markets/submit`}
-          className="text-xs font-heading font-semibold text-amber hover:text-amber/80 transition-colors"
+          className="inline-flex items-center gap-1.5 bg-amber hover:bg-amber/90 text-charcoal text-xs font-heading font-semibold px-3 py-1.5 rounded transition-colors"
         >
-          + Submit a market
+          {t('submitMarket')}
         </Link>
       </div>
 
