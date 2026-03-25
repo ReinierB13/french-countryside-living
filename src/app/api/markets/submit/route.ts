@@ -29,6 +29,24 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid seasonality.' }, { status: 400 });
   }
 
+  // Geocode the village using Nominatim (OpenStreetMap) — free, no API key
+  let lat = 43.8;
+  let lng = 5.4;
+  try {
+    const query = [village.trim(), postcode?.trim(), 'France'].filter(Boolean).join(', ');
+    const geoRes = await fetch(
+      `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&countrycodes=fr`,
+      { headers: { 'User-Agent': 'FrenchCountrysideLiving/1.0 (french_countryside_living@outlook.com)' } }
+    );
+    const geoData = await geoRes.json();
+    if (geoData.length > 0) {
+      lat = parseFloat(geoData[0].lat);
+      lng = parseFloat(geoData[0].lon);
+    }
+  } catch (geoErr) {
+    console.error('Geocoding failed, using placeholder coordinates:', geoErr);
+  }
+
   // Use service role key so RLS doesn't block the insert
   const supabaseAdmin = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -45,8 +63,8 @@ export async function POST(request: NextRequest) {
     postcode: postcode?.trim() || null,
     mairie_url: mairie_url?.trim() || null,
     notes: notes?.trim() || null,
-    lat: 43.8, // placeholder — will be corrected on review
-    lng: 5.4,
+    lat,
+    lng,
     confirmed: false,
   });
 
