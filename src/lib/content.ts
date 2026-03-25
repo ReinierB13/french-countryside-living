@@ -1242,6 +1242,7 @@ export const recipes: Recipe[] = [
     ingredients: [
       '4 kg veal tail',
       'Cold water to cover',
+      '1 generous handful dried porcini mushrooms',
       '1 splash Nuoc Mam (Vietnamese fish sauce)',
       '1 large handful fresh thyme, wild if possible',
       '1 large handful fresh rosemary, wild if possible',
@@ -1249,6 +1250,8 @@ export const recipes: Recipe[] = [
     instructions: [
       'Place the veal tail in a single layer in a roasting tray. Roast at 220°C until well browned on all sides, turning once - approximately 45-60 minutes total. Remove from the oven and transfer the browned tail to a large cast iron pot.',
       'Cover the veal tail with cold water. Bring to a boil over high heat. Skim all foam and impurities from the surface - continue skimming every few minutes until the liquid runs clear, approximately 30 minutes.',
+      'While the stock simmers and skims, rehydrate the dried porcini in a bowl of lukewarm water. Stir them well to loosen any grit. Leave for 20-30 minutes until fully softened.',
+      'Lift the porcini from the soaking liquid and set aside. Pour the soaking liquid slowly through a coffee filter or fine cloth to catch any sand - dried mushrooms often carry grit and an unfiltered liquid will ruin the texture of the finished demi-glace. Add the filtered soaking liquid to the pot, then add the porcini themselves.',
       'Add the Nuoc Mam, thyme, and rosemary. Do not add salt.',
       'Transfer the pot with lid on to a 110°C oven. Cook for 7 hours. Check the liquid level periodically and top up with water as needed. You are extracting, not reducing.',
       'Remove the pot from the oven. Discard the bones, herbs, and solids. Strain the liquid through a fine sieve - do not press the solids.',
@@ -1258,6 +1261,7 @@ export const recipes: Recipe[] = [
     story: `Most ingredients I track down myself. The kaffir lime leaves I grow in a pot outside. Wild thyme and rosemary I pick from the hillsides of Les Alpilles. But the veal tail is different. For that, I have Nou-Nours.\n\nNou-Nours is a rugby friend who works at the Intermarche in Saint-Remy-de-Provence. He orders the veal tail specially for me, in quantities large enough to justify the effort of what comes next - because a demi-glace cooked from two kilos of tail is the same amount of work as one cooked from eight, and it keeps in the freezer for months. When Nou-Nours calls to say the order is in, I clear the calendar.\n\nThe quantities below are built around 4 kilos of veal tail - enough to fill a serious cast iron pot and produce a meaningful yield of cubes to store. Scale it down if you must, but you will regret it in February when you are reaching into the freezer for a cube to finish a sauce and finding empty bags.\n\nWhat most cooks mean when they say demi-glace today is a deeply reduced veal stock: collagen-rich, glossy, intensely flavoured, gelatinous when cold. No roux. No espagnole. Just good bones, aromatics, time, and heat. The gelatin that comes from slowly breaking down the collagen in veal tail is what makes the result set solid when chilled - which is how you know you have done it correctly.\n\nI do not add salt to this recipe. A demi-glace is a building block, not a finished sauce. What I add instead is a measure of Nuoc Mam - Vietnamese fish sauce. Not enough to taste, not enough to identify. Just enough to add the kind of depth that salt alone does not provide. The demi-glace does not taste of fish. It tastes more intensely of itself.`,
     notes: [
       'Do not add salt at any stage. The demi-glace will be reduced further and used as a building block - seasoning now makes it impossible to control later.',
+      'Always filter the porcini soaking liquid through a coffee filter before adding it to the pot. Dried mushrooms frequently carry fine sand that settles at the bottom of the soaking bowl - pour slowly and stop before you reach the last few drops.',
       'The fish sauce does not make this taste of fish. It adds umami depth that disappears into the finished sauce. Do not skip it.',
       'Wild thyme and rosemary from the garrigue will always outperform cultivated herbs. If picking your own, take generously.',
       'Skimming thoroughly in the first 30 minutes is the difference between a clear demi-glace and a murky one. Take the time.',
