@@ -33,9 +33,11 @@ export async function POST(request: NextRequest) {
   let lat = 43.8;
   let lng = 5.4;
   try {
-    const query = [village.trim(), postcode?.trim(), 'France'].filter(Boolean).join(', ');
+    // Bounding box covers all four Provence departments (BdR, Var, Vaucluse, AHP)
+    const PROVENCE_BBOX = '4.5,43.0,7.2,44.5'; // min_lon,min_lat,max_lon,max_lat
+    const query = [village.trim(), postcode?.trim(), department.trim(), 'France'].filter(Boolean).join(', ');
     const geoRes = await fetch(
-      `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&countrycodes=fr`,
+      `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&limit=1&countrycodes=fr&viewbox=${PROVENCE_BBOX}&bounded=1`,
       { headers: { 'User-Agent': 'FrenchCountrysideLiving/1.0 (french_countryside_living@outlook.com)' } }
     );
     const geoData = await geoRes.json();
