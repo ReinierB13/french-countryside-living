@@ -39,8 +39,8 @@ export default function Navigation() {
             className="flex items-center gap-4 shrink-0 group"
           >
             <Image
-              src="/images/marcel-default.png"
-              alt="Marcel"
+              src="/icons/Logo1.png"
+              alt="French Countryside Living"
               width={80}
               height={80}
               className="rounded-full"
