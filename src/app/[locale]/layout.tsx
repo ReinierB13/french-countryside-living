@@ -46,12 +46,12 @@ export const metadata: Metadata = {
   ],
   icons: {
     icon: [
-      { url: '/images/marcel-default.png', type: 'image/png' },
+      { url: '/images/browser_logo.PNG', type: 'image/png' },
     ],
     apple: [
-      { url: '/images/marcel-default.png', type: 'image/png' },
+      { url: '/images/browser_logo.PNG', type: 'image/png' },
     ],
-    shortcut: '/images/marcel-default.png',
+    shortcut: '/images/browser_logo.PNG',
   },
   manifest: '/manifest.webmanifest',
   appleWebApp: {
