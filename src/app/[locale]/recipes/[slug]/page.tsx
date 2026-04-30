@@ -48,14 +48,12 @@ export default async function RecipePage({ params }: Props) {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${recipe.image})` }}
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 w-full pb-12 pt-24">
           <span className="inline-block bg-terracotta text-white text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide mb-4">
             {categoryConfig[recipe.category]?.label ?? recipe.category}
           </span>
-          <h1
-            className="font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 drop-shadow-lg"
-            style={{ color: 'white', mixBlendMode: 'difference' }}
-          >
+          <h1 className="font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 text-white drop-shadow-lg">
             {recipe.title}
           </h1>
           <p className="font-body italic text-lg text-parchment/80">{recipe.excerpt}</p>
