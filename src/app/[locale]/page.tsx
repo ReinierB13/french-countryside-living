@@ -50,6 +50,12 @@ export default async function HomePage({
           >
             Explore Recipes
           </Link>
+          <Link
+            href={`/${locale}/provence/markets`}
+            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-7 py-3 rounded-sm hover:bg-white/30 transition-colors"
+          >
+            Markets Map
+          </Link>
         </div>
       </Hero>
 
