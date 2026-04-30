@@ -332,7 +332,7 @@ export const articles: Article[] = [
 <p class="font-body text-xl text-charcoal/80 italic leading-relaxed mb-8 border-l-4 border-amber pl-5">I grew up hunting. I am not going to apologise for it. Mankind grew stronger and smarter because we ate meat - and the hunt is as old as humanity itself.</p>
 
 <p>My introduction to hunting came early, in South Africa, where the bush teaches you patience, respect for the animal, and a sharp awareness of everything around you. But hunting in France - and in Provence in particular - is something else entirely. It is, first and foremost, a <em>team sport</em>.</p>
-<p>Forget the solitary figure in a tree stand. Here, the hunt is a collective act, woven into the social fabric of rural life, governed by strict rules, ancient customs, and a great deal of good-natured argument over coffee before dawn.</p>
+<p>Forget the solitary figure in a tree stand or hunter stalking in the bush. Here, the hunt is a collective act, woven into the social fabric of rural life, governed by strict rules, ancient customs, and a great deal of good-natured argument over coffee before dawn.</p>
 
 <h2>The Animal: Wild Boar of Les Alpilles</h2>
 <p>In Provence, our main quarry is the <em>sanglier</em> - the wild boar. Do not underestimate it. These are canny, intelligent animals, with an acute sense of smell that puts most hunting dogs to shame. They are also, when their numbers go unchecked, genuinely destructive. A surpopulation in any area can have devastating consequences for farmers and landowners: rooted-up vineyards, ravaged olive groves, ruined pasture.</p>
@@ -1374,6 +1374,69 @@ export const recipes: Recipe[] = [
         `Goûter et ajuster — ajouter le vinaigre restant si la sauce a besoin de plus de mordant, et assaisonner de sel et de poivre noir.`,
       ],
       marcelTip: `Malgré le nom étrange, la Monkey Gland Sauce ne contient presque pas de singes.`,
+    },
+  },
+  {
+    slug: 'sardine-dip',
+    title: 'Sardine Dip',
+    excerpt: 'A fifteen-minute apéro dip built on tinned sardines, shallots, and a squeeze of lemon. The one that is always first to go.',
+    image: '/images/sardine.png',
+    date: '2026-04-28',
+    category: 'apero',
+    servings: 6,
+    prepTime: '15 min',
+    cookTime: '0 min',
+    difficulty: 'Easy',
+    ingredients: [
+      '2 cans sardines in oil, drained',
+      '2 shallots (or 1 small white onion), very finely chopped',
+      '2 tablespoons mayonnaise',
+      '1 lemon or lime, zest of half',
+      '1 lemon or lime, juice of half',
+      '1 pinch smoked paprika',
+      '1 pinch cayenne pepper (or a few dashes of Tabasco)',
+      'Salt and white pepper',
+    ],
+    instructions: [
+      'Chop the shallots as finely as you can. You want them to disappear into the dip, not announce themselves in every bite.',
+      'Drain the sardines thoroughly and tip into a bowl. Mash with a fork, but stop short of a paste. The fish should still have some texture and presence. It should look like sardine, not baby food.',
+      'Add the shallots to the sardines. Add the mayonnaise and mix through. The dip should be thick at this point, which is correct. Add the zest of half a lemon or lime, then the smoked paprika and cayenne (or Tabasco). Season with salt and white pepper. Mix well. In summer, when fresh dill is easy to find, add a small handful finely chopped. It turns this into a different dip, lighter and more herbal, and it is worth doing.',
+      'Squeeze in the juice of half a lemon or lime a little at a time, mixing as you go, until the dip loosens just enough to spread easily on a cracker without sliding off. Taste and adjust: more cayenne if you want heat, more lemon if it needs brightness.',
+    ],
+    story: `This recipe belongs to my wife. She has been making it since before we were married, which is over twenty years ago now, and it has been on the table at every apéro we have hosted since. It is not a recipe we decided to feature. It is simply what we make.\n\nWe keep four cans of sardines in the cupboard at all times. Not because we planned to, but because we learned the hard way what happens when friends arrive unexpectedly on a warm evening and you have nothing ready. Now we are never without them.\n\nIf the sardines are there and the shallots are there, we are fifteen minutes from an apéro. The rest fills itself in. If the butcher across the road is still open, you go. If he is not, his vending machine is - dried sausage, always stocked, available at any hour, a bloody marvel. A packet of biscuits from the pantry. A bottle of rosé from the fridge if there is one, otherwise quickly pop one from the wine rack into an ice bucket.\n\nThe dip takes ten minutes. We are outside before the bottle has had time to sweat. That is what this recipe is. Not a project. An answer.`,
+    notes: [
+      'Granulated garlic works well if you want an extra layer of flavour.',
+      'Serve at room temperature on crackers or sliced baguette.',
+      'It is the first thing to go at any apéro, which is either a compliment to the recipe or an indictment of how hungry people arrive.',
+    ],
+    marcelTip: 'Keep four cans in the cupboard at all times. You will thank yourself on the evening when unexpected guests appear and the sun is still warm.',
+    marcelType: 'cooking',
+    fr: {
+      title: 'Dip de Sardines',
+      excerpt: 'Un dip apéro en quinze minutes, à base de sardines en boîte, d\'échalotes et d\'un filet de citron. Celui qui disparaît toujours en premier.',
+      story: `Cette recette appartient à ma femme. Elle la fait depuis avant notre mariage, ce qui représente plus de vingt ans maintenant, et elle est sur la table à chaque apéro que nous avons organisé depuis. Ce n'est pas une recette que nous avons décidé de mettre en avant. C'est simplement ce que nous faisons.\n\nNous gardons quatre boîtes de sardines dans le placard en permanence. Non pas parce que nous l'avons planifié, mais parce que nous avons appris à la dure ce qui se passe quand des amis arrivent à l'improviste un soir de chaleur et que vous n'avez rien de prêt. Maintenant, nous n'en manquons jamais.\n\nSi les sardines sont là et les échalotes sont là, nous sommes à quinze minutes d'un apéro. Le reste se remplit tout seul. Si le boucher d'en face est encore ouvert, vous y allez. S'il ne l'est pas, son distributeur automatique l'est, lui, saucisson sec toujours approvisionné, disponible à toute heure, une sacrée merveille. Un paquet de biscuits du garde-manger. Une bouteille de rosé du frigo s'il y en a une, sinon vite une du casier à vin dans un seau à glace.\n\nLe dip prend dix minutes. Nous sommes dehors avant que la bouteille ait eu le temps de transpirer. C'est ça, cette recette. Pas un projet. Une réponse.`,
+      ingredients: [
+        '2 boîtes de sardines à l\'huile, égouttées',
+        '2 échalotes (ou 1 petit oignon blanc), finement hachées',
+        '2 cuillères à soupe de mayonnaise',
+        '1 citron ou citron vert, zeste de la moitié',
+        '1 citron ou citron vert, jus de la moitié',
+        '1 pincée de paprika fumé',
+        '1 pincée de cayenne (ou quelques traits de Tabasco)',
+        'Sel et poivre blanc',
+      ],
+      instructions: [
+        'Hacher les échalotes le plus finement possible. Vous voulez qu\'elles disparaissent dans le dip, pas qu\'elles s\'annoncent à chaque bouchée.',
+        'Égoutter soigneusement les sardines et les verser dans un bol. Écraser à la fourchette, mais sans aller jusqu\'à la purée. Le poisson doit encore avoir de la texture et de la présence. Ça doit ressembler à de la sardine, pas à de la nourriture pour bébé.',
+        'Ajouter les échalotes aux sardines. Ajouter la mayonnaise et mélanger. Le dip doit être épais à ce stade, c\'est normal. Ajouter le zeste de la moitié d\'un citron ou citron vert, puis le paprika fumé et le cayenne (ou le Tabasco). Assaisonner avec du sel et du poivre blanc. Bien mélanger. En été, quand l\'aneth frais est facile à trouver, ajouter une petite poignée finement ciselée. Ça donne un dip différent, plus léger et plus herbacé, et ça vaut le coup.',
+        'Presser le jus de la moitié d\'un citron ou citron vert peu à peu, en mélangeant au fur et à mesure, jusqu\'à ce que le dip se détende juste assez pour s\'étaler facilement sur un cracker sans glisser. Goûter et ajuster : plus de cayenne pour la chaleur, plus de citron si ça manque de vivacité.',
+      ],
+      notes: [
+        'L\'ail en poudre fonctionne bien pour une couche de saveur supplémentaire.',
+        'Servir à température ambiante sur des crackers ou des tranches de baguette.',
+        'C\'est le premier à disparaître à chaque apéro, ce qui est soit un compliment pour la recette, soit une mise en cause de l\'état de faim dans lequel les gens arrivent.',
+      ],
+      marcelTip: 'Gardez quatre boîtes dans le placard en permanence. Vous vous féliciterez le soir où des invités imprévus arrivent et que le soleil est encore chaud.',
     },
   },
 ];
