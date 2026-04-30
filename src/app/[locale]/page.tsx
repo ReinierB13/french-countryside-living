@@ -39,7 +39,8 @@ export default async function HomePage({
         imagePosition="center 20%"
         contentAlign="bottom"
       >
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
+        <div className="flex flex-col gap-4 items-center mt-6">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href={`/${locale}/articles`}
             className="bg-terracotta text-white font-body font-semibold px-7 py-3 rounded-sm hover:bg-terracotta-dark transition-colors"
@@ -57,6 +58,13 @@ export default async function HomePage({
             className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-7 py-3 rounded-sm hover:bg-white/30 transition-colors"
           >
             Markets Map
+          </Link>
+          </div>
+          <Link
+            href={`/${locale}/articles`}
+            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-7 py-3 rounded-sm hover:bg-white/30 transition-colors w-full sm:w-auto text-center"
+          >
+            Articles
           </Link>
         </div>
       </Hero>
