@@ -1,6 +1,7 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
 import type { Market } from './marketsData';
 import { MARKET_TYPE_COLORS, type MarketTypeKey } from './marketsData';
 
@@ -16,6 +17,10 @@ const SEASONALITY_COLORS: Record<string, string> = {
 
 export default function MarketPopup({ market }: Props) {
   const t = useTranslations('MarketsPage');
+  const locale = useLocale();
+  const detailHref = locale === 'fr'
+    ? `/fr/provence/markets/${market.id}`
+    : `/provence/markets/${market.id}`;
 
   const seasonalityKey =
     market.seasonality === 'year_round'
@@ -102,10 +107,18 @@ export default function MarketPopup({ market }: Props) {
 
       {/* Phone */}
       {market.mairie_phone && (
-        <p className="text-xs text-charcoal/50 text-center">
+        <p className="text-xs text-charcoal/50 text-center mb-1.5">
           {t('mairiePhone')}: {market.mairie_phone}
         </p>
       )}
+
+      {/* Reviews link */}
+      <Link
+        href={detailHref}
+        className="block w-full text-center bg-terracotta text-white text-xs font-medium py-1.5 px-3 rounded-sm hover:bg-terracotta/85 transition-colors mt-1"
+      >
+        Reviews &amp; comments →
+      </Link>
     </div>
   );
 }

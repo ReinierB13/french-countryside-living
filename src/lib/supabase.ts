@@ -7,7 +7,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export interface Comment {
   id: string;
-  content_type: 'article' | 'recipe';
+  content_type: 'article' | 'recipe' | 'market';
   content_slug: string;
   name: string;
   message: string;

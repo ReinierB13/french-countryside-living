@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import type { Comment } from '@/lib/supabase';
 
 interface Props {
-  contentType: 'article' | 'recipe';
+  contentType: 'article' | 'recipe' | 'market';
   contentSlug: string;
 }
 
