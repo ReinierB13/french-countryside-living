@@ -32,7 +32,7 @@ export default async function HomePage({
       {/* ── Hero ── */}
       <Hero
         subtitle={t('heroSubtitle')}
-        imageSrc="/images/Main_Hero_resized.png"
+        imageSrc="/images/Main_Hero.png"
         imageAlt="Provence countryside at golden hour"
         height="full"
         overlay="medium"
