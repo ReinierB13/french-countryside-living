@@ -47,6 +47,13 @@ export const DEPARTMENTS = [
 
 export const MARKET_TYPES: MarketTypeKey[] = ['food', 'brocante', 'crafts', 'mixed'];
 
+export interface RatingSummary {
+  avg: number;
+  count: number;
+}
+
+export type RatingSummaries = Record<string, RatingSummary>;
+
 export interface ActiveFilters {
   days: string[];
   types: string[];

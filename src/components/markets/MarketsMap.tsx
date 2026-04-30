@@ -6,7 +6,7 @@ import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import { useTranslations } from 'next-intl';
 
-import type { Market } from './marketsData';
+import type { Market, RatingSummaries } from './marketsData';
 import {
   DEFAULT_FILTERS,
   MARKET_TYPE_COLORS,
@@ -67,9 +67,10 @@ function MapController({ target }: { target: [number, number] | null }) {
 // ---------------------------------------------------------------------------
 interface Props {
   markets: Market[];
+  ratings: RatingSummaries;
 }
 
-export default function MarketsMap({ markets }: Props) {
+export default function MarketsMap({ markets, ratings }: Props) {
   const t = useTranslations('MarketsPage');
 
   const [filters, setFilters] = useState<ActiveFilters>(DEFAULT_FILTERS);
@@ -194,7 +195,7 @@ export default function MarketsMap({ markets }: Props) {
                 }}
               >
                 <Popup minWidth={220}>
-                  <MarketPopup market={market} />
+                  <MarketPopup market={market} rating={ratings[market.id]} />
                 </Popup>
               </Marker>
             );

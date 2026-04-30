@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Hero from '@/components/Hero';
 import MarketsMapClient from '@/components/markets/MarketsMapClient';
 import { supabase } from '@/lib/supabase';
-import type { Market } from '@/components/markets/marketsData';
+import type { Market, RatingSummaries } from '@/components/markets/marketsData';
 
 const BASE_URL = 'https://www.french-countryside-living.com';
 
@@ -73,6 +73,29 @@ export async function generateMetadata({
       images: [`${BASE_URL}/images/market.png`],
     },
   };
+}
+
+async function fetchRatings(): Promise<RatingSummaries> {
+  try {
+    const { data, error } = await supabase
+      .from('market_ratings')
+      .select('market_id, rating');
+
+    if (error || !data) return {};
+
+    const summaries: RatingSummaries = {};
+    for (const row of data) {
+      if (!summaries[row.market_id]) summaries[row.market_id] = { avg: 0, count: 0 };
+      summaries[row.market_id].count += 1;
+      summaries[row.market_id].avg += row.rating;
+    }
+    for (const id of Object.keys(summaries)) {
+      summaries[id].avg = Math.round((summaries[id].avg / summaries[id].count) * 10) / 10;
+    }
+    return summaries;
+  } catch {
+    return {};
+  }
 }
 
 async function fetchMarkets(): Promise<Market[]> {
@@ -185,7 +208,7 @@ export default async function MarketsPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations('MarketsPage');
-  const markets = await fetchMarkets();
+  const [markets, ratings] = await Promise.all([fetchMarkets(), fetchRatings()]);
   const jsonLd = buildJsonLd(markets, locale);
 
   return (
@@ -245,7 +268,7 @@ export default async function MarketsPage({
           </p>
         </div>
       ) : (
-        <MarketsMapClient markets={markets} />
+        <MarketsMapClient markets={markets} ratings={ratings} />
       )}
 
       {/* Disclaimer */}

@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import type { Market } from './marketsData';
+import type { Market, RatingSummaries } from './marketsData';
 
 const MarketsMap = dynamic(() => import('./MarketsMap'), {
   ssr: false,
@@ -12,6 +12,6 @@ const MarketsMap = dynamic(() => import('./MarketsMap'), {
   ),
 });
 
-export default function MarketsMapClient({ markets }: { markets: Market[] }) {
-  return <MarketsMap markets={markets} />;
+export default function MarketsMapClient({ markets, ratings }: { markets: Market[]; ratings: RatingSummaries }) {
+  return <MarketsMap markets={markets} ratings={ratings} />;
 }
