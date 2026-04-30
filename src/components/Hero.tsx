@@ -1,5 +1,5 @@
 interface HeroProps {
-  title: string;
+  title?: string;
   subtitle?: string;
   imageSrc: string;
   imageAlt: string;
@@ -15,6 +15,7 @@ export default function Hero({
   imageSrc,
   imageAlt,
   height = 'large',
+  overlay = 'light',
   darkText = false,
   children,
 }: HeroProps) {
@@ -24,9 +25,15 @@ export default function Hero({
     medium: 'min-h-[40vh]',
   };
 
+  const overlayStrength = {
+    light: 'from-black/40 via-black/10',
+    medium: 'from-black/60 via-black/20',
+    dark: 'from-black/75 via-black/30',
+  };
+
   return (
     <section
-      className={`relative ${heights[height]} w-full overflow-hidden flex items-center justify-center`}
+      className={`relative ${heights[height]} w-full overflow-hidden flex items-end justify-center`}
       aria-label={imageAlt}
     >
       {/* Background image */}
@@ -37,14 +44,16 @@ export default function Hero({
         aria-label={imageAlt}
       />
 
+      {/* Bottom gradient overlay for text readability */}
+      <div className={`absolute inset-0 bg-gradient-to-t ${overlayStrength[overlay]} to-transparent`} />
+
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto py-20">
-        <h1
-          className="font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-sm leading-tight"
-          style={{ color: 'white', mixBlendMode: 'difference' }}
-        >
-          {title}
-        </h1>
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pb-16 pt-32 w-full">
+        {title && (
+          <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-lg leading-tight text-white">
+            {title}
+          </h1>
+        )}
         {subtitle && (
           <p className={`font-body text-lg sm:text-xl md:text-2xl italic drop-shadow-sm max-w-2xl mx-auto ${darkText ? 'text-charcoal/80' : 'text-parchment/90'}`}>
             {subtitle}

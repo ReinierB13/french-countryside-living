@@ -31,12 +31,11 @@ export default async function HomePage({
     <>
       {/* ── Hero ── */}
       <Hero
-        title={t('heroTitle')}
         subtitle={t('heroSubtitle')}
-        imageSrc="/images/la_vallongue.png"
+        imageSrc="/images/Main_Hero_resized.png"
         imageAlt="Provence countryside at golden hour"
         height="full"
-        darkText
+        overlay="medium"
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <Link
