@@ -37,6 +37,7 @@ export default async function HomePage({
         height="full"
         overlay="medium"
         imagePosition="center 20%"
+        contentAlign="bottom"
       >
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
           <Link
