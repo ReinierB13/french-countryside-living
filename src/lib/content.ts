@@ -1378,7 +1378,7 @@ export const recipes: Recipe[] = [
   },
   {
     slug: 'sardine-dip',
-    title: 'Sardine Dip',
+    title: 'French Sardine Apéro Dip (10-Minute Recipe)',
     excerpt: 'A fifteen-minute apéro dip built on tinned sardines, shallots, and a squeeze of lemon. The one that is always first to go.',
     image: '/images/sardine.png',
     date: '2026-04-28',
