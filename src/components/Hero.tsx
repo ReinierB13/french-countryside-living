@@ -33,7 +33,7 @@ export default function Hero({
 
   return (
     <section
-      className={`relative ${heights[height]} w-full overflow-hidden flex items-end justify-center`}
+      className={`relative ${heights[height]} w-full overflow-hidden flex items-center justify-center`}
       aria-label={imageAlt}
     >
       {/* Background image */}
@@ -48,7 +48,7 @@ export default function Hero({
       <div className={`absolute inset-0 bg-gradient-to-t ${overlayStrength[overlay]} to-transparent`} />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto pb-16 pt-32 w-full">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto py-20 w-full">
         {title && (
           <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-bold mb-5 drop-shadow-lg leading-tight text-white">
             {title}
