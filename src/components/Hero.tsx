@@ -5,6 +5,7 @@ interface HeroProps {
   imageAlt: string;
   height?: 'full' | 'large' | 'medium';
   overlay?: 'light' | 'medium' | 'dark';
+  imagePosition?: string;
   darkText?: boolean;
   children?: React.ReactNode;
 }
@@ -16,6 +17,7 @@ export default function Hero({
   imageAlt,
   height = 'large',
   overlay = 'light',
+  imagePosition = 'center',
   darkText = false,
   children,
 }: HeroProps) {
@@ -38,8 +40,8 @@ export default function Hero({
     >
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${imageSrc})` }}
+        className="absolute inset-0 bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${imageSrc})`, backgroundPosition: imagePosition }}
         role="img"
         aria-label={imageAlt}
       />
