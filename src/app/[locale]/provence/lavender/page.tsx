@@ -77,7 +77,6 @@ async function fetchLavenderFields(): Promise<LavenderField[]> {
     const { data, error } = await supabase
       .from('lavender_fields')
       .select('*')
-      .eq('confirmed', true)
       .order('region', { ascending: true })
       .order('village', { ascending: true });
 
