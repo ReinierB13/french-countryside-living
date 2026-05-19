@@ -91,10 +91,7 @@ export default function LavenderMap({ fields }: Props) {
     setFlyTarget(null);
   }, []);
 
-  const activeFilterCount =
-    filters.regions.length +
-    filters.locationTypes.length +
-    (filters.bloomingNow ? 1 : 0);
+  const activeFilterCount = filters.regions.length + filters.locationTypes.length;
 
   return (
     <div className="relative flex flex-col lg:flex-row h-[calc(100dvh-56px)] overflow-hidden">

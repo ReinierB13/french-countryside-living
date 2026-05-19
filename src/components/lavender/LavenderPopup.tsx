@@ -5,7 +5,6 @@ import {
   LOCATION_TYPE_COLORS,
   LOCATION_TYPE_LABELS,
   bloomLabel,
-  isCurrentlyBlooming,
 } from './lavenderData';
 
 interface Props {
@@ -15,7 +14,6 @@ interface Props {
 export default function LavenderPopup({ field }: Props) {
   const color = LOCATION_TYPE_COLORS[field.location_type as LavenderLocationType] ?? '#7B5EA7';
   const label = LOCATION_TYPE_LABELS[field.location_type as LavenderLocationType] ?? field.location_type;
-  const blooming = isCurrentlyBlooming(field);
 
   return (
     <div className="font-body text-charcoal min-w-[220px] max-w-[280px]">
@@ -44,14 +42,8 @@ export default function LavenderPopup({ field }: Props) {
         </span>
 
         {/* Bloom period */}
-        <span
-          className={`inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-sm border ${
-            blooming
-              ? 'bg-[#7B5EA7] text-white border-[#7B5EA7]'
-              : 'bg-white text-charcoal border-charcoal/25'
-          }`}
-        >
-          {blooming ? '🌸 In bloom now' : `🌿 ${bloomLabel(field)}`}
+        <span className="inline-flex items-center text-xs font-semibold px-2.5 py-1 rounded-sm border bg-white text-charcoal border-charcoal/25">
+          🌿 {bloomLabel(field)}
         </span>
       </div>
 

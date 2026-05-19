@@ -5,7 +5,6 @@ import {
   LOCATION_TYPE_COLORS,
   LOCATION_TYPE_LABELS,
   bloomLabel,
-  isCurrentlyBlooming,
 } from './lavenderData';
 
 interface Props {
@@ -30,7 +29,6 @@ export default function LavenderSidebar({ fields, selectedId, onSelect }: Props)
         const isSelected = field.id === selectedId;
         const color = LOCATION_TYPE_COLORS[field.location_type as LavenderLocationType] ?? '#7B5EA7';
         const label = LOCATION_TYPE_LABELS[field.location_type as LavenderLocationType] ?? field.location_type;
-        const blooming = isCurrentlyBlooming(field);
 
         return (
           <li key={field.id}>
@@ -40,16 +38,11 @@ export default function LavenderSidebar({ fields, selectedId, onSelect }: Props)
                 isSelected ? 'bg-parchment border-l-2 border-[#7B5EA7]' : ''
               }`}
             >
-              {/* Name + bloom indicator */}
+              {/* Name */}
               <div className="flex items-start justify-between gap-2 mb-1">
                 <span className="font-heading font-semibold text-sm text-charcoal leading-snug">
                   {field.village}
                 </span>
-                {blooming && (
-                  <span className="text-[10px] text-[#7B5EA7] font-medium shrink-0 mt-0.5">
-                    🌸 blooming
-                  </span>
-                )}
               </div>
 
               {/* Full name */}

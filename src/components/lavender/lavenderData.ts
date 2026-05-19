@@ -79,39 +79,23 @@ export const MONTH_NAMES = [
 export interface LavenderFilters {
   regions: LavenderRegion[];
   locationTypes: LavenderLocationType[];
-  bloomingNow: boolean;
 }
 
 export const DEFAULT_FILTERS: LavenderFilters = {
   regions: [],
   locationTypes: [],
-  bloomingNow: false,
 };
-
-export function getCurrentMonth(): number {
-  return new Date().getMonth() + 1; // 1-based
-}
-
-export function isCurrentlyBlooming(field: LavenderField): boolean {
-  const month = getCurrentMonth();
-  return month >= field.bloom_start_month && month <= field.bloom_end_month;
-}
 
 export function filterFields(fields: LavenderField[], filters: LavenderFilters): LavenderField[] {
   return fields.filter((f) => {
     if (filters.regions.length > 0 && !filters.regions.includes(f.region)) return false;
     if (filters.locationTypes.length > 0 && !filters.locationTypes.includes(f.location_type)) return false;
-    if (filters.bloomingNow && !isCurrentlyBlooming(f)) return false;
     return true;
   });
 }
 
 export function hasActiveFilters(filters: LavenderFilters): boolean {
-  return (
-    filters.regions.length > 0 ||
-    filters.locationTypes.length > 0 ||
-    filters.bloomingNow
-  );
+  return filters.regions.length > 0 || filters.locationTypes.length > 0;
 }
 
 export function bloomLabel(field: LavenderField): string {

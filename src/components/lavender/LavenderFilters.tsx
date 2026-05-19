@@ -10,8 +10,6 @@ import {
   type LavenderLocationType,
   type LavenderRegion,
   hasActiveFilters,
-  getCurrentMonth,
-  MONTH_NAMES,
 } from './lavenderData';
 
 interface Props {
@@ -31,46 +29,27 @@ export default function LavenderFilters({
   filteredCount,
 }: Props) {
   const active = hasActiveFilters(filters);
-  const currentMonth = getCurrentMonth();
-  const currentMonthName = MONTH_NAMES[currentMonth - 1];
 
-  const clearAll = () =>
-    onFiltersChange({ regions: [], locationTypes: [], bloomingNow: false });
+  const clearAll = () => onFiltersChange({ regions: [], locationTypes: [] });
 
   return (
     <div className="bg-white border-b border-parchment px-4 py-3 space-y-3">
-      {/* Top row: Blooming now shortcut + clear */}
-      <div className="flex items-center justify-between gap-2">
-        <button
-          onClick={() =>
-            onFiltersChange({ ...filters, bloomingNow: !filters.bloomingNow })
-          }
-          className={`flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-sm transition-colors ${
-            filters.bloomingNow
-              ? 'bg-[#7B5EA7] text-white'
-              : 'bg-[#7B5EA7]/10 text-[#7B5EA7] hover:bg-[#7B5EA7]/20'
-          }`}
-        >
-          <span>🌸</span>
-          In bloom now ({currentMonthName})
-        </button>
-
-        <div className="flex items-center gap-2">
+      {/* Top row: count + clear */}
+      {active && (
+        <div className="flex items-center justify-between gap-2">
           {filteredCount > 0 && (
             <span className="text-xs text-charcoal/50 font-body">
               {filteredCount} field{filteredCount !== 1 ? 's' : ''}
             </span>
           )}
-          {active && (
-            <button
-              onClick={clearAll}
-              className="text-xs text-terracotta hover:underline font-body"
-            >
-              Clear filters
-            </button>
-          )}
+          <button
+            onClick={clearAll}
+            className="text-xs text-terracotta hover:underline font-body ml-auto"
+          >
+            Clear filters
+          </button>
         </div>
-      </div>
+      )}
 
       {/* Location type chips */}
       <div>
