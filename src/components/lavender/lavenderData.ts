@@ -6,7 +6,7 @@ export interface LavenderField {
   lat: number;
   lng: number;
   region: LavenderRegion;
-  location: LavenderLocationType;
+  location_type: LavenderLocationType;
   bloom_start_month: number;
   bloom_end_month: number;
   seasonality?: string | null;
@@ -22,53 +22,53 @@ export interface LavenderField {
 }
 
 export type LavenderRegion =
-  | 'valensole'
-  | 'luberon'
-  | 'sault'
-  | 'verdon'
-  | 'drome';
+  | 'Valensole'
+  | 'Luberon'
+  | 'Sault'
+  | 'Albion'
+  | 'Drôme Provençale';
 
 export type LavenderLocationType =
-  | 'field'
-  | 'distillery'
   | 'farm'
-  | 'viewpoint';
+  | 'viewpoint'
+  | 'abbey'
+  | 'museum';
 
 export const LOCATION_TYPE_COLORS: Record<LavenderLocationType, string> = {
-  field:      '#7B5EA7', // lavender purple
-  distillery: '#A04F8C', // mauve
-  farm:       '#556B2F', // olive
-  viewpoint:  '#4A6FA5', // slate blue
+  farm:      '#556B2F', // olive green
+  viewpoint: '#4A6FA5', // slate blue
+  abbey:     '#8B6040', // warm brown
+  museum:    '#7B5EA7', // lavender purple
 };
 
 export const LOCATION_TYPE_LABELS: Record<LavenderLocationType, string> = {
-  field:      'Field',
-  distillery: 'Distillery',
-  farm:       'Farm / Domain',
-  viewpoint:  'Viewpoint',
+  farm:      'Farm / Domain',
+  viewpoint: 'Viewpoint',
+  abbey:     'Abbey',
+  museum:    'Museum',
 };
 
 export const REGION_LABELS: Record<LavenderRegion, string> = {
-  valensole: 'Plateau de Valensole',
-  luberon:   'Luberon',
-  sault:     'Plateau de Sault',
-  verdon:    'Gorges du Verdon',
-  drome:     'Drôme Provençale',
+  'Valensole':        'Plateau de Valensole',
+  'Luberon':          'Luberon',
+  'Sault':            'Plateau de Sault',
+  'Albion':           'Plateau d\'Albion',
+  'Drôme Provençale': 'Drôme Provençale',
 };
 
 export const LAVENDER_REGIONS: LavenderRegion[] = [
-  'valensole',
-  'luberon',
-  'sault',
-  'verdon',
-  'drome',
+  'Valensole',
+  'Luberon',
+  'Sault',
+  'Albion',
+  'Drôme Provençale',
 ];
 
 export const LAVENDER_LOCATION_TYPES: LavenderLocationType[] = [
-  'field',
-  'distillery',
   'farm',
   'viewpoint',
+  'abbey',
+  'museum',
 ];
 
 export const MONTH_NAMES = [
@@ -100,7 +100,7 @@ export function isCurrentlyBlooming(field: LavenderField): boolean {
 export function filterFields(fields: LavenderField[], filters: LavenderFilters): LavenderField[] {
   return fields.filter((f) => {
     if (filters.regions.length > 0 && !filters.regions.includes(f.region)) return false;
-    if (filters.locationTypes.length > 0 && !filters.locationTypes.includes(f.location)) return false;
+    if (filters.locationTypes.length > 0 && !filters.locationTypes.includes(f.location_type)) return false;
     if (filters.bloomingNow && !isCurrentlyBlooming(f)) return false;
     return true;
   });

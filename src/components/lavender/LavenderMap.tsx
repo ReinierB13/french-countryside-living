@@ -183,7 +183,7 @@ export default function LavenderMap({ fields }: Props) {
               <Marker
                 key={field.id}
                 position={[field.lat, field.lng]}
-                icon={createPinIcon(field.location, isSelected)}
+                icon={createPinIcon(field.location_type, isSelected)}
                 opacity={isVisible ? 1 : 0.2}
                 eventHandlers={{
                   click: () => {

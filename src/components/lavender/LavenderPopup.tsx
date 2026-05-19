@@ -13,8 +13,8 @@ interface Props {
 }
 
 export default function LavenderPopup({ field }: Props) {
-  const color = LOCATION_TYPE_COLORS[field.location as LavenderLocationType] ?? '#7B5EA7';
-  const label = LOCATION_TYPE_LABELS[field.location as LavenderLocationType] ?? field.location;
+  const color = LOCATION_TYPE_COLORS[field.location_type as LavenderLocationType] ?? '#7B5EA7';
+  const label = LOCATION_TYPE_LABELS[field.location_type as LavenderLocationType] ?? field.location_type;
   const blooming = isCurrentlyBlooming(field);
 
   return (
