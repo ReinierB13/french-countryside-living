@@ -56,7 +56,7 @@ export async function generateMetadata({
       siteName: 'French Countryside Living',
       images: [
         {
-          url: `${BASE_URL}/images/lavender.jpg`,
+          url: `${BASE_URL}/images/lavender.png`,
           width: 1200,
           height: 630,
           alt: 'Purple lavender fields on the Plateau de Valensole, Provence',
@@ -67,7 +67,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title,
       description,
-      images: [`${BASE_URL}/images/lavender.jpg`],
+      images: [`${BASE_URL}/images/lavender.png`],
     },
   };
 }
@@ -106,7 +106,7 @@ export default async function LavenderPage({
       <Hero
         title="Lavender Fields of Provence"
         subtitle="Find fields, farms, and distilleries — and discover when the purple blooms"
-        imageSrc="/images/lavender.jpg"
+        imageSrc="/images/lavender.png"
         imageAlt="Purple lavender rows stretching to the horizon on the Plateau de Valensole"
         height="medium"
         overlay="medium"
