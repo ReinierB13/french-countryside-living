@@ -11,6 +11,7 @@ export interface Article {
   tags?: string[];
   marcelTip?: string;
   marcelType?: MarcelType;
+  hidden?: boolean;
   fr?: {
     title: string;
     excerpt: string;
