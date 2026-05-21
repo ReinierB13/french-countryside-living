@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface HeroProps {
   title?: string;
   subtitle?: string;
@@ -40,12 +42,14 @@ export default function Hero({
       className={`relative ${heights[height]} w-full overflow-hidden flex ${contentAlign === 'bottom' ? 'items-start' : 'items-center'} justify-center`}
       aria-label={imageAlt}
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-no-repeat"
-        style={{ backgroundImage: `url(${imageSrc})`, backgroundPosition: imagePosition }}
-        role="img"
-        aria-label={imageAlt}
+      {/* Background image - uses Next.js optimization (auto WebP, responsive sizes, CDN cache) */}
+      <Image
+        src={imageSrc}
+        alt={imageAlt}
+        fill
+        className="object-cover"
+        style={{ objectPosition: imagePosition }}
+        priority
       />
 
       {/* Bottom gradient overlay for text readability */}

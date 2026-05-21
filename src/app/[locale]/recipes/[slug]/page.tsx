@@ -1,6 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import Marcel from '@/components/Marcel';
 import NewsletterSignup from '@/components/NewsletterSignup';
@@ -198,11 +199,13 @@ export default async function RecipePage({ params }: Props) {
           <div className="mt-12 pt-8 border-t border-charcoal/10">
             <div className={`grid gap-3 ${recipe.images.length === 2 ? 'grid-cols-2' : 'grid-cols-3'}`}>
               {recipe.images.map((src, i) => (
-                <div key={i} className="aspect-square overflow-hidden rounded-sm bg-charcoal/5">
-                  <img
+                <div key={i} className="relative aspect-square overflow-hidden rounded-sm bg-charcoal/5">
+                  <Image
                     src={src}
                     alt={`${recipe.title} - photo ${i + 1}`}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 50vw, 33vw"
                   />
                 </div>
               ))}
@@ -220,8 +223,8 @@ export default async function RecipePage({ params }: Props) {
               <div className="flex flex-col gap-4">
                 {related.map(r => (
                   <Link key={r!.slug} href={`/${locale}/recipes/${r!.slug}`} className="flex items-center gap-4 group">
-                    <div className="w-20 h-20 shrink-0 overflow-hidden rounded-sm bg-charcoal/5">
-                      <img src={r!.image} alt={r!.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                    <div className="relative w-20 h-20 shrink-0 overflow-hidden rounded-sm bg-charcoal/5">
+                      <Image src={r!.image} alt={r!.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" sizes="80px" />
                     </div>
                     <div>
                       <p className="font-heading font-semibold text-charcoal group-hover:text-terracotta transition-colors">{r!.title}</p>
