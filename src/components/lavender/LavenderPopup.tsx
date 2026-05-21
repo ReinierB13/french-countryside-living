@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import type { LavenderField, LavenderLocationType } from './lavenderData';
 import {
   LOCATION_TYPE_COLORS,
@@ -14,6 +15,7 @@ interface Props {
 export default function LavenderPopup({ field }: Props) {
   const color = LOCATION_TYPE_COLORS[field.location_type as LavenderLocationType] ?? '#7B5EA7';
   const label = LOCATION_TYPE_LABELS[field.location_type as LavenderLocationType] ?? field.location_type;
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <div className="font-body text-charcoal min-w-[220px] max-w-[280px]">
@@ -49,9 +51,21 @@ export default function LavenderPopup({ field }: Props) {
 
       {/* Notes */}
       {field.notes && (
-        <p className="text-xs text-charcoal/80 leading-relaxed mb-3 border-l-2 border-charcoal/20 pl-2">
-          {field.notes.length > 160 ? field.notes.slice(0, 157) + '…' : field.notes}
-        </p>
+        <div className="mb-3 border-l-2 border-charcoal/20 pl-2">
+          <p className="text-xs text-charcoal/80 leading-relaxed">
+            {!expanded && field.notes.length > 160
+              ? field.notes.slice(0, 157) + '…'
+              : field.notes}
+          </p>
+          {field.notes.length > 160 && (
+            <button
+              onClick={() => setExpanded((e) => !e)}
+              className="text-xs text-[#7B5EA7] font-semibold mt-1 hover:underline"
+            >
+              {expanded ? 'See less' : 'See more'}
+            </button>
+          )}
+        </div>
       )}
 
       {/* Address */}
