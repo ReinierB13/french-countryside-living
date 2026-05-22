@@ -663,6 +663,73 @@ export const articles: Article[] = [
     },
   },
   {
+    slug: 'lavender-season-provence',
+    title: 'Lavender Season in Provence: Beyond the Postcard',
+    excerpt: 'Getting four semi-conscious family members into a car before sunrise, a daughter who became a tourist attraction, and the lavender crème brûlée I am still trying to recreate.',
+    content: `<p>Every year in late June or early July, my wife and I try to motivate the kids to get up before sunrise to go look at lavender. This involves a negotiation process that would exhaust a UN diplomat. There are veiled threats, vague promises of stopping at the boulangerie, and eventually, at some ungodly hour, four semi-conscious humans climb into the car. By the time we get there they are quiet, either still half asleep or genuinely stunned into silence. Golden hour does that.</p>
+<img src="/images/Lavender/lav-from-high.jpg" alt="The lavender landscape of Provence at golden hour" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<h2>The Abbey</h2>
+<p>We've been to Sault, we've driven through the Drôme Provençale, but our favourite is still the Abbaye de Sénanque. If you approach from the Gordes side and suddenly see that patchwork of purple nestled between the limestone hills, it stops you every time. Pull over at the vantage point and take your panorama shots - it is absolutely worth it. One practical note: since earlier this year the road has been made one-way from Gordes to the abbey. You can no longer turn around and drive back the way you came. You follow the road past the abbey and eventually turn right to loop back up to Gordes.</p>
+<img src="/images/Lavender/lav-abbey.jpg" alt="The Abbaye de Sénanque surrounded by lavender" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<p>One strong piece of advice: go early. If you arrive mid-morning you will be sharing it with very large groups of tourists, and your experience will be somewhat different from the peaceful lavender moment you had in mind.</p>
+<h2>The Daughter, the Bees, and the Photographers</h2>
+<p>We learned this the hard way on our first visit after arriving in Provence. We did Sénanque and Sault in the same day, which was ambitious, and we got to the abbey a bit late. Our daughter had just started sitting up on her own and her grandmother had made her a little suit for the occasion. We set her down in the lavender to take a few photos of her.</p>
+<img src="/images/Lavender/lav-nia-abbey.jpg" alt="Our daughter in the lavender at the Abbaye de Sénanque" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<p>Within about thirty seconds we were looking at the back of a Chinese woman's head because she had also started photographing our daughter. Then the rest of the group joined in. Our daughter had become a tourist attraction. We are still amused with the possibility of her being framed and hanging on someone's wall somewhere in China.</p>
+<p>Then we noticed the bees. Lavender fields in full bloom are essentially functioning beehives at ground level. Getting her out of there required us to push through a group of enthusiastic photographers who were not yet aware the session was over.</p>
+<p>Go early.</p>
+<h2>The Vantage Point</h2>
+<p>Just before you reach Gordes again there is a vantage point looking out towards Ménerbes and the other hilltop villages. There are picnic tables there and we always stop. Baguettes, charcuterie, a decent cheese selection, and anchovy-stuffed olives. A proper Provençal picnic by any reasonable measure.</p>
+<p>This year we are heading to Valensole again. A friend who is a legionnaire has bought a house there and it would be rude not to visit during peak season.</p>
+<h2>Lavender and Lavandin Are Not the Same Thing</h2>
+<p>What you see in those enormous, perfectly uniform purple rows at Valensole is almost certainly not true lavender. It is lavandin - a hybrid between true lavender and spike lavender. Lavandin is hardier, produces more oil per hectare, and grows in thick dramatic rows that photograph beautifully. It is what drives the postcard industry.</p>
+<p>True lavender, known as <em>lavande fine</em>, grows at higher altitudes - around Sault and into the Alpine foothills. It has a softer, more complex scent and is considered the premium product for serious perfumery. Lower yield, higher value, and a noticeably more delicate character than its hybrid cousin.</p>
+<img src="/images/Lavender/lav-sault.jpg" alt="The high-altitude lavender fields near Sault" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<p>Both are worth seeing. Valensole gives you the scale and the drama. Sault gives you the altitude, the finer lavender, and considerably fewer tour buses.</p>
+<h2>Before You Go</h2>
+<p>I put together a <a href="/provence/lavender" style="color:#7B5EA7;font-weight:600;">map of the lavender fields worth visiting</a>, with websites included where I could find them. One important thing before you load up the car: phone the local bureau de tourisme first. Bloom timing shifts every year depending on the weather, and the difference between a spectacular field and a field of grey sticks is sometimes just a week. A two-minute phone call saves a wasted morning.</p>
+<h2>The Part Nobody Talks About</h2>
+<p>Most people associate lavender with soap, skincare, and the inside of old wardrobes. Which is fair. But shortly after we arrived in Provence, my wife and I had dinner in Isle-sur-la-Sorgue and I ordered a lavender-infused crème brûlée that I still think about. Not in a vague nostalgic way - I mean I literally ordered a second one right after I finished the first one. If they had served it in a bucket I would have asked for a spoon.</p>
+<p>I have tried to recreate it at home several times. I have not nailed it yet. When I do, the recipe goes up on the site.</p>
+<p>If you happen to have a reliable version, I would genuinely love to hear it. Drop it in the comments below.</p>`,
+    image: '/images/Lavender/lav-hero.png',
+    date: '2026-05-22',
+    category: 'Provence',
+    marcelTip: 'Go before sunrise. Bring a baguette. Do not put the baby in the lavender if there are tourists nearby.',
+    marcelType: 'gardener',
+    fr: {
+      title: 'La Saison de la Lavande en Provence : Au-delà de la Carte Postale',
+      excerpt: 'Faire monter quatre membres de la famille à moitié conscients dans une voiture avant le lever du soleil, une fille devenue attraction touristique, et la crème brûlée à la lavande que j\'essaie encore de reproduire.',
+      content: `<p>Chaque année, fin juin ou début juillet, ma femme et moi essayons de motiver les enfants pour qu'ils se lèvent avant le lever du soleil aller voir de la lavande. Ce qui implique un processus de négociation qui épuiserait un diplomate de l'ONU. Il y a des menaces voilées, de vagues promesses d'arrêt à la boulangerie, et finalement, à une heure impossible, quatre humains à moitié conscients montent dans la voiture. Au moment où l'on arrive, ils sont silencieux, soit encore à moitié endormis, soit véritablement frappés de stupeur. L'heure dorée fait ça.</p>
+<img src="/images/Lavender/lav-from-high.jpg" alt="Le paysage de lavande provençal à l'heure dorée" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<h2>L'Abbaye</h2>
+<p>Nous sommes allés à Sault, nous avons traversé la Drôme Provençale, mais notre préféré reste l'Abbaye de Sénanque. Si vous arrivez du côté de Gordes et que vous voyez soudain ce damier de violet niché entre les collines calcaires, cela vous coupe le souffle à chaque fois. Garez-vous au belvédère et prenez vos panoramas - cela en vaut absolument la peine. Une note pratique : depuis le début de l'année, la route est en sens unique depuis Gordes vers l'abbaye. Vous ne pouvez plus faire demi-tour et revenir par le même chemin. Vous suivez la route après l'abbaye et vous tournez à droite pour remonter vers Gordes.</p>
+<img src="/images/Lavender/lav-abbey.jpg" alt="L'Abbaye de Sénanque entourée de lavande" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<p>Un conseil important : allez-y tôt. Si vous arrivez en milieu de matinée, vous partagerez les lieux avec de très grands groupes de touristes, et votre expérience sera quelque peu différente du moment de lavande paisible que vous aviez imaginé.</p>
+<h2>Notre Fille, les Abeilles et les Photographes</h2>
+<p>Nous l'avons appris à nos dépens lors de notre première visite après notre arrivée en Provence. Nous avons fait Sénanque et Sault dans la même journée, ce qui était ambitieux, et nous sommes arrivés à l'abbaye un peu tard. Notre fille venait juste d'apprendre à s'asseoir seule et sa grand-mère lui avait confectionné un petit costume pour l'occasion. Nous l'avons installée dans la lavande pour prendre quelques photos d'elle.</p>
+<img src="/images/Lavender/lav-nia-abbey.jpg" alt="Notre fille dans la lavande à l'Abbaye de Sénanque" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<p>En moins de trente secondes, nous regardions le dos d'une femme chinoise qui avait commencé à photographier notre fille. Puis le reste du groupe a suivi. Notre fille était devenue une attraction touristique. Nous sommes encore amusés par la possibilité qu'elle soit encadrée et accrochée sur un mur quelque part en Chine.</p>
+<p>Puis nous avons remarqué les abeilles. Les champs de lavande en pleine floraison sont essentiellement des ruches fonctionnelles au niveau du sol. La sortir de là nous a obligés à traverser un groupe de photographes enthousiastes qui n'étaient pas encore conscients que la séance était terminée.</p>
+<p>Allez-y tôt.</p>
+<h2>Le Belvédère</h2>
+<p>Juste avant de retrouver Gordes, il y a un point de vue qui donne vers Ménerbes et les autres villages perchés. Il y a des tables de pique-nique là-haut et nous nous y arrêtons toujours. Baguettes, charcuterie, une bonne sélection de fromages et des olives farcies aux anchois. Un vrai pique-nique provençal par n'importe quelle mesure raisonnable.</p>
+<p>Cette année, nous repartons à Valensole. Un ami légionnaire a acheté une maison là-bas et ce serait impoli de ne pas lui rendre visite en pleine saison.</p>
+<h2>La Lavande et le Lavandin ne Sont Pas la Même Chose</h2>
+<p>Ce que vous voyez dans ces rangées violettes immenses et parfaitement uniformes à Valensole n'est presque certainement pas de la vraie lavande. C'est du lavandin, un hybride entre la lavande vraie et la lavande aspic. Le lavandin est plus résistant, produit plus d'huile par hectare et pousse en rangs épais et dramatiques qui se photographient magnifiquement. C'est lui qui fait tourner l'industrie des cartes postales.</p>
+<p>La vraie lavande, connue sous le nom de <em>lavande fine</em>, pousse en altitude, autour de Sault et dans les contreforts alpins. Elle a un parfum plus doux et plus complexe et est considérée comme le produit haut de gamme pour la parfumerie sérieuse. Rendement plus faible, valeur plus haute, et un caractère nettement plus délicat que son cousin hybride.</p>
+<img src="/images/Lavender/lav-sault.jpg" alt="Les champs de lavande en altitude près de Sault" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<p>Les deux valent le déplacement. Valensole vous donne l'échelle et le spectacle. Sault vous offre l'altitude, la lavande plus fine et nettement moins de cars de touristes.</p>
+<h2>Avant de Partir</h2>
+<p>J'ai constitué une <a href="/fr/provence/lavender" style="color:#7B5EA7;font-weight:600;">carte des champs de lavande à visiter</a>, avec les sites internet là où j'ai pu les trouver. Une chose importante avant de charger la voiture : appelez d'abord le bureau de tourisme local. Le calendrier de floraison change chaque année selon la météo, et la différence entre un champ spectaculaire et un champ de bâtons gris n'est parfois qu'une semaine. Un coup de téléphone de deux minutes évite une matinée gâchée.</p>
+<h2>Ce Dont Personne ne Parle</h2>
+<p>La plupart des gens associent la lavande au savon, aux soins de la peau et à l'intérieur des vieilles armoires. Ce qui se comprend. Mais peu après notre arrivée en Provence, ma femme et moi avons dîné à Isle-sur-la-Sorgue et j'ai commandé une crème brûlée à la lavande à laquelle je pense encore. Pas de façon vaguement nostalgique - je veux dire que j'en ai littéralement commandé une deuxième juste après avoir terminé la première. S'ils l'avaient servie dans un seau, j'aurais demandé une cuillère.</p>
+<p>J'ai essayé de la recréer à la maison plusieurs fois. Je n'y suis pas encore parvenu. Quand ce sera le cas, la recette sera publiée sur le site.</p>
+<p>Si vous avez une version fiable, je serais vraiment ravi de l'entendre. Laissez-la dans les commentaires ci-dessous.</p>`,
+      marcelTip: 'Partez avant le lever du soleil. Emportez une baguette. Ne posez pas le bébé dans la lavande s\'il y a des touristes dans les environs.',
+    },
+  },
+  {
     slug: 'six-fours-les-plages',
     hidden: true,
     title: 'Six Fours les Plages',
