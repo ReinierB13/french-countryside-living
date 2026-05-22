@@ -674,7 +674,7 @@ export const articles: Article[] = [
 <p>One strong piece of advice: go early. If you arrive mid-morning you will be sharing it with very large groups of tourists, and your experience will be somewhat different from the peaceful lavender moment you had in mind.</p>
 <h2>The Daughter, the Bees, and the Photographers</h2>
 <p>We learned this the hard way on our first visit after arriving in Provence. We did Sénanque and Sault in the same day, which was ambitious, and we got to the abbey a bit late. Our daughter had just started sitting up on her own and her grandmother had made her a little suit for the occasion. We set her down in the lavender to take a few photos of her.</p>
-<img src="/images/Lavender/lav-nia-abbey.jpg" alt="Our daughter in the lavender at the Abbaye de Sénanque" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<img src="/images/Lavender/lav-nia-abbey.jpg" alt="Our daughter in the lavender at the Abbaye de Sénanque" style="width:100%;border-radius:2px;margin:1.5rem 0;" />
 <p>Within about thirty seconds we were looking at the back of a Chinese woman's head because she had also started photographing our daughter. Then the rest of the group joined in. Our daughter had become a tourist attraction. We are still amused with the possibility of her being framed and hanging on someone's wall somewhere in China.</p>
 <p>Then we noticed the bees. Lavender fields in full bloom are essentially functioning beehives at ground level. Getting her out of there required us to push through a group of enthusiastic photographers who were not yet aware the session was over.</p>
 <p>Go early.</p>
@@ -708,7 +708,7 @@ export const articles: Article[] = [
 <p>Un conseil important : allez-y tôt. Si vous arrivez en milieu de matinée, vous partagerez les lieux avec de très grands groupes de touristes, et votre expérience sera quelque peu différente du moment de lavande paisible que vous aviez imaginé.</p>
 <h2>Notre Fille, les Abeilles et les Photographes</h2>
 <p>Nous l'avons appris à nos dépens lors de notre première visite après notre arrivée en Provence. Nous avons fait Sénanque et Sault dans la même journée, ce qui était ambitieux, et nous sommes arrivés à l'abbaye un peu tard. Notre fille venait juste d'apprendre à s'asseoir seule et sa grand-mère lui avait confectionné un petit costume pour l'occasion. Nous l'avons installée dans la lavande pour prendre quelques photos d'elle.</p>
-<img src="/images/Lavender/lav-nia-abbey.jpg" alt="Notre fille dans la lavande à l'Abbaye de Sénanque" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
+<img src="/images/Lavender/lav-nia-abbey.jpg" alt="Notre fille dans la lavande à l'Abbaye de Sénanque" style="width:100%;border-radius:2px;margin:1.5rem 0;" />
 <p>En moins de trente secondes, nous regardions le dos d'une femme chinoise qui avait commencé à photographier notre fille. Puis le reste du groupe a suivi. Notre fille était devenue une attraction touristique. Nous sommes encore amusés par la possibilité qu'elle soit encadrée et accrochée sur un mur quelque part en Chine.</p>
 <p>Puis nous avons remarqué les abeilles. Les champs de lavande en pleine floraison sont essentiellement des ruches fonctionnelles au niveau du sol. La sortir de là nous a obligés à traverser un groupe de photographes enthousiastes qui n'étaient pas encore conscients que la séance était terminée.</p>
 <p>Allez-y tôt.</p>
