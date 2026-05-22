@@ -63,7 +63,7 @@ export default async function HomePage({
             href={`/${locale}/provence/lavender`}
             className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-7 py-3 rounded-sm hover:bg-white/30 transition-colors"
           >
-            🌸 Lavender Fields
+            🪻 Lavender Fields
           </Link>
           </div>
           <Link
