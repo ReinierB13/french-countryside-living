@@ -692,7 +692,7 @@ export const articles: Article[] = [
 <p>Most people associate lavender with soap, skincare, and the inside of old wardrobes. Which is fair. But shortly after we arrived in Provence, my wife and I had dinner in Isle-sur-la-Sorgue and I ordered a lavender-infused crème brûlée that I still think about. Not in a vague nostalgic way - I mean I literally ordered a second one right after I finished the first one. If they had served it in a bucket I would have asked for a spoon.</p>
 <p>I have tried to recreate it at home several times. I have not nailed it yet. When I do, the recipe goes up on the site.</p>
 <p>If you happen to have a reliable version, I would genuinely love to hear it. Drop it in the comments below.</p>`,
-    image: '/images/Lavender/lav-hero.png',
+    image: '/images/Lavender/lav-hero.jpg',
     date: '2026-05-22',
     category: 'Provence',
     marcelTip: 'Go before sunrise. Bring a baguette. Do not put the baby in the lavender if there are tourists nearby.',
