@@ -10,6 +10,7 @@ interface HeroProps {
   imagePosition?: string;
   contentAlign?: 'center' | 'bottom';
   darkText?: boolean;
+  priority?: boolean;
   children?: React.ReactNode;
 }
 
@@ -23,6 +24,7 @@ export default function Hero({
   imagePosition = 'center',
   contentAlign = 'center',
   darkText = false,
+  priority = false,
   children,
 }: HeroProps) {
   const heights = {
@@ -42,14 +44,15 @@ export default function Hero({
       className={`relative ${heights[height]} w-full overflow-hidden flex ${contentAlign === 'bottom' ? 'items-start' : 'items-center'} justify-center`}
       aria-label={imageAlt}
     >
-      {/* Background image - uses Next.js optimization (auto WebP, responsive sizes, CDN cache) */}
+      {/* Background image */}
       <Image
         src={imageSrc}
         alt={imageAlt}
         fill
+        priority={priority}
+        sizes="100vw"
         className="object-cover"
         style={{ objectPosition: imagePosition }}
-        priority
       />
 
       {/* Bottom gradient overlay for text readability */}
