@@ -129,6 +129,23 @@ const DAY_URL: Record<string, string> = {
   Sunday:    'https://schema.org/Sunday',
 };
 
+const DAY_INDEX: Record<string, number> = {
+  Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3,
+  Thursday: 4, Friday: 5, Saturday: 6,
+};
+
+// Returns the next ISO 8601 date (YYYY-MM-DD) for the given day name.
+// If today is that day, returns today.
+function nextOccurrence(dayOfWeek: string): string {
+  const target = DAY_INDEX[dayOfWeek];
+  if (target === undefined) return new Date().toISOString().split('T')[0];
+  const today = new Date();
+  const diff = ((target - today.getDay()) + 7) % 7;
+  const next = new Date(today);
+  next.setDate(today.getDate() + diff);
+  return next.toISOString().split('T')[0];
+}
+
 function buildJsonLd(markets: Market[], locale: string) {
   const isEn = locale === 'en';
   const pageUrl = isEn
@@ -150,50 +167,76 @@ function buildJsonLd(markets: Market[], locale: string) {
     ],
   };
 
-  // ItemList of recurring market Events (top 20 to keep payload reasonable)
-  const itemList = {
-    '@type': 'ItemList',
-    name: isEn ? 'Weekly Markets of Provence' : 'Marchés Hebdomadaires de Provence',
-    url: pageUrl,
-    numberOfItems: markets.length,
-    itemListElement: markets.slice(0, 20).map((m, i) => {
-      const event: Record<string, unknown> = {
-        '@type': 'Event',
-        name: m.name,
-        eventStatus: 'https://schema.org/EventScheduled',
-        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-        eventSchedule: {
-          '@type': 'Schedule',
-          repeatFrequency: 'P1W',
-          byDay: DAY_URL[m.day_of_week] ?? m.day_of_week,
+  // Consolidate rows that share the same market into one Event with all operating days.
+  // Markets like "Marché André Vidau" that appear multiple times (once per day) are merged
+  // into a single Event whose byDay is an array and whose startDate is the earliest upcoming day.
+  type GroupEntry = { market: Market; days: string[] };
+  const grouped = new Map<string, GroupEntry>();
+  for (const m of markets) {
+    const key = `${m.name}||${m.village}||${m.department}`;
+    if (grouped.has(key)) {
+      grouped.get(key)!.days.push(m.day_of_week);
+    } else {
+      grouped.set(key, { market: m, days: [m.day_of_week] });
+    }
+  }
+
+  // Events emitted directly into @graph — no ItemList wrapper.
+  // An ItemList of Events is treated as a Carousel by Google, which requires
+  // individual page URLs per item that recurring markets on one page cannot provide.
+  const events = Array.from(grouped.values()).slice(0, 20).map(({ market: m, days }) => {
+    const uniqueDays = [...new Set(days)];
+
+    // startDate = earliest next calendar occurrence across all operating days
+    const startDate = uniqueDays.map(nextOccurrence).sort()[0];
+
+    // byDay: single schema.org URL for one day, array for multiple
+    const byDay = uniqueDays.length === 1
+      ? (DAY_URL[uniqueDays[0]] ?? uniqueDays[0])
+      : uniqueDays.map(d => DAY_URL[d] ?? d);
+
+    const event: Record<string, unknown> = {
+      '@type': 'Event',
+      name: m.name,
+      startDate,
+      eventStatus: 'https://schema.org/EventScheduled',
+      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+      eventSchedule: {
+        '@type': 'Schedule',
+        repeatFrequency: 'P1W',
+        byDay,
+      },
+      location: {
+        '@type': 'Place',
+        name: m.village,
+        address: {
+          '@type': 'PostalAddress',
+          addressLocality: m.village,
+          ...(m.postcode ? { postalCode: m.postcode } : {}),
+          addressRegion: m.department,
+          addressCountry: 'FR',
         },
-        location: {
-          '@type': 'Place',
-          name: m.village,
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: m.village,
-            ...(m.postcode ? { postalCode: m.postcode } : {}),
-            addressRegion: m.department,
-            addressCountry: 'FR',
-          },
-          geo: {
-            '@type': 'GeoCoordinates',
-            latitude: m.lat,
-            longitude: m.lng,
-          },
-          ...(m.mairie_url ? { url: m.mairie_url } : {}),
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: m.lat,
+          longitude: m.lng,
         },
-      };
-      if (m.notes) event.description = m.notes;
-      if (m.mairie_url) event.url = m.mairie_url;
-      return { '@type': 'ListItem', position: i + 1, item: event };
-    }),
-  };
+        ...(m.mairie_url ? { url: m.mairie_url } : {}),
+      },
+    };
+
+    // Use first non-null notes as description — avoids contradictory text from merged rows
+    if (m.notes) event.description = m.notes;
+    // Canonical static image URL — never the /_next/image proxy
+    event.image = `${BASE_URL}/images/market.png`;
+    if (m.mairie_url) event.url = m.mairie_url;
+
+    return event;
+  });
 
   return {
     '@context': 'https://schema.org',
-    '@graph': [breadcrumb, itemList],
+    '@graph': [breadcrumb, ...events],
   };
 }
 
