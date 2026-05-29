@@ -16,7 +16,7 @@ const PUBLISHER = {
 
 export type BreadcrumbItem = {
   name: string
-  item: string
+  item?: string  // omit when no real URL exists for this step
 }
 
 export function absoluteUrl(path: string): string {
@@ -143,7 +143,7 @@ export function buildBreadcrumbSchema(items: BreadcrumbItem[]): Record<string, u
       '@type': 'ListItem',
       position: i + 1,
       name: crumb.name,
-      item: crumb.item,
+      ...(crumb.item ? { item: crumb.item } : {}),
     })),
   }
 }

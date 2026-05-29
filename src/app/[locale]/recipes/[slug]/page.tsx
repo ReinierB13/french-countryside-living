@@ -49,7 +49,7 @@ export default async function RecipePage({ params }: Props) {
   const schemaBreadcrumbs = [
     { name: isEn ? 'Home' : 'Accueil', item: isEn ? 'https://french-countryside-living.com' : 'https://french-countryside-living.com/fr' },
     { name: isEn ? 'Recipes' : 'Recettes', item: pageUrl(locale, 'recipes') },
-    { name: categoryLabel, item: pageUrl(locale, 'recipes') },
+    { name: categoryLabel, item: `${pageUrl(locale, 'recipes')}?category=${recipe.category}` },
     { name: recipe.title, item: pageUrl(locale, 'recipes', slug) },
   ]
   const visibleBreadcrumbs = [

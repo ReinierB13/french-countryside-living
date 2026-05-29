@@ -52,7 +52,7 @@ export default async function ArticlePage({ params }: Props) {
   const schemaBreadcrumbs = [
     { name: isEn ? 'Home' : 'Accueil', item: isEn ? 'https://french-countryside-living.com' : 'https://french-countryside-living.com/fr' },
     { name: 'Articles', item: pageUrl(locale, 'articles') },
-    { name: article.category, item: pageUrl(locale, 'articles') },
+    { name: article.category },
     { name: article.title, item: pageUrl(locale, 'articles', slug) },
   ]
   const visibleBreadcrumbs = [

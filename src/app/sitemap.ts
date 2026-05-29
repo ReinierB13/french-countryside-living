@@ -2,12 +2,11 @@ import { MetadataRoute } from 'next'
 import { articles, recipes } from '@/lib/content'
 import { supabase } from '@/lib/supabase'
 import { routing } from '@/i18n/routing'
-
-const BASE = 'https://www.french-countryside-living.com'
+import { BASE_URL } from '@/lib/schema'
 
 function url(locale: string, path: string): string {
   const prefix = locale === routing.defaultLocale ? '' : `/${locale}`
-  return `${BASE}${prefix}${path}`
+  return `${BASE_URL}${prefix}${path}`
 }
 
 const staticPages = [
@@ -36,8 +35,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
+  // Recipe category filter pages
+  const categories = Array.from(new Set(recipes.map((r) => r.category)))
+  for (const category of categories) {
+    for (const locale of locales) {
+      entries.push({ url: url(locale, `/recipes?category=${category}`) })
+    }
+  }
+
   // Article pages (exclude hidden)
-  for (const article of articles.filter(a => !a.hidden)) {
+  for (const article of articles.filter((a) => !a.hidden)) {
     for (const locale of locales) {
       entries.push({
         url: url(locale, `/articles/${article.slug}`),
