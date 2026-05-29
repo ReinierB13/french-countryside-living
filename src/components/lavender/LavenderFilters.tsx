@@ -69,15 +69,15 @@ export default function LavenderFilters({
                     locationTypes: toggle(filters.locationTypes, type),
                   })
                 }
-                className={`text-xs px-2.5 py-1 rounded-sm border font-body transition-colors ${
+                className={`text-xs px-2.5 py-1 rounded-sm border-2 font-body transition-colors ${
                   isActive
-                    ? 'text-white border-transparent'
-                    : 'bg-white border-charcoal/20 hover:border-current'
+                    ? 'text-white'
+                    : 'bg-white text-charcoal'
                 }`}
                 style={
                   isActive
                     ? { backgroundColor: color, borderColor: color }
-                    : { color }
+                    : { borderColor: color }
                 }
               >
                 {LOCATION_TYPE_LABELS[type as LavenderLocationType]}

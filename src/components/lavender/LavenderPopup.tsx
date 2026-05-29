@@ -77,7 +77,8 @@ export default function LavenderPopup({ field }: Props) {
       {field.phone && (
         <a
           href={`tel:${field.phone}`}
-          className="block text-xs text-charcoal/70 mb-2 hover:text-charcoal transition-colors font-medium"
+          className="block text-xs mb-2 font-medium transition-colors hover:opacity-80"
+          style={{ color: '#2B2B2B' }}
         >
           📞 {field.phone}
         </a>
