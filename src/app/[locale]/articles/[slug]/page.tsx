@@ -9,6 +9,7 @@ import ShareButtons from '@/components/ShareButtons';
 import Comments from '@/components/Comments';
 import LikeButton from '@/components/LikeButton';
 import JsonLd from '@/components/JsonLd';
+import Breadcrumb from '@/components/Breadcrumb';
 import { getArticleBySlug, getRelatedArticles, articles } from '@/lib/content';
 import { buildArticleSchema, buildBreadcrumbSchema, pageUrl } from '@/lib/schema';
 import { routing } from '@/i18n/routing';
@@ -48,16 +49,22 @@ export default async function ArticlePage({ params }: Props) {
   );
 
   const isEn = locale !== 'fr'
-  const breadcrumbItems = [
+  const schemaBreadcrumbs = [
     { name: isEn ? 'Home' : 'Accueil', item: isEn ? 'https://french-countryside-living.com' : 'https://french-countryside-living.com/fr' },
-    { name: isEn ? 'Articles' : 'Articles', item: pageUrl(locale, 'articles') },
+    { name: 'Articles', item: pageUrl(locale, 'articles') },
     { name: article.title, item: pageUrl(locale, 'articles', slug) },
+  ]
+  const visibleBreadcrumbs = [
+    { name: isEn ? 'Home' : 'Accueil', href: `/${locale}` },
+    { name: 'Articles', href: `/${locale}/articles` },
+    { name: article.title },
   ]
 
   return (
     <>
       <JsonLd data={buildArticleSchema(article, slug, locale)} />
-      <JsonLd data={buildBreadcrumbSchema(breadcrumbItems)} />
+      <JsonLd data={buildBreadcrumbSchema(schemaBreadcrumbs)} />
+      <Breadcrumb items={visibleBreadcrumbs} />
       {/* Article hero */}
       <div className="relative min-h-[50vh] flex items-end">
         {/* Background image */}
@@ -81,10 +88,7 @@ export default async function ArticlePage({ params }: Props) {
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-          <Link href={`/${locale}/articles`} className="text-terracotta font-body text-sm hover:underline">
-            {t('backToArticles')}
-          </Link>
+        <div className="flex flex-wrap items-center justify-end gap-4 mb-8">
           <ShareButtons
             title={article.title}
             path={`/${locale}/articles/${article.slug}`}

@@ -10,6 +10,7 @@ import Comments from '@/components/Comments';
 import LikeButton from '@/components/LikeButton';
 import RecipeTools from '@/components/RecipeTools';
 import JsonLd from '@/components/JsonLd';
+import Breadcrumb from '@/components/Breadcrumb';
 import { categoryConfig } from '@/components/RecipeCard';
 import { getRecipeBySlug, recipes } from '@/lib/content';
 import { buildRecipeSchema, buildBreadcrumbSchema, pageUrl } from '@/lib/schema';
@@ -44,16 +45,22 @@ export default async function RecipePage({ params }: Props) {
   if (!recipe) notFound();
 
   const isEn = locale !== 'fr'
-  const breadcrumbItems = [
+  const schemaBreadcrumbs = [
     { name: isEn ? 'Home' : 'Accueil', item: isEn ? 'https://french-countryside-living.com' : 'https://french-countryside-living.com/fr' },
     { name: isEn ? 'Recipes' : 'Recettes', item: pageUrl(locale, 'recipes') },
     { name: recipe.title, item: pageUrl(locale, 'recipes', slug) },
+  ]
+  const visibleBreadcrumbs = [
+    { name: isEn ? 'Home' : 'Accueil', href: `/${locale}` },
+    { name: isEn ? 'Recipes' : 'Recettes', href: `/${locale}/recipes` },
+    { name: recipe.title },
   ]
 
   return (
     <>
       <JsonLd data={buildRecipeSchema(recipe, slug, locale)} />
-      <JsonLd data={buildBreadcrumbSchema(breadcrumbItems)} />
+      <JsonLd data={buildBreadcrumbSchema(schemaBreadcrumbs)} />
+      <Breadcrumb items={visibleBreadcrumbs} />
       {/* Hero */}
       <div className="relative min-h-[50vh] flex items-end">
         <div
@@ -99,10 +106,7 @@ export default async function RecipePage({ params }: Props) {
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-10">
-          <Link href={`/${locale}/recipes`} className="text-terracotta font-body text-sm hover:underline">
-            {t('backToRecipes')}
-          </Link>
+        <div className="flex flex-wrap items-center justify-end gap-4 mb-10">
           <ShareButtons
             title={recipe.title}
             path={`/${locale}/recipes/${recipe.slug}`}
