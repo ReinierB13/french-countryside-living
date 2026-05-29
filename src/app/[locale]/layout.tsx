@@ -7,7 +7,17 @@ import { routing } from '@/i18n/routing';
 import { Analytics } from '@vercel/analytics/next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import JsonLd from '@/components/JsonLd';
+import { BASE_URL } from '@/lib/schema';
 import '../globals.css';
+
+const ORGANIZATION_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'French Countryside Living',
+  url: BASE_URL,
+  founder: 'Reinier Botha',
+} as const;
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -90,6 +100,7 @@ export default async function LocaleLayout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <JsonLd data={ORGANIZATION_SCHEMA} />
       </head>
       <body className="bg-parchment min-h-screen flex flex-col">
         <NextIntlClientProvider messages={messages}>

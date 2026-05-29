@@ -8,7 +8,9 @@ import NewsletterSignup from '@/components/NewsletterSignup';
 import ShareButtons from '@/components/ShareButtons';
 import Comments from '@/components/Comments';
 import LikeButton from '@/components/LikeButton';
+import JsonLd from '@/components/JsonLd';
 import { getArticleBySlug, getRelatedArticles, articles } from '@/lib/content';
+import { buildArticleSchema, buildBreadcrumbSchema, pageUrl } from '@/lib/schema';
 import { routing } from '@/i18n/routing';
 
 interface Props {
@@ -45,8 +47,17 @@ export default async function ArticlePage({ params }: Props) {
     { year: 'numeric', month: 'long', day: 'numeric' }
   );
 
+  const isEn = locale !== 'fr'
+  const breadcrumbItems = [
+    { name: isEn ? 'Home' : 'Accueil', item: isEn ? 'https://french-countryside-living.com' : 'https://french-countryside-living.com/fr' },
+    { name: isEn ? 'Articles' : 'Articles', item: pageUrl(locale, 'articles') },
+    { name: article.title, item: pageUrl(locale, 'articles', slug) },
+  ]
+
   return (
     <>
+      <JsonLd data={buildArticleSchema(article, slug, locale)} />
+      <JsonLd data={buildBreadcrumbSchema(breadcrumbItems)} />
       {/* Article hero */}
       <div className="relative min-h-[50vh] flex items-end">
         {/* Background image */}

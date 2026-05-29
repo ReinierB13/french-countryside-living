@@ -9,8 +9,10 @@ import ShareButtons from '@/components/ShareButtons';
 import Comments from '@/components/Comments';
 import LikeButton from '@/components/LikeButton';
 import RecipeTools from '@/components/RecipeTools';
+import JsonLd from '@/components/JsonLd';
 import { categoryConfig } from '@/components/RecipeCard';
 import { getRecipeBySlug, recipes } from '@/lib/content';
+import { buildRecipeSchema, buildBreadcrumbSchema, pageUrl } from '@/lib/schema';
 import { routing } from '@/i18n/routing';
 
 interface Props {
@@ -41,8 +43,17 @@ export default async function RecipePage({ params }: Props) {
   const recipe = getRecipeBySlug(slug, locale);
   if (!recipe) notFound();
 
+  const isEn = locale !== 'fr'
+  const breadcrumbItems = [
+    { name: isEn ? 'Home' : 'Accueil', item: isEn ? 'https://french-countryside-living.com' : 'https://french-countryside-living.com/fr' },
+    { name: isEn ? 'Recipes' : 'Recettes', item: pageUrl(locale, 'recipes') },
+    { name: recipe.title, item: pageUrl(locale, 'recipes', slug) },
+  ]
+
   return (
     <>
+      <JsonLd data={buildRecipeSchema(recipe, slug, locale)} />
+      <JsonLd data={buildBreadcrumbSchema(breadcrumbItems)} />
       {/* Hero */}
       <div className="relative min-h-[50vh] flex items-end">
         <div
