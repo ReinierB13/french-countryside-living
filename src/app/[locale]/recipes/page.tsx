@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
 import RecipeGrid from '@/components/RecipeGrid';
 import { getRecipes } from '@/lib/content';
+import { categoryConfig } from '@/components/RecipeCard';
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -13,11 +14,16 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RecipesPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ category?: string }>;
 }) {
   const { locale } = await params;
+  const { category } = await searchParams;
   const t = await getTranslations('RecipesPage');
+
+  const validCategory = category && categoryConfig[category] ? category : undefined;
 
   return (
     <>
@@ -31,7 +37,7 @@ export default async function RecipesPage({
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
-        <RecipeGrid recipes={getRecipes(locale)} locale={locale} />
+        <RecipeGrid recipes={getRecipes(locale)} locale={locale} initialCategory={validCategory} />
       </div>
     </>
   );

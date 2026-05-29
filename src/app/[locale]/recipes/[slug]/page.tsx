@@ -55,7 +55,7 @@ export default async function RecipePage({ params }: Props) {
   const visibleBreadcrumbs = [
     { name: isEn ? 'Home' : 'Accueil', href: `/${locale}` },
     { name: isEn ? 'Recipes' : 'Recettes', href: `/${locale}/recipes` },
-    { name: categoryLabel },
+    { name: categoryLabel, href: `/${locale}/recipes?category=${recipe.category}` },
     { name: recipe.title },
   ]
 

@@ -9,8 +9,8 @@ function getCatMeta(key: string) {
   return { label: key.charAt(0).toUpperCase() + key.slice(1), icon: '🍽', color: '' };
 }
 
-export default function RecipeGrid({ recipes, locale }: { recipes: Recipe[]; locale: string }) {
-  const [active, setActive] = useState('all');
+export default function RecipeGrid({ recipes, locale, initialCategory }: { recipes: Recipe[]; locale: string; initialCategory?: string }) {
+  const [active, setActive] = useState(initialCategory ?? 'all');
 
   // Build unique category list in the order they first appear
   const categories = Array.from(new Set(recipes.map((r) => r.category)));
