@@ -84,7 +84,7 @@ export default async function ArticlePage({ params }: Props) {
           <p className="font-body text-parchment/90 text-sm drop-shadow">{formattedDate}</p>
         </div>
       </div>
-      <Breadcrumb items={visibleBreadcrumbs} floating />
+      <Breadcrumb items={visibleBreadcrumbs} />
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">

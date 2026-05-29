@@ -77,7 +77,7 @@ export default async function RecipePage({ params }: Props) {
           <p className="font-body italic text-lg text-parchment/80">{recipe.excerpt}</p>
         </div>
       </div>
-      <Breadcrumb items={visibleBreadcrumbs} floating />
+      <Breadcrumb items={visibleBreadcrumbs} />
 
       {/* Recipe info bar */}
       <div className="bg-charcoal text-parchment">
