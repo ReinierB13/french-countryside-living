@@ -60,7 +60,6 @@ export default async function RecipePage({ params }: Props) {
     <>
       <JsonLd data={buildRecipeSchema(recipe, slug, locale)} />
       <JsonLd data={buildBreadcrumbSchema(schemaBreadcrumbs)} />
-      <Breadcrumb items={visibleBreadcrumbs} />
       {/* Hero */}
       <div className="relative min-h-[50vh] flex items-end">
         <div
@@ -78,6 +77,7 @@ export default async function RecipePage({ params }: Props) {
           <p className="font-body italic text-lg text-parchment/80">{recipe.excerpt}</p>
         </div>
       </div>
+      <Breadcrumb items={visibleBreadcrumbs} floating />
 
       {/* Recipe info bar */}
       <div className="bg-charcoal text-parchment">

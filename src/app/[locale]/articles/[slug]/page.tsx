@@ -64,7 +64,6 @@ export default async function ArticlePage({ params }: Props) {
     <>
       <JsonLd data={buildArticleSchema(article, slug, locale)} />
       <JsonLd data={buildBreadcrumbSchema(schemaBreadcrumbs)} />
-      <Breadcrumb items={visibleBreadcrumbs} />
       {/* Article hero */}
       <div className="relative min-h-[50vh] flex items-end">
         {/* Background image */}
@@ -85,6 +84,7 @@ export default async function ArticlePage({ params }: Props) {
           <p className="font-body text-parchment/90 text-sm drop-shadow">{formattedDate}</p>
         </div>
       </div>
+      <Breadcrumb items={visibleBreadcrumbs} floating />
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
