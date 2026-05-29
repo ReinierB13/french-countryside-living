@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /api/
 
-Sitemap: https://www.french-countryside-living.com/sitemap.xml
+Sitemap: https://french-countryside-living.com/sitemap.xml
