@@ -6,7 +6,7 @@ import MarketsMapClient from '@/components/markets/MarketsMapClient';
 import { supabase } from '@/lib/supabase';
 import type { Market, RatingSummaries } from '@/components/markets/marketsData';
 
-const BASE_URL = 'https://www.french-countryside-living.com';
+const BASE_URL = 'https://french-countryside-living.com';
 
 export async function generateMetadata({
   params,
@@ -119,13 +119,23 @@ async function fetchMarkets(): Promise<Market[]> {
   }
 }
 
+const DAY_URL: Record<string, string> = {
+  Monday:    'https://schema.org/Monday',
+  Tuesday:   'https://schema.org/Tuesday',
+  Wednesday: 'https://schema.org/Wednesday',
+  Thursday:  'https://schema.org/Thursday',
+  Friday:    'https://schema.org/Friday',
+  Saturday:  'https://schema.org/Saturday',
+  Sunday:    'https://schema.org/Sunday',
+};
+
 function buildJsonLd(markets: Market[], locale: string) {
   const isEn = locale === 'en';
   const pageUrl = isEn
     ? `${BASE_URL}/provence/markets`
     : `${BASE_URL}/fr/provence/markets`;
 
-  // BreadcrumbList
+  // BreadcrumbList — unchanged
   const breadcrumb = {
     '@type': 'BreadcrumbList',
     itemListElement: [
@@ -140,64 +150,50 @@ function buildJsonLd(markets: Market[], locale: string) {
     ],
   };
 
-  // Dataset describing the collection
-  const dataset = {
-    '@type': 'Dataset',
-    name: isEn
-      ? 'Weekly Markets of Provence — Interactive Map'
-      : 'Marchés Hebdomadaires de Provence — Carte Interactive',
-    description: isEn
-      ? 'A curated dataset of 68+ weekly recurring markets across the four departments of Provence, France: Bouches-du-Rhône, Var, Vaucluse, and Alpes-de-Haute-Provence.'
-      : 'Base de données de plus de 68 marchés hebdomadaires dans les quatre départements de Provence : Bouches-du-Rhône, Var, Vaucluse et Alpes-de-Haute-Provence.',
-    url: pageUrl,
-    spatialCoverage: {
-      '@type': 'Place',
-      name: 'Provence, France',
-      geo: {
-        '@type': 'GeoShape',
-        box: '43.1 4.6 44.4 6.8',
-      },
-    },
-    includedInDataCatalog: {
-      '@type': 'DataCatalog',
-      name: 'French Countryside Living',
-      url: BASE_URL,
-    },
-  };
-
-  // ItemList of individual markets (top ~20 to keep payload reasonable)
+  // ItemList of recurring market Events (top 20 to keep payload reasonable)
   const itemList = {
     '@type': 'ItemList',
-    name: isEn ? 'Provençal Markets' : 'Marchés de Provence',
+    name: isEn ? 'Weekly Markets of Provence' : 'Marchés Hebdomadaires de Provence',
     url: pageUrl,
     numberOfItems: markets.length,
-    itemListElement: markets.slice(0, 20).map((m, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      item: {
-        '@type': 'LocalBusiness',
+    itemListElement: markets.slice(0, 20).map((m, i) => {
+      const event: Record<string, unknown> = {
+        '@type': 'Event',
         name: m.name,
-        description: m.notes ?? undefined,
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: m.village,
-          addressRegion: m.department,
-          addressCountry: 'FR',
+        eventStatus: 'https://schema.org/EventScheduled',
+        eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+        eventSchedule: {
+          '@type': 'Schedule',
+          repeatFrequency: 'P1W',
+          byDay: DAY_URL[m.day_of_week] ?? m.day_of_week,
         },
-        geo: {
-          '@type': 'GeoCoordinates',
-          latitude: m.lat,
-          longitude: m.lng,
+        location: {
+          '@type': 'Place',
+          name: m.village,
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: m.village,
+            ...(m.postcode ? { postalCode: m.postcode } : {}),
+            addressRegion: m.department,
+            addressCountry: 'FR',
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: m.lat,
+            longitude: m.lng,
+          },
+          ...(m.mairie_url ? { url: m.mairie_url } : {}),
         },
-        url: m.mairie_url ?? undefined,
-        openingHours: `We ${m.day_of_week.slice(0, 2).toUpperCase()}`,
-      },
-    })),
+      };
+      if (m.notes) event.description = m.notes;
+      if (m.mairie_url) event.url = m.mairie_url;
+      return { '@type': 'ListItem', position: i + 1, item: event };
+    }),
   };
 
   return {
     '@context': 'https://schema.org',
-    '@graph': [breadcrumb, dataset, itemList],
+    '@graph': [breadcrumb, itemList],
   };
 }
 
