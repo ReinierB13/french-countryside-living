@@ -84,23 +84,20 @@ export default async function RecipePage({ params }: Props) {
 
       {/* Recipe info bar */}
       <div className="bg-charcoal text-parchment">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-5 flex flex-wrap gap-6 justify-start">
-          <div className="text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-5 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+          <div>
             <p className="text-xs font-heading uppercase tracking-widest text-parchment/50 mb-1">{t('serves')}</p>
             <p className="font-heading font-bold text-lg">{recipe.servings}</p>
           </div>
-          <div className="w-px bg-parchment/10 self-stretch" />
-          <div className="text-center">
+          <div>
             <p className="text-xs font-heading uppercase tracking-widest text-parchment/50 mb-1">{t('prepTime')}</p>
             <p className="font-heading font-bold text-lg">{recipe.prepTime}</p>
           </div>
-          <div className="w-px bg-parchment/10 self-stretch" />
-          <div className="text-center">
+          <div>
             <p className="text-xs font-heading uppercase tracking-widest text-parchment/50 mb-1">{t('cookTime')}</p>
             <p className="font-heading font-bold text-lg">{recipe.cookTime}</p>
           </div>
-          <div className="w-px bg-parchment/10 self-stretch" />
-          <div className="text-center">
+          <div>
             <p className="text-xs font-heading uppercase tracking-widest text-parchment/50 mb-1">Difficulty</p>
             <p className="font-heading font-bold text-lg">{recipe.difficulty}</p>
           </div>
@@ -215,7 +212,7 @@ export default async function RecipePage({ params }: Props) {
         {/* Photo gallery */}
         {recipe.images && recipe.images.length > 1 && (
           <div className="mt-12 pt-8 border-t border-charcoal/10">
-            <div className={`grid gap-3 ${recipe.images.length === 2 ? 'grid-cols-2' : 'grid-cols-3'}`}>
+            <div className={`grid gap-3 ${recipe.images.length === 2 ? 'grid-cols-2' : 'grid-cols-2 sm:grid-cols-3'}`}>
               {recipe.images.map((src, i) => (
                 <div key={i} className="relative aspect-square overflow-hidden rounded-sm bg-charcoal/5">
                   <Image

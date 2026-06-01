@@ -77,10 +77,7 @@ export default async function ArticlePage({ params }: Props) {
           <span className="inline-block bg-terracotta text-white text-xs font-heading font-semibold px-3 py-1 rounded-sm uppercase tracking-wide mb-4">
             {article.category}
           </span>
-          <h1
-            className="font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 drop-shadow-lg"
-            style={{ color: 'white', mixBlendMode: 'difference' }}
-          >
+          <h1 className="font-heading text-3xl sm:text-5xl font-bold leading-tight mb-3 drop-shadow-lg text-white">
             {article.title}
           </h1>
           <p className="font-body text-parchment/90 text-sm drop-shadow">{formattedDate}</p>

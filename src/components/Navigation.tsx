@@ -32,20 +32,20 @@ export default function Navigation() {
   return (
     <nav className="bg-olive text-white sticky top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-32">
+        <div className="flex items-center justify-between h-16 lg:h-28">
           {/* Brand */}
           <Link
             href="/"
-            className="flex items-center gap-4 shrink-0 group"
+            className="flex items-center gap-2 lg:gap-4 shrink-0 group"
           >
             <Image
               src="/icons/Logo1.png"
               alt="French Countryside Living"
               width={80}
               height={80}
-              className="rounded-full"
+              className="rounded-full w-10 h-10 lg:w-16 lg:h-16"
             />
-            <span className="font-heading font-bold text-2xl md:text-3xl text-parchment group-hover:text-amber transition-colors">
+            <span className="font-heading font-bold text-base sm:text-xl lg:text-3xl text-parchment group-hover:text-amber transition-colors">
               French Countryside Living
             </span>
           </Link>

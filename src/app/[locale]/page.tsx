@@ -40,38 +40,30 @@ export default async function HomePage({
         contentAlign="bottom"
         priority
       >
-        <div className="flex flex-col gap-4 items-center mt-6">
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-6 grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto">
           <Link
             href={`/${locale}/articles`}
-            className="bg-terracotta text-white font-body font-semibold px-7 py-3 rounded-sm hover:bg-terracotta-dark transition-colors"
+            className="bg-terracotta text-white font-body font-semibold px-5 sm:px-7 py-3 rounded-sm hover:bg-terracotta-dark transition-colors text-center"
           >
             Read the Stories
           </Link>
           <Link
             href={`/${locale}/recipes`}
-            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-7 py-3 rounded-sm hover:bg-white/30 transition-colors"
+            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-5 sm:px-7 py-3 rounded-sm hover:bg-white/30 transition-colors text-center"
           >
             Explore Recipes
           </Link>
           <Link
             href={`/${locale}/provence/markets`}
-            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-7 py-3 rounded-sm hover:bg-white/30 transition-colors"
+            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-5 sm:px-7 py-3 rounded-sm hover:bg-white/30 transition-colors text-center"
           >
             Markets Map
           </Link>
           <Link
             href={`/${locale}/provence/lavender`}
-            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-7 py-3 rounded-sm hover:bg-white/30 transition-colors"
+            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-5 sm:px-7 py-3 rounded-sm hover:bg-white/30 transition-colors text-center"
           >
             🪻 Lavender Fields
-          </Link>
-          </div>
-          <Link
-            href={`/${locale}/articles`}
-            className="bg-white/20 backdrop-blur-sm text-white border border-white/40 font-body font-semibold px-7 py-3 rounded-sm hover:bg-white/30 transition-colors w-full sm:w-auto text-center"
-          >
-            Articles
           </Link>
         </div>
       </Hero>
