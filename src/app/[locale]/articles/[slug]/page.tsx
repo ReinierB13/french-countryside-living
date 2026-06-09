@@ -20,7 +20,7 @@ interface Props {
 
 export async function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
-    articles.map((a) => ({ locale, slug: a.slug }))
+    articles.filter((a) => !a.hidden).map((a) => ({ locale, slug: a.slug }))
   );
 }
 

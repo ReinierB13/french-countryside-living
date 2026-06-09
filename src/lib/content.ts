@@ -1574,7 +1574,7 @@ export function getFeaturedRecipes(count = 3): Recipe[] {
 }
 
 export function getArticleBySlug(slug: string, locale?: string): Article | undefined {
-  const article = articles.find((a) => a.slug === slug);
+  const article = articles.find((a) => a.slug === slug && !a.hidden);
   if (!article || locale !== 'fr' || !article.fr) return article;
   return { ...article, ...article.fr };
 }
