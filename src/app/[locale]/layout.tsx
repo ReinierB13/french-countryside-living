@@ -38,10 +38,10 @@ const lora = Lora({
 export const metadata: Metadata = {
   title: {
     template: '%s | French Countryside Living',
-    default: 'French Countryside Living - Hunting, Cooking & Life in Rural Provence',
+    default: 'French Countryside Living - Exploring Provence through food, history and local traditions',
   },
   description:
-    'Stories, recipes, and life from the Provençal countryside - wild boar hunting, fire cooking, village life, and the slow rhythm of rural France.',
+    'Exploring Provence through food, history and local traditions - from someone who lives here.',
   keywords: [
     'Provence',
     'French countryside',
