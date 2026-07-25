@@ -691,7 +691,12 @@ export const articles: Article[] = [
 <h2>The Part Nobody Talks About</h2>
 <p>Most people associate lavender with soap, skincare, and the inside of old wardrobes. Which is fair. But shortly after we arrived in Provence, my wife and I had dinner in Isle-sur-la-Sorgue and I ordered a lavender-infused crème brûlée that I still think about. Not in a vague nostalgic way - I mean I literally ordered a second one right after I finished the first one. If they had served it in a bucket I would have asked for a spoon.</p>
 <p>I have tried to recreate it at home several times. I have not nailed it yet. When I do, the recipe goes up on the site.</p>
-<p>If you happen to have a reliable version, I would genuinely love to hear it. Drop it in the comments below.</p>`,
+<p>If you happen to have a reliable version, I would genuinely love to hear it. Drop it in the comments below.</p>
+<h2>Watch It</h2>
+<p>We filmed this in Valensole in June 2026, right in the middle of peak bloom. It captures the scale of the rows far better than any photo we took that day.</p>
+<div style="position:relative;padding-top:56.25%;border-radius:2px;overflow:hidden;margin:1.5rem 0;">
+<iframe src="https://www.youtube.com/embed/3FbWp9uzDv8" title="Lavender fields in Valensole" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+</div>`,
     image: '/images/Lavender/lav-hero.jpg',
     date: '2026-05-22',
     category: 'Provence',
@@ -725,7 +730,12 @@ export const articles: Article[] = [
 <h2>Ce Dont Personne ne Parle</h2>
 <p>La plupart des gens associent la lavande au savon, aux soins de la peau et à l'intérieur des vieilles armoires. Ce qui se comprend. Mais peu après notre arrivée en Provence, ma femme et moi avons dîné à Isle-sur-la-Sorgue et j'ai commandé une crème brûlée à la lavande à laquelle je pense encore. Pas de façon vaguement nostalgique - je veux dire que j'en ai littéralement commandé une deuxième juste après avoir terminé la première. S'ils l'avaient servie dans un seau, j'aurais demandé une cuillère.</p>
 <p>J'ai essayé de la recréer à la maison plusieurs fois. Je n'y suis pas encore parvenu. Quand ce sera le cas, la recette sera publiée sur le site.</p>
-<p>Si vous avez une version fiable, je serais vraiment ravi de l'entendre. Laissez-la dans les commentaires ci-dessous.</p>`,
+<p>Si vous avez une version fiable, je serais vraiment ravi de l'entendre. Laissez-la dans les commentaires ci-dessous.</p>
+<h2>À Voir</h2>
+<p>Nous avons tourné cette vidéo à Valensole en juin 2026, en plein pic de floraison. Elle rend beaucoup mieux compte de l'immensité des rangs que nos photos ce jour-là.</p>
+<div style="position:relative;padding-top:56.25%;border-radius:2px;overflow:hidden;margin:1.5rem 0;">
+<iframe src="https://www.youtube.com/embed/3FbWp9uzDv8" title="Champs de lavande à Valensole" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+</div>`,
       marcelTip: 'Partez avant le lever du soleil. Emportez une baguette. Ne posez pas le bébé dans la lavande s\'il y a des touristes dans les environs.',
     },
   },
@@ -770,7 +780,12 @@ export const articles: Article[] = [
 <h2>Back to Valensole, Judge for Yourselves</h2>
 <p>Back in Valensole we made a quick stop for a toilet break before continuing to one of the most famous fields in the area, the site where a UFO was reportedly seen back in 1965. Whether you believe the story or not, the lavender certainly didn't disappoint. If anything, the fields seemed even more vibrant now than they had that morning. Under the afternoon sun the purple seemed almost to glow.</p>
 <img src="/images/Lavender/ChasingLavender/chase-bee-macro.jpg" alt="A bee working a lavender bloom under the afternoon sun" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
-<p>With the temperature climbing steadily, we ate our picnic in the air conditioned comfort of the car on the way home. By 4:30 that afternoon we were back, tired, slightly sunburnt, smelling faintly of lavender, with memory cards full of photos and enough stories to keep us smiling for quite some time. All in all, I'd call that a very good day's work.</p>`,
+<p>With the temperature climbing steadily, we ate our picnic in the air conditioned comfort of the car on the way home. By 4:30 that afternoon we were back, tired, slightly sunburnt, smelling faintly of lavender, with memory cards full of photos and enough stories to keep us smiling for quite some time. All in all, I'd call that a very good day's work.</p>
+<h2>The Footage</h2>
+<p>Some of what we shot that day in Valensole, back in June 2026, made it into this video. It's a fair bit calmer than the sorbet incident.</p>
+<div style="position:relative;padding-top:56.25%;border-radius:2px;overflow:hidden;margin:1.5rem 0;">
+<iframe src="https://www.youtube.com/embed/3FbWp9uzDv8" title="A day among the lavender fields of Valensole" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+</div>`,
     image: '/images/Lavender/ChasingLavender/chase-backlit-field.jpg',
     date: '2026-06-30',
     category: 'Provence',
@@ -816,7 +831,12 @@ export const articles: Article[] = [
 <h2>Retour à Valensole, Jugez par Vous-Mêmes</h2>
 <p>De retour à Valensole, nous avons fait une courte pause toilettes avant de continuer vers l'un des champs les plus célèbres de la région, le site où un OVNI aurait été aperçu en 1965. Que l'on croie l'histoire ou non, la lavande, elle, n'a pas déçu. Les champs semblaient même plus éclatants que le matin. Sous le soleil de l'après-midi, le violet semblait presque rayonner.</p>
 <img src="/images/Lavender/ChasingLavender/chase-bee-macro.jpg" alt="Une abeille butinant une fleur de lavande sous le soleil de l'après-midi" style="width:100%;height:310px;object-fit:cover;border-radius:2px;margin:1.5rem 0;" />
-<p>Avec la température qui montait régulièrement, nous avons mangé notre pique-nique dans le confort climatisé de la voiture sur le chemin du retour. À 16h30, nous étions de retour, fatigués, légèrement brûlés par le soleil, sentant vaguement la lavande, avec des cartes mémoire pleines de photos et assez d'histoires pour nous faire sourire pendant un bon moment. Tout compte fait, je dirais que c'était une très bonne journée de travail.</p>`,
+<p>Avec la température qui montait régulièrement, nous avons mangé notre pique-nique dans le confort climatisé de la voiture sur le chemin du retour. À 16h30, nous étions de retour, fatigués, légèrement brûlés par le soleil, sentant vaguement la lavande, avec des cartes mémoire pleines de photos et assez d'histoires pour nous faire sourire pendant un bon moment. Tout compte fait, je dirais que c'était une très bonne journée de travail.</p>
+<h2>Les Images</h2>
+<p>Une partie de ce que nous avons filmé ce jour-là à Valensole, en juin 2026, se retrouve dans cette vidéo. C'est nettement plus calme que l'incident du sorbet.</p>
+<div style="position:relative;padding-top:56.25%;border-radius:2px;overflow:hidden;margin:1.5rem 0;">
+<iframe src="https://www.youtube.com/embed/3FbWp9uzDv8" title="Une journée dans les champs de lavande de Valensole" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"></iframe>
+</div>`,
       marcelTip: 'Achetez le maillot de bain de l\'enfant avant d\'en avoir besoin, pas après. Et ne faites jamais confiance à un sorbet citron-thym par une chaude après-midi.',
     },
   },
@@ -1640,6 +1660,14 @@ export const videos: Video[] = [
     description: '',
     youtubeId: 'LrrtOP9kUf0',
     date: '2026-03-16',
+    category: 'Provence',
+  },
+  {
+    id: 'lavender-fields-valensole',
+    title: 'The Lavender Fields of Valensole',
+    description: 'Filmed in Valensole during June 2026, right at the height of bloom - endless purple rows, the mountains hazy in the distance, and the scent of lavender drifting through the whole valley.',
+    youtubeId: '3FbWp9uzDv8',
+    date: '2026-03-01',
     category: 'Provence',
   },
 ];
