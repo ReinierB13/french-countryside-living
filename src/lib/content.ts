@@ -1651,7 +1651,7 @@ export const videos: Video[] = [
     title: 'The Most Beautiful Drive in Provence – Les Alpilles',
     description: 'A scenic drive through the heart of Les Alpilles, with original music composed for the journey - white limestone ridges, olive groves, and the villages that make this corner of Provence unforgettable.',
     youtubeId: 'JTVwEWiKz5g',
-    date: '2026-03-13',
+    date: '2026-07-24',
     category: 'Provence',
   },
   {
@@ -1667,7 +1667,7 @@ export const videos: Video[] = [
     title: 'The Lavender Fields of Valensole',
     description: 'Filmed in Valensole during June 2026, right at the height of bloom - endless purple rows, the mountains hazy in the distance, and the scent of lavender drifting through the whole valley.',
     youtubeId: '3FbWp9uzDv8',
-    date: '2026-03-01',
+    date: '2026-07-25',
     category: 'Provence',
   },
 ];
