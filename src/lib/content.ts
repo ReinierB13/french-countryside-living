@@ -1616,6 +1616,85 @@ export const recipes: Recipe[] = [
       marcelTip: 'Gardez quatre boîtes dans le placard en permanence. Vous vous féliciterez le soir où des invités imprévus arrivent et que le soleil est encore chaud.',
     },
   },
+  {
+    slug: 'ratatouille-pasta-davoine-salad',
+    title: "Ratatouille Pasta d'Avoine Salad",
+    excerpt: "A cold summer pasta salad inspired by rugby Sundays and the Maussane-les-Alpilles market, with aubergine, courgette, tomato, olives, lemon, basil, and goat's cheese.",
+    image: '/images/ratatouille-pasta-davoine-salad.jpg',
+    date: '2026-08-09',
+    category: 'provencal',
+    servings: 6,
+    prepTime: '30 min',
+    cookTime: '25 min',
+    difficulty: 'Easy',
+    videoId: 'HgL_Su3XJAo',
+    ingredients: [
+      "About 400 g pasta d'avoine",
+      '1 aubergine',
+      '1 medium courgette',
+      '1 large ripe tomato',
+      '4 sun-dried tomatoes',
+      'A generous handful of Sicilian market mix containing green olives, celery, and small pieces of lemon',
+      '1-2 tablespoons capers',
+      '2 pickled chillies',
+      '2-3 green onion stalks',
+      'Zest of 1 lemon',
+      'Juice of 1 lemon',
+      '1 bouchon de chevre',
+      'A generous handful of fresh basil',
+      'Fresh dill, optional',
+      'Castelas ripe black-olive oil',
+      'Olive oil for cooking',
+      'Salt',
+      'Freshly ground black pepper',
+    ],
+    instructions: [
+      "Bring a large pot of well-salted water to the boil and cook the pasta d'avoine until al dente. Drain, cool, and toss with a small amount of olive oil so it does not stick together.",
+      'Cut the aubergine and courgette into small pieces. Heat olive oil in a frying pan and cook the aubergine until soft and nicely browned. Cook the courgette until tender and lightly coloured, but still with a little texture. Set both aside to cool.',
+      'Dice the fresh tomato and slice the sun-dried tomatoes. Finely slice the pickled chillies and green onion stalks. Drain the capers, roughly chop the Sicilian olive mixture if needed, zest and juice the lemon, and tear or roughly chop the basil.',
+      'Add the cooled pasta to a large bowl with the aubergine, courgette, fresh tomato, sun-dried tomatoes, Sicilian olive mixture, capers, pickled chillies, and green onion. Add the lemon zest and juice, basil, dill if using, and a generous pour of good olive oil. Toss gently.',
+      "Taste before adding salt, because the olives, capers, sun-dried tomatoes, pickled chillies, and cheese already bring plenty of seasoning. Finish with freshly ground black pepper, then break the bouchon de chevre into small pieces over the salad and turn once or twice gently.",
+      'Leave the salad at room temperature for 20-30 minutes so the pasta can take up the tomato juices, lemon, olive oil, and salty market flavours. Taste again before serving and finish with another drizzle of Castelas black-olive oil.',
+    ],
+    story: `For years, Sunday meant rugby.
+
+And if you've ever played rugby in France, you'll know that match-day food isn't necessarily the culinary highlight of the week.
+
+Before games, we seemed to live on bloody overcooked pasta. Pasta. Some cheese. Some chicken. Week after week.
+
+It did the job, I suppose. Nobody was expecting fine dining before spending 80 minutes running into other large men. But after a while, the sight of another enormous tray of overboiled pasta wasn't particularly inspiring.
+
+Then one Sunday we played away from home. The weather was already getting warmer and, instead of the usual mountain of plain pasta, the chef had made a cold pasta salad.
+
+The pasta itself caught my attention. It was made from tiny little pieces shaped almost like grains of rice. I'd never really noticed this pasta before, so I asked what it was.
+
+Pasta d'avoine.
+
+And I loved it. That salad stuck in my memory long after I'd forgotten the score of the rugby match.
+
+Years later, on a summer morning in Provence, I was wandering around the market in Maussane-les-Alpilles, looking at what was fresh and thinking about what I could make for lunch.
+
+The aubergines looked good. So did the courgettes. And the tomatoes were exactly what a Provencal tomato should be in summer: big, ripe, and actually smelling like tomatoes.
+
+That immediately put ratatouille into my head. But it was hot. I didn't particularly feel like sitting down to a steaming bowl of ratatouille in the middle of a Provencal summer afternoon.
+
+And then I thought about that pasta salad I'd eaten all those years ago after discovering pasta d'avoine at rugby. Why not combine the two?
+
+So this recipe is my interpretation of that salad I remember from years ago, mixed with what was fresh and interesting at the Maussane market that morning.
+
+It isn't the chef's original recipe. I wouldn't even be able to tell you exactly what he put into his anymore. And it certainly isn't a traditional ratatouille.
+
+It's what happened when those two memories and places came together: part rugby-club memory, part ratatouille, part whatever looked good at the market that morning, and very much a summer lunch in Provence.
+
+Sometimes the best recipes aren't invented from scratch. They're memories that evolve with you.`,
+    notes: [
+      "You do not need to reproduce my shopping basket exactly. If you cannot find the Sicilian market mixture, use good green olives, finely sliced celery, and a little preserved or prepared lemon.",
+      'Save the expensive finishing oil for the end. Use a decent everyday olive oil for cooking the vegetables.',
+      'Serve at room temperature rather than straight from the fridge.',
+    ],
+    marcelTip: "Do not murder the pasta. Rugby clubs have already done enough damage to pasta d'avoine.",
+    marcelType: 'rugby',
+  },
 ];
 
 export const videos: Video[] = [
