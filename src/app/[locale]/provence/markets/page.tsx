@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
+import Image from 'next/image';
 import Link from 'next/link';
-import Hero from '@/components/Hero';
 import MarketsMapClient from '@/components/markets/MarketsMapClient';
 import { supabase } from '@/lib/supabase';
 import type { Market, RatingSummaries } from '@/components/markets/marketsData';
@@ -259,14 +259,56 @@ export default async function MarketsPage({
       />
 
       {/* Hero */}
-      <Hero
-        title={t('title')}
-        subtitle={t('subtitle')}
-        imageSrc="/images/market.png"
-        imageAlt="A busy Provençal market with stalls selling garlic, produce, and local goods under plane trees"
-        height="medium"
-        overlay="medium"
-      />
+      <section
+        className="relative min-h-[46vh] w-full overflow-hidden"
+        aria-label="A busy Provençal market with stalls selling garlic, produce, and local goods under plane trees"
+      >
+        <Image
+          src="/images/market.png"
+          alt="A busy Provençal market with stalls selling garlic, produce, and local goods under plane trees"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/65" />
+
+        <div className="relative z-10 mx-auto grid min-h-[46vh] w-full max-w-7xl grid-cols-1 items-center gap-8 px-6 py-12 lg:grid-cols-[2fr_1fr] lg:px-10">
+          <div className="max-w-3xl text-center lg:text-left">
+            <h1 className="font-heading text-4xl font-bold leading-tight text-white drop-shadow-lg sm:text-6xl md:text-7xl">
+              {t('title')}
+            </h1>
+            <p className="mx-auto mt-5 max-w-2xl font-body text-lg italic leading-relaxed text-parchment/90 drop-shadow-sm sm:text-xl md:text-2xl lg:mx-0">
+              {t('subtitle')}
+            </p>
+          </div>
+
+          <aside className="w-full justify-self-center lg:justify-self-end" aria-label="Latest French Countryside Living video">
+            <p className="mb-2 font-heading text-sm font-semibold uppercase tracking-[0.14em] text-amber">
+              Latest video
+            </p>
+            <div className="overflow-hidden rounded border border-parchment/25 bg-charcoal/70 shadow-2xl backdrop-blur-sm">
+              <div className="aspect-video w-full">
+                <iframe
+                  className="h-full w-full"
+                  src="https://www.youtube.com/embed/HgL_Su3XJAo"
+                  title="Latest French Countryside Living video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
+              <a
+                href="https://youtu.be/HgL_Su3XJAo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block px-4 py-3 font-body text-sm font-semibold text-parchment transition-colors hover:bg-parchment/10"
+              >
+                Watch on YouTube
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
 
       {/* Breadcrumb bar */}
       <div className="bg-charcoal text-parchment px-4 sm:px-6 py-2.5 flex items-center gap-3">
