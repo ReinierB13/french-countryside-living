@@ -930,6 +930,88 @@ export const articles: Article[] = [
       marcelTip: 'Les pâtes d\'avant-match sont toujours trop cuites. Personne ne sait pourquoi. Personne ne pose la question. C\'est la France.',
     },
   },
+  {
+    slug: 'hunting-season-safety-france',
+    title: 'How to Stay Safe During Hunting Season in France: A Local Hunter’s Guide',
+    excerpt: 'A Provence hunter explains battues, warning signs, dog safety and practical ways to share the countryside during hunting season.',
+    content: `<p>Autumn is one of my favourite times to walk in Les Alpilles. It is also hunting season. If you are new to the French countryside, a gunshot in the hills, a pack of dogs or a <em>chasse en cours</em> sign can be unsettling. What should you do?</p>
+<p>I take part in driven wild boar hunts in Provence. I also walk these hills with my family. Here is how a hunt works where I live, what the signs mean, and how we can share the countryside safely.</p>
+<p>Most hunters want to hunt in peace and bring everyone home unharmed. Nobody wants to live with having injured an innocent person. That responsibility sits first with the person holding the firearm. Walkers, runners and cyclists can also make sensible choices when they see an active hunt.</p>
+<h2>What is a battue?</h2>
+<p>A <em>battue</em> is an organised driven hunt, often for wild boar or deer. Hunters take assigned positions while <em>traqueurs</em>, frequently with dogs, move through the cover and drive game towards them. It is a coordinated operation within a defined area, not a hunt across an entire mountain range.</p>
+<p>Our hunting territory is about 5,000 hectares. On a typical battue we seldom hunt more than roughly 100 hectares at once. That is my local experience, not a rule for France as a whole. Hunts here also rarely run beyond 2 p.m., but you should never assume a hunt has finished because of the time or a quiet spell.</p>
+<p>Other shots may come from individual hunters pursuing permitted small game, such as pigeons or thrushes. They may be elsewhere in the countryside and do not necessarily indicate a nearby battue. Shotgun pellets can still injure at a distance; there is no universal “safe at 100 metres” rule.</p>
+<h2>What happens before the hunt?</h2>
+<p>Every battue I join begins with a safety briefing. The organiser explains the positions, shooting sectors, signals and rules. Hunters wear high-visibility clothing, must identify the animal and its background before firing, and must keep shots away from people, roads and buildings. The 30-degree rule helps establish no-shoot sectors around neighbouring positions. If there is doubt, we do not shoot.</p>
+<p>During the off season, we also install elevated hunting stands. They give us a clearer view of the animals and help direct shots towards the ground, with a suitable backstop. That reduces the chance of a bullet travelling beyond the intended area, though no stand makes a shot automatically safe. Some of these stands have been vandalised. Apart from damaging the equipment, that can remove a safety measure intended to protect everyone using the countryside.</p>
+<p>French law requires fluorescent vests for hunters in collective big-game hunts, temporary warning signs on or close to public roads, and safety refresher training every ten years. The Office français de la biodiversité (OFB) publishes detailed guidance for safe shooting and battues. Hunters may also be checked by authorities for compliance with applicable rules. These safeguards matter, but they never remove a hunter’s personal responsibility for a shot.</p>
+<h2>What does a <em>chasse en cours</em> sign mean?</h2>
+<p>It means an organised hunt is under way nearby. Take it seriously. A hunting warning sign does not, on its own, necessarily close a public path. A separate lawful restriction may apply, so pay attention to any official notices as well.</p>
+<p>I have watched people walk, jog, cycle and ride past signs into an active hunt. I have also been sworn at for warning someone. Sometimes the sign was simply missed; either way, a quick change of route is usually the easiest solution. When I am out walking and see one, I turn around and enjoy another trail that day.</p>
+<p>If changing course is impossible, stop at a safe distance, make your presence known and ask the organiser or a hunter where the active area is. Do not rely on silence to decide it is over. Hunters should respond courteously, secure their firearm and help others pass safely where possible.</p>
+<h2>Seven ways to stay safe outdoors</h2>
+<ol>
+<li><strong>Ask locally before setting out.</strong> Your mairie or local hunting association may be able to tell you the usual battue days and where current information is posted. A schedule can change, so watch for signs on the day.</li>
+<li><strong>Wear something visible.</strong> A bright jacket, cap or backpack cover helps others spot you in dense vegetation.</li>
+<li><strong>Read the signs and choose another route when you can.</strong> A warning is useful information, even where a path remains open.</li>
+<li><strong>Keep your dog close for its own safety.</strong> Put it on a lead when approaching a hunt. A family dog can catch a boar’s scent and give chase. Wild boar are powerful animals with sharp tusks; even trained hunting dogs can be gravely injured or killed. Your dog does not understand that danger, so keep it out of a confrontation.</li>
+<li><strong>Make yourself known.</strong> If you unexpectedly meet hunters, calmly call out from a safe distance. Let them acknowledge you and secure their firearms before you approach. Ask which way to go.</li>
+<li><strong>Do not guess that the hunt is over.</strong> A battue may be quiet for a long time. Seek confirmation or take another route.</li>
+<li><strong>Report immediate danger.</strong> Move away if someone handles a firearm dangerously or shoots towards people. In an emergency in France, call <strong>17</strong> or <strong>112</strong>.</li>
+</ol>
+<h2>Why are wild boar hunted?</h2>
+<p>Wild boar can cause serious damage to crops. Hunting is one part of wildlife management in France, alongside rules that vary by species and department. Departmental hunting federations have a statutory role in compensating eligible agricultural damage caused by big game. That does not mean every loss is compensated, or that everyone must agree with hunting. It is part of the practical context in which local hunts take place.</p>
+<p>Hunters are not all perfect. Unsafe behaviour should be challenged and reported. But neither is every hunter reckless or indifferent to animals and other people. The hunters I know care deeply about the countryside and take the safety briefing seriously.</p>
+<p>We all use these paths. Hunters must take responsibility for every shot and respect other users’ access. Walkers, runners, riders and cyclists can notice the signs, keep their dogs safe and make room for a hunt in a small area for a few hours when another route is available. A little courtesy in both directions makes the countryside safer for everyone.</p>
+<p><em>Stay safe out there, and respect each other.</em></p>
+<h2>Official references</h2>
+<ul><li><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038846472">French Environmental Code, Article L424-15: hunting safety requirements</a></li><li><a href="https://ofb.gouv.fr/la-securite-a-la-chasse">OFB: La sécurité à la chasse</a></li><li><a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006159260/">French Environmental Code, Articles L426-1 onward: game damage compensation</a></li></ul>`,
+    image: '/images/hero-hunting.jpg',
+    date: '2026-10-05',
+    category: 'Traditions',
+    tags: ['Hunting', 'Safety', 'Les Alpilles', 'Wild boar'],
+    marcelTip: 'If you see a chasse en cours sign, choose another trail when you can. Keep your dog on a lead near wild boar.',
+    marcelType: 'hunter',
+    fr: {
+      title: 'Comment rester en sécurité pendant la saison de chasse en France : le regard d’un chasseur local',
+      excerpt: 'Un chasseur provençal explique les battues, les panneaux, la sécurité des chiens et comment partager la campagne pendant la saison de chasse.',
+      content: `<p>L'automne est l'une de mes saisons préférées pour marcher dans les Alpilles. C'est aussi la saison de la chasse. Si vous découvrez la campagne française, entendre des coups de feu dans les collines, croiser des chiens ou voir un panneau « chasse en cours » peut être inquiétant. Que faire ?</p>
+<p>Je participe à des battues au sanglier en Provence. Je me promène aussi dans ces collines avec ma famille. Voici comment se déroule une chasse chez nous, ce que signifient les panneaux et comment partager la campagne en sécurité.</p>
+<p>La plupart des chasseurs veulent chasser tranquillement et que tout le monde rentre chez soi sain et sauf. Personne ne veut vivre avec le fait d'avoir blessé un innocent. La responsabilité première revient à celui qui tient l'arme. Les promeneurs, coureurs et cyclistes peuvent eux aussi prendre des précautions lorsqu'ils voient qu'une chasse est en cours.</p>
+<h2>Qu'est-ce qu'une battue ?</h2>
+<p>Une battue est une chasse collective organisée, souvent au sanglier ou au chevreuil. Des chasseurs occupent des postes définis pendant que des traqueurs, souvent accompagnés de chiens, progressent dans la végétation et poussent le gibier vers eux. La chasse se déroule dans un secteur délimité, pas sur tout un massif.</p>
+<p>Notre territoire de chasse couvre environ 5 000 hectares. Pour une battue, nous chassons rarement plus d'une centaine d'hectares à la fois. C'est mon expérience locale, pas une règle valable dans toute la France. Chez nous, les battues se prolongent rarement au-delà de 14 heures. Ne supposez pourtant jamais qu'une chasse est terminée à cause de l'heure ou d'une période sans coups de feu.</p>
+<p>D'autres tirs peuvent provenir de chasseurs individuels qui recherchent du petit gibier autorisé, comme les pigeons ou les grives. Ils peuvent se trouver ailleurs dans la campagne, sans lien avec une battue proche. Les plombs d'un fusil peuvent encore blesser à distance : il n'existe pas de règle générale selon laquelle on serait « en sécurité à 100 mètres ».</p>
+<h2>Que se passe-t-il avant la chasse ?</h2>
+<p>Chaque battue à laquelle je participe commence par un rappel des consignes de sécurité. Le responsable précise les postes, les secteurs de tir, les signaux et les règles. Les chasseurs portent des vêtements fluorescents, doivent identifier l'animal et ce qui se trouve derrière lui avant de tirer, et ne doivent pas tirer en direction des personnes, des routes ou des bâtiments. La règle des 30 degrés sert à définir des secteurs dans lesquels on ne tire pas près des postes voisins. Au moindre doute, on ne tire pas.</p>
+<p>Hors saison, nous installons aussi des miradors. Ils offrent une meilleure vue des animaux et permettent de diriger le tir davantage vers le sol, avec un fond de tir adapté. Cela réduit le risque qu'une balle poursuive sa course au-delà du secteur visé, mais un mirador ne rend jamais un tir automatiquement sûr. Certains sont vandalisés. Au-delà des dégâts matériels, cela peut supprimer un dispositif destiné à protéger tous les usagers de la campagne.</p>
+<p>La loi française impose le gilet fluorescent lors des chasses collectives au grand gibier, une signalisation temporaire sur les voies publiques ou à proximité, et une remise à niveau des règles de sécurité tous les dix ans. L'Office français de la biodiversité (OFB) publie des conseils détaillés sur la sécurité à la chasse. Les chasseurs peuvent aussi faire l'objet de contrôles. Ces mesures sont importantes, mais elles ne remplacent jamais la responsabilité individuelle du tireur.</p>
+<h2>Que signifie un panneau « chasse en cours » ?</h2>
+<p>Il indique qu'une chasse organisée se déroule à proximité. Prenez-le au sérieux. À lui seul, ce panneau ne ferme pas forcément un chemin public. Une restriction officielle distincte peut s'appliquer : lisez également les arrêtés et autres avis affichés.</p>
+<p>J'ai souvent vu des personnes passer devant ces panneaux à pied, en courant, à vélo ou à cheval pour entrer dans le secteur chassé. Je me suis même fait insulter en avertissant quelqu'un. Parfois, la personne n'avait simplement pas vu le panneau. Dans tous les cas, changer d'itinéraire est généralement la solution la plus simple. Lorsque je me promène et que j'en vois un, je fais demi-tour et profite d'un autre chemin ce jour-là.</p>
+<p>Si vous ne pouvez pas changer d'itinéraire, arrêtez-vous à bonne distance, signalez votre présence et demandez au responsable ou à un chasseur où se trouve la zone active. Ne déduisez pas du silence que la chasse est finie. Les chasseurs doivent répondre avec courtoisie, sécuriser leur arme et aider les autres usagers à passer en sécurité lorsque c'est possible.</p>
+<h2>Sept conseils pour sortir en sécurité</h2>
+<ol>
+<li><strong>Renseignez-vous localement avant de partir.</strong> La mairie ou l'association de chasse peut vous indiquer les jours habituels de battue et où trouver les informations. Le programme peut changer : regardez aussi les panneaux le jour même.</li>
+<li><strong>Portez quelque chose de visible.</strong> Une veste, une casquette ou une housse de sac de couleur vive aide à vous distinguer dans la végétation.</li>
+<li><strong>Lisez les panneaux et changez de chemin si vous le pouvez.</strong> Un avertissement est une information utile, même si le sentier reste ouvert.</li>
+<li><strong>Gardez votre chien près de vous pour sa propre sécurité.</strong> Tenez-le en laisse à l'approche d'une chasse. Un chien de famille peut sentir un sanglier et se lancer à sa poursuite. Le sanglier est puissant et possède des défenses tranchantes ; même des chiens de chasse entraînés peuvent être gravement blessés ou tués. Votre chien ne mesure pas ce danger : empêchez la confrontation.</li>
+<li><strong>Signalez votre présence.</strong> Si vous rencontrez des chasseurs par surprise, appelez calmement de loin. Attendez qu'ils vous aient vu et aient sécurisé leurs armes avant d'approcher. Demandez par où passer.</li>
+<li><strong>Ne devinez pas que la battue est terminée.</strong> Elle peut rester longtemps silencieuse. Demandez confirmation ou choisissez un autre itinéraire.</li>
+<li><strong>Signalez un danger immédiat.</strong> Éloignez-vous si quelqu'un manipule une arme dangereusement ou tire vers des personnes. En cas d'urgence en France, appelez le <strong>17</strong> ou le <strong>112</strong>.</li>
+</ol>
+<h2>Pourquoi chasse-t-on le sanglier ?</h2>
+<p>Les sangliers peuvent causer des dégâts importants aux cultures. La chasse fait partie de la gestion de la faune en France, selon des règles qui varient suivant les espèces et les départements. Les fédérations départementales des chasseurs ont un rôle légal dans l'indemnisation de certains dégâts agricoles causés par le grand gibier. Cela ne signifie pas que toute perte est indemnisée ni que chacun doit approuver la chasse. C'est une partie du contexte dans lequel se déroulent les battues locales.</p>
+<p>Tous les chasseurs ne sont pas irréprochables. Un comportement dangereux doit être dénoncé et signalé. Mais il serait tout aussi injuste de considérer chaque chasseur comme imprudent ou indifférent aux animaux et aux autres personnes. Les chasseurs que je connais tiennent à la campagne et prennent les consignes de sécurité au sérieux.</p>
+<p>Nous partageons tous ces chemins. Les chasseurs doivent assumer la responsabilité de chaque tir et respecter l'accès des autres usagers. Les promeneurs, coureurs, cavaliers et cyclistes peuvent tenir compte des panneaux, protéger leurs chiens et, lorsqu'un autre trajet existe, laisser pendant quelques heures un petit secteur à la chasse. Un peu de courtoisie de part et d'autre rend la campagne plus sûre pour tous.</p>
+<p><em>Soyez prudents et respectez-vous les uns les autres.</em></p>
+<h2>Sources officielles</h2>
+<p><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038846472">Code de l'environnement, article L424-15 : sécurité à la chasse</a></p>
+<p><a href="https://ofb.gouv.fr/la-securite-a-la-chasse">OFB : La sécurité à la chasse</a></p>
+<p><a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006159260/">Code de l'environnement, articles L426-1 et suivants : indemnisation des dégâts</a></p>`,
+      marcelTip: 'Si vous voyez un panneau « chasse en cours », choisissez un autre sentier si possible. Gardez votre chien en laisse près des sangliers.',
+    },
+  },
 ];
 
 export const recipes: Recipe[] = [
