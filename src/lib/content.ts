@@ -966,7 +966,7 @@ export const articles: Article[] = [
 <p><em>Stay safe out there, and respect each other.</em></p>
 <h2>Official references</h2>
 <ul><li><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038846472">French Environmental Code, Article L424-15: hunting safety requirements</a></li><li><a href="https://ofb.gouv.fr/la-securite-a-la-chasse">OFB: La sécurité à la chasse</a></li><li><a href="https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074220/LEGISCTA000006159260/">French Environmental Code, Articles L426-1 onward: game damage compensation</a></li></ul>`,
-    image: '/images/hero-hunting.jpg',
+    image: '/images/hunting-season-safety-hero.webp',
     date: '2026-10-05',
     category: 'Traditions',
     tags: ['Hunting', 'Safety', 'Les Alpilles', 'Wild boar'],
