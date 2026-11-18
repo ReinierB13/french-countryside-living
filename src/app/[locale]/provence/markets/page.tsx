@@ -334,6 +334,19 @@ export default async function MarketsPage({
         </Link>
       </div>
 
+      {/* Mobile article discovery: visible before the tall interactive map. */}
+      <section className="bg-parchment px-4 py-3 lg:hidden" aria-label={locale === 'fr' ? 'Découvrir les articles' : 'Explore articles'}>
+        <details className="group rounded-sm border border-olive/25 bg-white shadow-sm">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 font-heading font-semibold text-charcoal [&::-webkit-details-marker]:hidden">
+            <span>{locale === 'fr' ? 'À découvrir : nos articles' : 'Explore our latest articles'}</span>
+            <span aria-hidden="true" className="text-terracotta transition-transform group-open:rotate-180">⌄</span>
+          </summary>
+          <div className="border-t border-olive/15 p-3">
+            <LatestArticlesSidebar locale={locale} compact />
+          </div>
+        </details>
+      </section>
+
       {/* Map */}
       {markets.length === 0 ? (
         <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 text-center bg-parchment">
@@ -354,7 +367,7 @@ export default async function MarketsPage({
       )}
 
       {/* Discover more content without interrupting the interactive market map. */}
-      <section className="bg-parchment px-4 py-10 sm:px-6" aria-label={locale === 'fr' ? 'Autres articles' : 'More stories'}>
+      <section className="hidden bg-parchment px-4 py-10 sm:px-6 lg:block" aria-label={locale === 'fr' ? 'Autres articles' : 'More stories'}>
         <div className="mx-auto max-w-7xl">
           <LatestArticlesSidebar locale={locale} />
         </div>
