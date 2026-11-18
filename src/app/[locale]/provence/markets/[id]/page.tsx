@@ -6,6 +6,7 @@ import type { Market } from '@/components/markets/marketsData';
 import { MARKET_TYPE_COLORS, type MarketTypeKey } from '@/components/markets/marketsData';
 import MarketRating from '@/components/markets/MarketRating';
 import Comments from '@/components/Comments';
+import LatestArticlesSidebar from '@/components/LatestArticlesSidebar';
 
 interface Props {
   params: Promise<{ locale: string; id: string }>;
@@ -64,7 +65,8 @@ export default async function MarketDetailPage({ params }: Props) {
     <>
       {/* Header */}
       <div className="bg-charcoal text-parchment">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_300px] gap-8 items-start">
+        <div className="min-w-0">
           <Link
             href={backHref}
             className="inline-block text-parchment/50 hover:text-parchment text-xs font-body transition-colors mb-5"
@@ -144,6 +146,8 @@ export default async function MarketDetailPage({ params }: Props) {
 
         {/* Comments */}
         <Comments contentType="market" contentSlug={market.id} />
+        </div>
+        <div className="lg:sticky lg:top-24"><LatestArticlesSidebar locale={locale} /></div>
       </div>
     </>
   );
