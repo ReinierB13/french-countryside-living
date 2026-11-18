@@ -3,6 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 import MarketsMapClient from '@/components/markets/MarketsMapClient';
+import LatestArticlesSidebar from '@/components/LatestArticlesSidebar';
 import { supabase } from '@/lib/supabase';
 import type { Market, RatingSummaries } from '@/components/markets/marketsData';
 
@@ -351,6 +352,13 @@ export default async function MarketsPage({
       ) : (
         <MarketsMapClient markets={markets} ratings={ratings} />
       )}
+
+      {/* Discover more content without interrupting the interactive market map. */}
+      <section className="bg-parchment px-4 py-10 sm:px-6" aria-label={locale === 'fr' ? 'Autres articles' : 'More stories'}>
+        <div className="mx-auto max-w-7xl">
+          <LatestArticlesSidebar locale={locale} />
+        </div>
+      </section>
 
       {/* Disclaimer */}
       <div className="bg-amber/10 border-t border-amber/30 px-4 sm:px-6 py-4">
